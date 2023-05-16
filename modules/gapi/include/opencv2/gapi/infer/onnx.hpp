@@ -298,7 +298,8 @@ public:
     @param model_path path to model file (.onnx file).
     */
     Params(const std::string& tag, const std::string& model_path)
-         : desc{model_path, 0u, 0u, {}, {}, {}, {}, {}, {}, {}, {}, {}, true}, m_tag(tag) {}
+         : desc{model_path, 0u, 0u, {}, {},
+                decltype(detail::ParamDesc::const_inputs){}, {}, {}, {}, {}, {}, {}, true}, m_tag(tag) {}
 
     // BEGIN(G-API's network parametrization API)
     GBackend      backend() const { return cv::gapi::onnx::backend(); }

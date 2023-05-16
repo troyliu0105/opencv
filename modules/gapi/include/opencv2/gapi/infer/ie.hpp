@@ -444,8 +444,10 @@ public:
            const std::string &model,
            const std::string &weights,
            const std::string &device)
-        : desc{ model, weights, device, {}, {}, {}, 0u, 0u,
-                detail::ParamDesc::Kind::Load, true, {}, {}, {}, 1u,
+        : desc{ model, weights, device, {}, {},
+                decltype(detail::ParamDesc::const_inputs){}, 0u, 0u,
+                detail::ParamDesc::Kind::Load, true, {}, {},
+                decltype(detail::ParamDesc::layer_names_to_reshape){}, 1u,
                 {}, {}, {}, {}, InferMode::Async, {} },
           m_tag(tag) {
     };
@@ -462,8 +464,10 @@ public:
     Params(const std::string &tag,
            const std::string &model,
            const std::string &device)
-        : desc{ model, {}, device, {}, {}, {}, 0u, 0u,
-                detail::ParamDesc::Kind::Import, true, {}, {}, {}, 1u,
+        : desc{ model, {}, device, {}, {},
+                decltype(detail::ParamDesc::const_inputs){}, 0u, 0u,
+                detail::ParamDesc::Kind::Import, true, {}, {},
+                decltype(detail::ParamDesc::layer_names_to_reshape){}, 1u,
                 {}, {}, {}, {}, InferMode::Async, {} },
           m_tag(tag) {
     };
