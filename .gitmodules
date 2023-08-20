@@ -1,0 +1,3 @@
+[submodule "3rdparty/schwarz"]
+	path = 3rdparty/schwarz
+	url = https://gitlab.com/stmgroup/schwarz.git
