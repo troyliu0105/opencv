@@ -223,17 +223,17 @@ if(TARGET ocv.3rdparty.cap_ios)
   list(APPEND tgts ocv.3rdparty.cap_ios)
 endif()
 
-if(TARGET ocv.3rdparty.android_mediandk)
-  list(APPEND videoio_srcs
-    ${CMAKE_CURRENT_LIST_DIR}/src/cap_android_mediandk.cpp)
-  list(APPEND tgts ocv.3rdparty.android_mediandk)
-endif()
+# if(TARGET ocv.3rdparty.android_mediandk)
+#   list(APPEND videoio_srcs
+#     ${CMAKE_CURRENT_LIST_DIR}/src/cap_android_mediandk.cpp)
+#   list(APPEND tgts ocv.3rdparty.android_mediandk)
+# endif()
 
-if(TARGET ocv.3rdparty.android_native_camera)
-  list(APPEND videoio_srcs
-    ${CMAKE_CURRENT_LIST_DIR}/src/cap_android_camera.cpp)
-  list(APPEND tgts ocv.3rdparty.android_native_camera)
-endif()
+# if(TARGET ocv.3rdparty.android_native_camera)
+#   list(APPEND videoio_srcs
+#     ${CMAKE_CURRENT_LIST_DIR}/src/cap_android_camera.cpp)
+#   list(APPEND tgts ocv.3rdparty.android_native_camera)
+# endif()
 
 if(TARGET ocv.3rdparty.obsensor)
   list(APPEND videoio_srcs
