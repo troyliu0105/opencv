@@ -73,6 +73,7 @@ namespace dnn
 using std::abs;
 using std::exp;
 using std::expm1;
+using std::expm1f;
 using std::tanh;
 using std::pow;
 using std::ceil;
@@ -2020,7 +2021,7 @@ struct CeluFunctor : public BaseDefaultFunctor<CeluFunctor>
 
     inline float calculate(float x) const
     {
-        return max(0.f, x) + min(0.f, alpha * expm1(x / alpha));
+        return max(0.f, x) + min(0.f, alpha * expm1f(x / alpha));
     }
 
     inline void setKernelParams(ocl::Kernel& kernel) const

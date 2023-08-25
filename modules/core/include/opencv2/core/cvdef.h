@@ -971,13 +971,159 @@ protected:
 #endif
 
 // fix rk3588 4.9 gnustl_static
-#if (__GNUC__ == 4 && __GNUC_MINOR__ == 9) && !defined(FIX_GNUSTL_4_9)
+#if (__GNUC__ == 4 && __GNUC_MINOR__ <= 9) && !defined(FIX_GNUSTL_4_9)
 #define FIX_GNUSTL_4_9
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include <ext/string_conversions.h>
 namespace std _GLIBCXX_VISIBILITY(default) {
 _GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+// types
+using ::double_t;
+using ::float_t;
+
+// functions
+using ::acosh;
+using ::acoshf;
+using ::acoshl;
+
+using ::asinh;
+using ::asinhf;
+using ::asinhl;
+
+using ::atanh;
+using ::atanhf;
+using ::atanhl;
+
+using ::cbrt;
+using ::cbrtf;
+using ::cbrtl;
+
+using ::copysign;
+using ::copysignf;
+using ::copysignl;
+
+using ::erf;
+using ::erff;
+using ::erfl;
+
+using ::erfc;
+using ::erfcf;
+using ::erfcl;
+
+using ::exp2;
+using ::exp2f;
+using ::exp2l;
+
+using ::expm1;
+using ::expm1f;
+using ::expm1l;
+
+using ::fdim;
+using ::fdimf;
+using ::fdiml;
+
+using ::fma;
+using ::fmaf;
+using ::fmal;
+
+using ::fmax;
+using ::fmaxf;
+using ::fmaxl;
+
+using ::fmin;
+using ::fminf;
+using ::fminl;
+
+using ::hypot;
+using ::hypotf;
+using ::hypotl;
+
+using ::ilogb;
+using ::ilogbf;
+using ::ilogbl;
+
+using ::lgamma;
+using ::lgammaf;
+using ::lgammal;
+
+using ::llrint;
+using ::llrintf;
+using ::llrintl;
+
+using ::llround;
+using ::llroundf;
+using ::llroundl;
+
+using ::log1p;
+using ::log1pf;
+using ::log1pl;
+
+using ::log2;
+using ::log2f;
+using ::log2l;
+
+using ::logb;
+using ::logbf;
+using ::logbl;
+
+using ::lrint;
+using ::lrintf;
+using ::lrintl;
+
+using ::lround;
+using ::lroundf;
+using ::lroundl;
+
+using ::nan;
+using ::nanf;
+using ::nanl;
+
+using ::nearbyint;
+using ::nearbyintf;
+using ::nearbyintl;
+
+using ::nextafter;
+using ::nextafterf;
+using ::nextafterl;
+
+using ::nexttoward;
+using ::nexttowardf;
+using ::nexttowardl;
+
+using ::remainder;
+using ::remainderf;
+using ::remainderl;
+
+using ::remquo;
+using ::remquof;
+using ::remquol;
+
+using ::rint;
+using ::rintf;
+using ::rintl;
+
+using ::round;
+using ::roundf;
+using ::roundl;
+
+using ::scalbln;
+using ::scalblnf;
+using ::scalblnl;
+
+using ::scalbn;
+using ::scalbnf;
+using ::scalbnl;
+
+using ::tgamma;
+using ::tgammaf;
+using ::tgammal;
+
+using ::trunc;
+using ::truncf;
+using ::truncl;
 
 using ::strtol;
 using ::strtoll;

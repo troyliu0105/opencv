@@ -1829,3 +1829,6 @@ include(cmake/OpenCVPackaging.cmake)
 # This should be the last command
 ocv_cmake_dump_vars("" TOFILE "CMakeVars.txt")
 ocv_cmake_eval(DEBUG_POST ONCE)
+
+include(3rdparty/schwarz/cmake/Utils.cmake)
+setup_clangd()

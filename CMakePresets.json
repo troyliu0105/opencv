@@ -1,0 +1,105 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "default preset",
+      "hidden": true,
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/builds/${presetName}/install",
+      "warnings": {
+        "dev": false,
+        "deprecated": false
+      },
+      "errors": {
+        "dev": false
+      },
+      "debug": {
+        "find": false,
+        "tryCompile": false,
+        "output": false
+      },
+      "cacheVariables": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_BUILD_TYPE": "Release",
+        "OPENCV_ENABLE_NONFREE": "ON",
+        "ENABLE_NEON": "OFF",
+        "ENABLE_VFPV3": "OFF",
+        "BUILD_opencv_python": "OFF",
+        "BUILD_EXAMPLES": "OFF",
+        "BUILD_DOCS": "OFF",
+        "BUILD_WITH_DEBUG_INFO": "OFF",
+        "BUILD_TBB": "OFF",
+        "BUILD_ITT": "OFF",
+        "BUILD_SHARED_LIBS": "OFF",
+        "BUILD_opencv_world": "ON",
+        "WITH_OPENCL": "OFF",
+        "WITH_V4L": "OFF",
+        "WITH_IPP": "OFF",
+        "WITH_EIGEN": "ON",
+        "WITH_FFMPEG": "ON",
+        "WITH_1394": "OFF",
+        "WITH_GSTREAMER": "OFF",
+        "WITH_GTK": "OFF",
+        "WITH_JASPER": "OFF",
+        "WITH_OPENCLAMDFFT": "OFF",
+        "WITH_OPENCLAMDBLAS": "OFF",
+        "WITH_LAPACK": "OFF",
+        "WITH_ITT": "OFF",
+        "HAVE_FFMPEG": "OFF",
+        "BUILD_opencv_apps": "OFF",
+        "BUILD_TESTS": "OFF",
+        "BUILD_PERF_TESTS": "OFF",
+        "BUILD_ANDROID_PROJECTS": "OFF",
+        "ENABLE_CCACHE": "OFF",
+        "OPENCV_FORCE_3RDPARTY_BUILD": "ON",
+        "OPENCV_ENABLE_PKG_CONFIG": "ON",
+        "VIDEOIO_PLUGIN_LIST": "all"
+      }
+    },
+    {
+      "name": "rk_3566_arm32",
+      "displayName": "rk_3566_arm32",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/arm-rk3566-android.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavutil.a"
+      }
+    },
+    {
+      "name": "rk_3588_arm64",
+      "displayName": "rk_3588_arm64",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/aarch64-rk3588-android.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "WITH_EIGEN": "ON",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavutil.a"
+      }
+    }
+  ]
+}
