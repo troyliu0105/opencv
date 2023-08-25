@@ -1,0 +1,45 @@
+{
+    "name": "STM RK3566",
+    "image": "git.asswecan.org:9443/stm/stm_compiler-rk3566-r16:latest",
+    "containerEnv": {
+        "DEVCONTAINER": "1"
+    },
+    "runArgs": [
+        "-e",
+        "GIT_EDITOR=code --wait"
+    ],
+    //"postCreateCommand": "sed -i '/.*llvm.*/d' /etc/apt/sources.list && apt update && apt install fish git-lfs -y && chsh -s /usr/bin/fish",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // UI
+                "miguelsolorio.fluent-icons", // product 图标
+                "chadalen.vscode-jetbrains-icon-theme", // icon 图标
+                "jdinhlife.gruvbox", // 主题
+                "IBM.output-colorizer", // cmake 编译着色
+                "isudox.vscode-jetbrains-keybindings", // jetbrains 按键绑定
+                // 一般工具
+                "mhutchie.git-graph", // git graph
+                "wayou.vscode-todo-highlight", // 高亮 todo
+                "mkxml.vscode-filesize", // 状态栏显示文件大小
+                "usernamehw.errorlens", // 使警告/错误更加显眼
+                "streetsidesoftware.code-spell-checker", // 拼写检查
+                "streetsidesoftware.code-spell-checker-german",
+                "tamasfe.even-better-toml", // toml 文件支持
+                "alefragnani.Bookmarks", // 书签支持
+                // C/C++
+                // "ccls-project.ccls",
+                "llvm-vs-code-extensions.vscode-clangd", // clangd LSP
+                "ms-vscode.cpptools", // C/C++ 基础支持
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools", // CMake 支持
+                "twxs.cmake", // CMake 文件编写支持
+                "xaver.clang-format", // C/C++ 文件格式化
+                "jeff-hykin.better-cpp-syntax", // C/C++ 语法高亮加强
+                "cschlosser.doxdocgen", // C/C++ 辅助文档生成
+                "tdennis4496.cmantic", // 辅助重构
+                "matepek.vscode-catch2-test-adapter" // Catch2/Gtest 的支持
+            ]
+        }
+    }
+}

@@ -23,9 +23,11 @@
       "cacheVariables": {
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
         "CMAKE_BUILD_TYPE": "Release",
-        "OPENCV_ENABLE_NONFREE": "ON",
-        "ENABLE_NEON": "OFF",
+        "ENABLE_NEON": "ON",
         "ENABLE_VFPV3": "OFF",
+        "ENABLE_PIC": "ON",
+        "OPENCV_ENABLE_NONFREE": "ON",
+        "OPENCV_FORCE_3RDPARTY_BUILD": "ON",
         "BUILD_opencv_python": "OFF",
         "BUILD_EXAMPLES": "OFF",
         "BUILD_DOCS": "OFF",
@@ -47,13 +49,16 @@
         "WITH_OPENCLAMDBLAS": "OFF",
         "WITH_LAPACK": "OFF",
         "WITH_ITT": "OFF",
+        "WITH_ANDROID_MEDIANDK": "OFF",
+        "WITH_ANDROID_NATIVE_CAMERA": "OFF",
         "HAVE_FFMPEG": "OFF",
         "BUILD_opencv_apps": "OFF",
         "BUILD_TESTS": "OFF",
         "BUILD_PERF_TESTS": "OFF",
         "BUILD_ANDROID_PROJECTS": "OFF",
         "ENABLE_CCACHE": "OFF",
-        "OPENCV_FORCE_3RDPARTY_BUILD": "ON",
+        "ENABLE_LTO": "OFF",
+        "CV_ENABLE_INTRINSICS": "ON",
         "OPENCV_ENABLE_PKG_CONFIG": "ON",
         "VIDEOIO_PLUGIN_LIST": "ffmpeg"
       }
@@ -90,6 +95,7 @@
         "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/pkgconfig"
       },
       "cacheVariables": {
+        "ENABLE_NEON": "OFF",
         "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libavformat.a",
         "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libavcodec.a",
         "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libswresample.a",
@@ -111,7 +117,7 @@
         "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/pkgconfig"
       },
       "cacheVariables": {
-        "WITH_EIGEN": "ON",
+        "ENABLE_NEON": "OFF",
         "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavformat.a",
         "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavcodec.a",
         "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libswresample.a",

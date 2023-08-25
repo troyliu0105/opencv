@@ -3,6 +3,7 @@ build[s]
 .*
 !.gitignore
 !.clang-format
+!.devcontainer
 
 *.autosave
 *.pyc
