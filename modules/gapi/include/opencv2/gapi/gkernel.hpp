@@ -24,7 +24,7 @@
 #include <opencv2/gapi/util/compiler_hints.hpp> //suppress_unused_warning
 #include <opencv2/gapi/gtransform.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 struct GTypeInfo
 {
@@ -271,7 +271,7 @@ class KernelTypeMedium<K, std::function<R(Args...)>> :
     public cv::GKernelType<K, std::function<R(Args...)>> {};
 } // namespace detail
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 // FIXME: I don't know a better way so far. Feel free to suggest one
@@ -366,7 +366,7 @@ G_TYPED_KERNEL_HELPER(Class, COMBINE_SIGNATURE(_1, _2, _3, _4, _5, _6, _7, _8, _
 #define G_API_OP   G_TYPED_KERNEL
 #define G_API_OP_M G_API_OP
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -397,7 +397,7 @@ namespace gapi
         return !(lhs == rhs);
     }
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 namespace std
 {
@@ -410,7 +410,7 @@ namespace std
     };
 } // namespace std
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
     class GAPI_EXPORTS_W_SIMPLE GKernelPackage;
 
 namespace gapi {
@@ -747,6 +747,6 @@ namespace detail
     };
 } // namespace detail
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GKERNEL_HPP

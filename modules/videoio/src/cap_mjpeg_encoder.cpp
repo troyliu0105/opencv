@@ -51,7 +51,7 @@
 #define WITH_NEON
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static const unsigned bit_mask[] =

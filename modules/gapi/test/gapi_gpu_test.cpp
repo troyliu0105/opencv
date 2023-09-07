@@ -14,7 +14,7 @@
 #include "opencl_kernels_test_gapi.hpp"
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #ifdef HAVE_OPENCL
@@ -153,7 +153,7 @@ namespace cv
     } // namespace gapi_test_kernels
 #endif //HAVE_OPENCL
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 namespace opencv_test

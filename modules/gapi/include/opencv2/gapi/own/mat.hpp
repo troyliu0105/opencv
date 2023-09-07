@@ -20,7 +20,7 @@
 #include <vector>
 #include <opencv2/gapi/util/throw.hpp>
 
-namespace cv { namespace gapi { namespace own {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi { namespace own {
     namespace detail {
         template <typename T, unsigned char channels>
         void assign_row(void* ptr, int cols, Scalar const& s)
@@ -349,6 +349,6 @@ namespace cv { namespace gapi { namespace own {
 
 } //namespace own
 } //namespace gapi
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif /* OPENCV_GAPI_OWN_MAT_HPP */

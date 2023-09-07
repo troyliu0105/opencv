@@ -45,7 +45,7 @@
 #include "../include/ocl4dnn.hpp"
 #include "../include/math_functions.hpp"
 
-namespace cv { namespace dnn { namespace ocl4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace ocl4dnn {
 template<typename Dtype>
 OCL4DNNInnerProduct<Dtype>::OCL4DNNInnerProduct(OCL4DNNInnerProductConfig config)
 {
@@ -114,4 +114,4 @@ bool OCL4DNNInnerProduct<Dtype>::Forward(const UMat& bottom,
 
 template class OCL4DNNInnerProduct<float>;
 
-}}} // namespace cv::dnn::ocl4dnn
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::ocl4dnn

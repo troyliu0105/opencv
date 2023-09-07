@@ -76,7 +76,7 @@
 
 
 /* Namespace cv */
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
 
 /* Data structures */
 

@@ -27,7 +27,7 @@ slowly.
 #include <memory>
 #include <thread>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace
 {
@@ -364,7 +364,7 @@ void VideoCapture_uEye::unlock_image_buffer()
     std::swap(locked_image, tmp_buffer);
     ASSERT_UEYE(is_UnlockSeqBuf(cam_id, IS_IGNORE_PARAMETER, tmp_buffer));
 }
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 // plugin glue
 #if defined(BUILD_PLUGIN)
@@ -373,7 +373,7 @@ void VideoCapture_uEye::unlock_image_buffer()
 #define API_VERSION 0
 #include "plugin_api.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 namespace
@@ -502,7 +502,7 @@ const OpenCV_VideoIO_Plugin_API_preview plugin_api =
     }
 };
 } // namespace
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 const OpenCV_VideoIO_Plugin_API_preview* opencv_videoio_plugin_init_v0(int requested_abi_version, int requested_api_version, void* /*reserved=NULL*/) CV_NOEXCEPT
 {

@@ -12,7 +12,7 @@
 
 #include "streaming/onevpl/engine/preproc_engine_interface.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -44,5 +44,5 @@ private:
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // GAPI_STREAMING_ONEVPL_PREPROC_DISPATCHER_HPP

@@ -24,7 +24,7 @@
 #include <opencv2/gapi/gcommon.hpp>  // OpaqueKind
 #include <opencv2/gapi/garray.hpp>  // TypeHintBase
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 // Forward declaration; GNode and GOrigin are an internal
 // (user-inaccessible) classes.
@@ -364,6 +364,6 @@ private:
 
 /** @} */
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GOPAQUE_HPP

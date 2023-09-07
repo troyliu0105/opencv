@@ -8,7 +8,7 @@
 
 #include <opencv2/dnn/shape_utils.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {
@@ -297,4 +297,4 @@ Ptr<BatchNormLayerInt8> BatchNormLayerInt8::create(const LayerParams& params)
 }
 
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

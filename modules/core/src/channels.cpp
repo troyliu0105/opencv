@@ -11,7 +11,7 @@
 *                       Generalized split/merge: mixing channels                         *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T> static void
@@ -172,7 +172,7 @@ void cv::mixChannels( const Mat* src, size_t nsrcs, Mat* dst, size_t ndsts, cons
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static void getUMatIndex(const std::vector<UMat> & um, int cn, int & idx, int & cnidx)
 {
@@ -337,7 +337,7 @@ void cv::mixChannels(InputArrayOfArrays src, InputOutputArrayOfArrays dst,
 
 #ifdef HAVE_IPP
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_extractChannel(const Mat &src, Mat &dst, int channel)
 {

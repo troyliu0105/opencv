@@ -347,7 +347,7 @@ const float** cvGetTrainSamples( const CvMat* train_data, int tflag,
                    int* _var_count, int* _sample_count,
                    bool always_copy_data=false );
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     struct DTreeBestSplitFinder
     {

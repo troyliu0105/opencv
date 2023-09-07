@@ -6,7 +6,7 @@
 // Not a standalone header.
 //
 
-namespace cv { namespace impl { namespace legacy {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace impl { namespace legacy {
 
 //==================================================================================================
 

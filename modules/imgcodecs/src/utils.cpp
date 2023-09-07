@@ -42,7 +42,7 @@
 #include "precomp.hpp"
 #include "utils.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 int validateToInt(size_t sz)
 {

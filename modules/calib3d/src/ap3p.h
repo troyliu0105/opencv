@@ -3,7 +3,7 @@
 
 #include <opencv2/core.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 class ap3p {
 private:
     template<typename T>

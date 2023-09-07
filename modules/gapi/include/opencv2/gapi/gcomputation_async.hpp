@@ -16,7 +16,7 @@
 #include <opencv2/gapi/own/exports.hpp>
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
     //fwd declaration
     class GComputation;
 namespace gapi {
@@ -63,7 +63,7 @@ namespace wip  {
     GAPI_EXPORTS std::future<void>   async_apply(GComputation& gcomp, GRunArgs &&ins, GRunArgsP &&outs, GCompileArgs &&args,  GAsyncContext& ctx);
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 #endif //OPENCV_GAPI_GCOMPUTATION_ASYNC_HPP

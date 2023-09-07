@@ -61,7 +61,7 @@
 
 
 /* For the sake of cv:: namespace ONLY: */
-namespace cv{/* For C support, replace with extern "C" { */
+namespace stcv{} namespace cv = stcv; namespace stcv{/* For C support, replace with extern "C" { */
 
 
 /* Constants */
@@ -2644,5 +2644,5 @@ static inline void   sacSub8x1(float* Hout, const float* H, const float* dH){
 }
 
 
-/* End namespace cv */
+/* End namespace stcv{} namespace cv = stcv; namespace stcv */
 }

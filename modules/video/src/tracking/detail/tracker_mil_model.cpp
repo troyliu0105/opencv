@@ -9,7 +9,7 @@
  * TrackerMILModel
  */
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 inline namespace tracking {
 namespace impl {
 
@@ -82,4 +82,4 @@ void TrackerMILModel::setMode(int trainingMode, const std::vector<Mat>& samples)
     mode = trainingMode;
 }
 
-}}}  // namespace cv::tracking::impl
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::tracking::impl

@@ -7,7 +7,7 @@
 #include <limits>
 #include <typeinfo>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // Utility function for safe integer conversions

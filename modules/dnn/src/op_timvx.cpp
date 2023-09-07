@@ -11,7 +11,7 @@
 #include "op_timvx.hpp"
 #include "net_impl.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {
@@ -928,4 +928,4 @@ bool haveTimVX()
 #endif
 }
 } // namespace dnn
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

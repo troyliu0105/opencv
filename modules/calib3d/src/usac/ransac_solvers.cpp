@@ -6,7 +6,7 @@
 #include "../usac.hpp"
 #include <atomic>
 
-namespace cv { namespace usac {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace usac {
 int mergePoints (InputArray pts1_, InputArray pts2_, Mat &pts, bool ispnp);
 void setParameters (int flag, Ptr<Model> &params, EstimationMethod estimator, double thr,
                     int max_iters, double conf, bool mask_needed);

@@ -45,7 +45,7 @@
 
 using namespace std;
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class VariationalRefinementImpl CV_FINAL : public VariationalRefinement

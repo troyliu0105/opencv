@@ -11,7 +11,7 @@
 
 #include <stdexcept>
 
-namespace cv { namespace utils {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils {
 //! @addtogroup core_utils
 //! @{
 
@@ -301,7 +301,7 @@ namespace fs {
 } // namespace fs
 
 //! @}  // core_utils
-}  // namespace cv::utils
+}  // namespace stcv{} namespace cv = stcv; namespace stcv::utils
 
 //! @cond IGNORED
 

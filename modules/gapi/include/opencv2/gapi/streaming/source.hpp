@@ -13,7 +13,7 @@
 #include <opencv2/gapi/gmetaarg.hpp>   // GMetaArg
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
     struct Data; // "forward-declaration" of GRunArg
@@ -57,6 +57,6 @@ IStreamSource::Ptr inline make_src(Args&&... args)
 
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_STREAMING_SOURCE_HPP

@@ -184,7 +184,7 @@ inline void convertToShow(const cv::Mat &src, const CvMat* arr, bool toRGB = tru
 }
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 CV_EXPORTS Mutex& getWindowMutex();
 static inline Mutex& getInitializationMutex() { return getWindowMutex(); }

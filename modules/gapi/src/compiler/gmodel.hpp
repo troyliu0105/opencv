@@ -31,7 +31,7 @@
 #include "compiler/gobjref.hpp"
 #include "compiler/gislandmodel.hpp"
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 // TODO: Document all metadata types
 
@@ -363,6 +363,6 @@ namespace GModel
 } // namespace GModel
 
 
-}} // namespace cv::gimpl
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::gimpl
 
 #endif // OPENCV_GAPI_GMODEL_HPP

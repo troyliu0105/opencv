@@ -10,7 +10,7 @@
 #include "apriltag/predefined_dictionaries_apriltag.hpp"
 #include <opencv2/objdetect/aruco_dictionary.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 
 using namespace std;

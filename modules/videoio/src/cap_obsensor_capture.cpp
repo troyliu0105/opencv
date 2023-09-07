@@ -24,7 +24,7 @@
 #include "cap_obsensor_capture.hpp"
 #include "cap_obsensor/obsensor_stream_channel_interface.hpp"
 #ifdef HAVE_OBSENSOR
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 Ptr<IVideoCapture> create_obsensor_capture(int index)
 {
     return makePtr<VideoCapture_obsensor>(index);
@@ -182,5 +182,5 @@ bool VideoCapture_obsensor::setProperty(int propIdx, double /*propVal*/)
     return false;
 }
 
-} // namespace cv::
+} // namespace stcv{} namespace cv = stcv; namespace stcv::
 #endif // HAVE_OBSENSOR

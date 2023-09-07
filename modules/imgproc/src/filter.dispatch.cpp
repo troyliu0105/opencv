@@ -61,7 +61,7 @@
                                     Base Image Filter
 \****************************************************************************************/
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 BaseRowFilter::BaseRowFilter() { ksize = anchor = -1; }
 BaseRowFilter::~BaseRowFilter() {}
@@ -1515,7 +1515,7 @@ void sepFilter2D(int stype, int dtype, int ktype,
                  anchor_x, anchor_y, delta, borderType);
 }
 
-} // namespace cv::hal::
+} // namespace stcv{} namespace cv = stcv; namespace stcv::hal::
 
 //================================================================
 //   Main interface

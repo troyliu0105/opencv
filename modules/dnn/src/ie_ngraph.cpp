@@ -23,7 +23,7 @@
 #include "opencv2/core/utils/filesystem.hpp"
 #include "opencv2/core/utils/filesystem.private.hpp"
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 #ifdef HAVE_DNN_NGRAPH
 

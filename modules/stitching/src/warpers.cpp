@@ -43,7 +43,7 @@
 #include "precomp.hpp"
 #include "opencl_kernels_stitching.hpp"
 #include <iostream>
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 PyRotationWarper::PyRotationWarper(String warp_type, float scale)
 {
@@ -558,4 +558,4 @@ Point CylindricalWarper::warp(InputArray src, InputArray K, InputArray R, int in
 }
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

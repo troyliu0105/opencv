@@ -22,7 +22,7 @@
 #include <utility>
 #include <algorithm>
 
-namespace cv { namespace dnn { namespace cuda4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn {
 
     struct TransposeConvolutionConfiguration {
         /* other than `input_shape` and `output_shape`, all the configuration values must be provided
@@ -225,6 +225,6 @@ namespace cv { namespace dnn { namespace cuda4dnn {
         std::size_t scratch_mem_in_bytes;
     };
 
-}}} /* namespace cv::dnn::cuda4dnn */
+}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_PRIMITIVES_TRANSPOSE_CONVOLUTION_HPP */

@@ -70,7 +70,7 @@
     #define OPENCV_WITH_THREAD_SANITIZER 0
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static void _initSystem()
 {
@@ -109,7 +109,7 @@ void* allocSingletonBuffer(size_t size) { return fastMalloc(size); }
 void* allocSingletonNewBuffer(size_t size) { return malloc(size); }
 
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #ifndef CV_ERROR_SET_TERMINATE_HANDLER  // build config option
 # if defined(_WIN32)
@@ -309,7 +309,7 @@ DECLARE_CV_CPUID_X86
   #include <chrono>
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 Exception::Exception() { code = 0; line = 0; }
@@ -1483,7 +1483,7 @@ cvErrorFromIppStatus( int status )
     }
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 bool __termination = false;
 
 
@@ -2896,6 +2896,6 @@ bool restoreFPDenormalsState(const FPDenormalsModeState& state)
 }  // namespace details
 
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 /* End of file. */

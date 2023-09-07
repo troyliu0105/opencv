@@ -42,7 +42,7 @@
 #include "precomp.hpp"
 #include "opencv2/videoio/container_avi.private.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class MotionJpegCapture: public IVideoCapture

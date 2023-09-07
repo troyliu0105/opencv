@@ -21,7 +21,7 @@
 #include "plugin_wrapper.impl.hpp"
 
 
-namespace cv { namespace highgui_backend {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace highgui_backend {
 
 UIBackend::~UIBackend()
 {
@@ -178,4 +178,4 @@ bool setUIBackend(const std::string& backendName)
     return true;
 }
 
-}}  // namespace cv::highgui_backend
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::highgui_backend

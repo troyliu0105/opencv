@@ -10,7 +10,7 @@
 #include "internal.hpp"
 #include "../include/op_base.hpp"
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 #ifdef HAVE_VULKAN
 
@@ -190,4 +190,4 @@ void OpBase::runCommandBuffer()
 
 #endif // HAVE_VULKAN
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom

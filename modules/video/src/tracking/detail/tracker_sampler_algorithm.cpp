@@ -5,7 +5,7 @@
 #include "../../precomp.hpp"
 #include "opencv2/video/detail/tracking.detail.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 inline namespace tracking {
 
@@ -121,4 +121,4 @@ std::vector<Mat> TrackerSamplerCSC::sampleImage(const Mat& img, int x, int y, in
     return samples;
 }
 
-}}}  // namespace cv::detail::tracking
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::detail::tracking

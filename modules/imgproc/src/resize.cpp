@@ -897,7 +897,7 @@ typedef void(*be_resize_func)(const uchar* src, size_t src_step, int src_width, 
 
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /************** interpolation formulas and tables ***************/

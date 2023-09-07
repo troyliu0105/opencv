@@ -63,7 +63,7 @@ namespace cvflann
 }
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace flann
 {
@@ -624,6 +624,6 @@ CV_DEPRECATED int hierarchicalClustering(const Mat& features, Mat& centers, cons
 
 //! @} flann
 
-} } // namespace cv::flann
+} } // namespace stcv{} namespace cv = stcv; namespace stcv::flann
 
 #endif

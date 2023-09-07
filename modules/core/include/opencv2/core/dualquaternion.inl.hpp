@@ -33,7 +33,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////
 //Implementation
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 template <typename T>
 DualQuat<T>::DualQuat():w(0), x(0), y(0), z(0), w_(0), x_(0), y_(0), z_(0){};
@@ -482,6 +482,6 @@ DualQuat<T> DualQuat<T>::gdqblend(const Vec<DualQuat<T>, cn> &_dualquat, InputAr
     return gdqblend(dualquat_mat, _weight, assumeUnit);
 }
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif /*OPENCV_CORE_DUALQUATERNION_INL_HPP*/

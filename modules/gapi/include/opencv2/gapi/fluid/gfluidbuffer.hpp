@@ -18,7 +18,7 @@
 
 #include <opencv2/gapi/util/optional.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 
@@ -147,8 +147,8 @@ private:
     const Cache* m_cache;
 };
 
-} // namespace cv::gapi::fluid
-} // namespace cv::gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv::gapi::fluid
+} // namespace stcv{} namespace cv = stcv; namespace stcv::gapi
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_FLUID_BUFFER_HPP

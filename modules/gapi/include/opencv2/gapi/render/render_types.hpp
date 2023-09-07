@@ -15,7 +15,7 @@
 #include <opencv2/gapi/util/variant.hpp>
 #include <opencv2/gapi/own/exports.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -354,6 +354,6 @@ using Prims = std::vector<Prim>;
 } // namespace draw
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_RENDER_TYPES_HPP

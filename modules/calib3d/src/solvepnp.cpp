@@ -54,7 +54,7 @@
 
 #include <opencv2/core/utils/logger.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 #if defined _DEBUG || defined CV_STATIC_ANALYSIS
 static bool isPlanarObjectPoints(InputArray _objectPoints, double threshold)

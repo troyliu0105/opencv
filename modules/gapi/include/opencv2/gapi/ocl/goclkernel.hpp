@@ -19,7 +19,7 @@
 #include <opencv2/gapi/garg.hpp>
 
 // FIXME: namespace scheme for backends?
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace gimpl
 {
@@ -255,6 +255,6 @@ public:
 
 #define GAPI_OCL_KERNEL(Name, API) struct Name: public cv::GOCLKernelImpl<Name, API>
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GOCLKERNEL_HPP

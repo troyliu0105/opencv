@@ -74,7 +74,7 @@ using namespace cv::dnn::cuda4dnn;
 
 #include "fast_convolution/fast_convolution.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {

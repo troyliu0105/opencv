@@ -122,7 +122,7 @@ void calcDeriv(const Mat &err1, const Mat &err2, double h, Mat res)
 } // namespace
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 bool HomographyBasedEstimator::estimate(
@@ -1214,4 +1214,4 @@ void findMaxSpanningTree(int num_images, const std::vector<MatchesInfo> &pairwis
 }
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

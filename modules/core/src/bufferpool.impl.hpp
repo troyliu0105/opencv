@@ -9,7 +9,7 @@
 
 #include "opencv2/core/bufferpool.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 class DummyBufferPoolController : public BufferPoolController
 {

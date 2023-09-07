@@ -11,7 +11,7 @@
 
 #include "../cuda4dnn/csl/nvcc_defs.hpp"
 
-namespace cv { namespace dnn { namespace cuda4dnn { namespace kernels {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn { namespace kernels {
 
 template <class T>
 struct IdentityFunctor {
@@ -772,6 +772,6 @@ struct ReciprocalFunctor {
     }
 };
 
-}}}} /* namespace cv::dnn::cuda4dnn::kernels */
+}}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn::kernels */
 
 #endif /* OPENCV_DNN_SRC_CUDA_FUNCTORS_HPP */

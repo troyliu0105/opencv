@@ -19,7 +19,7 @@ enum
     CV_XML_DIRECTIVE_TAG = 5
 };
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class XMLEmitter : public FileStorageEmitter

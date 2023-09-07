@@ -56,7 +56,7 @@
 
 #include <opencv2/core/utils/configuration.private.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // 64Mb limit to avoid memory DDOS

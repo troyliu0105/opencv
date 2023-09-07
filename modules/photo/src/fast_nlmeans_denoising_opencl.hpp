@@ -13,7 +13,7 @@
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 enum
 {

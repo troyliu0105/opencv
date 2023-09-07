@@ -5,7 +5,7 @@
 #include "../../precomp.hpp"
 #include "tracking_online_mil.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 inline namespace tracking {
 
@@ -353,4 +353,4 @@ inline std::vector<float> ClfOnlineStump::classifySetF(const Mat& x)
     return res;
 }
 
-}}}  // namespace cv::detail::tracking
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::detail::tracking

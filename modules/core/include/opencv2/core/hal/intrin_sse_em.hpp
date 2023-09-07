@@ -5,7 +5,7 @@
 #ifndef OPENCV_HAL_INTRIN_SSE_EM_HPP
 #define OPENCV_HAL_INTRIN_SSE_EM_HPP
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @cond IGNORED

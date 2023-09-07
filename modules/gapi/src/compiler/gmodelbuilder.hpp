@@ -18,7 +18,7 @@
 #include "api/gnode.hpp"
 #include "compiler/gmodel.hpp"
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 struct Unrolled
 {

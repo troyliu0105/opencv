@@ -13,7 +13,7 @@
 #include "fast_convolution.hpp"
 #include "../layers_common.hpp"
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 static void depthWiseBlockConv2D(const float* wptr,
                                  int kernel_h, int kernel_w,
@@ -411,4 +411,4 @@ void runDepthwise(InputArray _input, OutputArray _output, const Ptr<FastConv>& c
     }});
 }
 
-}} // namespace cv::dnn
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

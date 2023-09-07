@@ -77,7 +77,7 @@
 #include "../../../modules/core/include/opencv2/core/hal/intrin.hpp"
 #include "../../../modules/core/include/opencv2/core/utils/trace.hpp"
 #include "../../../modules/ts/include/opencv2/ts/ts_gtest.h"
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace hal {
 #include "../../../modules/core/test/test_intrin_utils.hpp"
 }

@@ -53,7 +53,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     //////////////////////////////////////////////////////////////
     // BrdConstant
@@ -715,7 +715,7 @@ namespace cv { namespace cuda { namespace device
         int width;
         D val;
     };
-}}} // namespace cv { namespace cuda { namespace cudev
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace cudev
 
 //! @endcond
 

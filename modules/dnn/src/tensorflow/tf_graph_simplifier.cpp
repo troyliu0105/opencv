@@ -13,7 +13,7 @@
 #include "tf_graph_simplifier.hpp"
 #include <queue>
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
 using ::google::protobuf::RepeatedField;
@@ -1140,6 +1140,6 @@ void removePhaseSwitches(tensorflow::GraphDef& net)
 
 
 CV__DNN_INLINE_NS_END
-}}  // namespace dnn, namespace cv
+}}  // namespace dnn, namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif  // HAVE_PROTOBUF

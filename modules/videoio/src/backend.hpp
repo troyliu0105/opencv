@@ -8,7 +8,7 @@
 #include "cap_interface.hpp"
 #include "opencv2/videoio/registry.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // TODO: move to public interface
 // TODO: allow runtime backend registration
@@ -60,6 +60,6 @@ std::string getWriterPluginVersion(
     CV_OUT int& version_API
 );
 
-} // namespace cv::
+} // namespace stcv{} namespace cv = stcv; namespace stcv::
 
 #endif // BACKEND_HPP_DEFINED

@@ -9,7 +9,7 @@
 #include <opencv2/core/utility.hpp>
 #include <vector>
 
-namespace cv { namespace utils {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils {
 
 //! @addtogroup core_utils
 //! @{

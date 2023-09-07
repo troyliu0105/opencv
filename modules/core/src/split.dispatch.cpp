@@ -9,7 +9,7 @@
 #include "split.simd.hpp"
 #include "split.simd_declarations.hpp" // defines CV_CPU_DISPATCH_MODES_ALL=AVX2,...,BASELINE based on CMakeLists.txt content
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 
 void split8u(const uchar* src, uchar** dst, int len, int cn )
 {
@@ -43,7 +43,7 @@ void split64s(const int64* src, int64** dst, int len, int cn )
         CV_CPU_DISPATCH_MODES_ALL);
 }
 
-} // namespace cv::hal::
+} // namespace stcv{} namespace cv = stcv; namespace stcv::hal::
 
 /****************************************************************************************\
 *                                       split & merge                                    *

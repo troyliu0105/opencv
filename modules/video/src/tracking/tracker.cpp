@@ -4,7 +4,7 @@
 
 #include "../precomp.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 Tracker::Tracker()
 {
@@ -16,4 +16,4 @@ Tracker::~Tracker()
     // nothing
 }
 
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

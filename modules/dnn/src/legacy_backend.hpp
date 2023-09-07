@@ -7,7 +7,7 @@
 
 #include "layer_internals.hpp"  // LayerPin LayerData DataLayer
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 inline namespace detail {
 
@@ -335,5 +335,5 @@ Ptr<BackendWrapper> wrapMat(int backendId, int targetId, cv::Mat& m);
 
 }  // namespace detail
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn
 #endif  // __OPENCV_DNN_SRC_LEGACY_BACKEND_HPP__

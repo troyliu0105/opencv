@@ -86,7 +86,7 @@
     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 \****************************************************************************************/
 
-namespace cv { namespace ml {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ml {
 
 typedef float Qfloat;
 const int QFLOAT_TYPE = DataDepth<Qfloat>::value;

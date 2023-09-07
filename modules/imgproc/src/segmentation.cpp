@@ -46,7 +46,7 @@
 *                                       Watershed                                        *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 // A node represents a pixel to label
 struct WSNode

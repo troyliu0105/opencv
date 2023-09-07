@@ -43,7 +43,7 @@
 
 #include "precomp.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     class FormattedImpl CV_FINAL : public Formatted
     {

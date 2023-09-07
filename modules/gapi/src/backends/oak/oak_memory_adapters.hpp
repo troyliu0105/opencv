@@ -12,7 +12,7 @@
 #include <opencv2/gapi/media.hpp>
 #include <opencv2/gapi/rmat.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace oak {
 
@@ -52,6 +52,6 @@ private:
 
 } // namespace oak
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_OAK_MEDIA_ADAPTER_HPP

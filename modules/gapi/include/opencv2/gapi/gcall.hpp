@@ -15,7 +15,7 @@
 #include <opencv2/gapi/garray.hpp>    // GArray<T>
 #include <opencv2/gapi/gopaque.hpp>   // GOpaque<T>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 struct GKernel;
 
@@ -73,6 +73,6 @@ protected:
     detail::GOpaqueU yieldOpaque(int output = 0);
 };
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GCALL_HPP

@@ -8,7 +8,7 @@
 #include "opencv2/video/detail/tracking.detail.hpp"
 #include "tracker_mil_state.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 inline namespace tracking {
 namespace impl {
 
@@ -62,6 +62,6 @@ private:
     int height;  //initial height of the boundingBox
 };
 
-}}}  // namespace cv::tracking::impl
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::tracking::impl
 
 #endif

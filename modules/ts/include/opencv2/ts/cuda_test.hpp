@@ -343,7 +343,7 @@ namespace cvtest
     void printCudaInfo();
 }
 
-namespace cv { namespace cuda
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda
 {
     void PrintTo(const DeviceInfo& info, std::ostream* os);
 }}

@@ -15,7 +15,7 @@ namespace opencv_test
     };
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     namespace detail
     {

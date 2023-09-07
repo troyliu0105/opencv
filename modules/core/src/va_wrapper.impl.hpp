@@ -8,7 +8,7 @@
 
 #include "opencv2/core/utils/plugin_loader.private.hpp"  // DynamicLib
 
-namespace cv { namespace detail {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace detail {
 
 typedef VAStatus (*FN_vaDeriveImage)(VADisplay dpy, VASurfaceID surface, VAImage *image);
 typedef VAStatus (*FN_vaDestroyImage)(VADisplay dpy, VAImageID image);

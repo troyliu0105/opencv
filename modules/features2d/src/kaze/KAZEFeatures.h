@@ -17,7 +17,7 @@
 #include "fed.h"
 #include "TEvolution.h"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /* ************************************************************************* */

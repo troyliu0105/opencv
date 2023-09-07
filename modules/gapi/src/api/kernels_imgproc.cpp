@@ -12,7 +12,7 @@
 #include <opencv2/gapi/gkernel.hpp>
 #include <opencv2/gapi/imgproc.hpp>
 
-namespace cv { namespace gapi {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi {
 
 GMat resize(const GMat& src, const Size& dsize, double fx, double fy, int interpolation)
 {
@@ -338,4 +338,4 @@ GMatP NV12toBGRp(const GMat &y, const GMat &uv)
 }
 
 } //namespace gapi
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv

@@ -43,7 +43,7 @@
 #define OPENCV_DNN_DNN_ALL_LAYERS_HPP
 #include <opencv2/dnn.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 //! @addtogroup dnn

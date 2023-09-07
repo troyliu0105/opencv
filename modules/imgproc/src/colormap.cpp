@@ -22,7 +22,7 @@
 #pragma warning( disable: 4305 )  // FIXIT remove this
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static Mat linspace(float x0, float x1, int n)

@@ -11,7 +11,7 @@
 #include "color_hsv.simd.hpp"
 #include "color_hsv.simd_declarations.hpp" // defines CV_CPU_DISPATCH_MODES_ALL=AVX2,...,BASELINE based on CMakeLists.txt content
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 //
 // IPP functions
@@ -355,4 +355,4 @@ void cvtColorHSV2BGR( InputArray _src, OutputArray _dst, int dcn, bool swapb, bo
 }
 
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

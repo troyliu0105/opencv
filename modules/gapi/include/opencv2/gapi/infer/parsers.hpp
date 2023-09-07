@@ -13,7 +13,7 @@
 #include <opencv2/gapi/gmat.hpp>
 #include <opencv2/gapi/gkernel.hpp>
 
-namespace cv { namespace gapi {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi {
 namespace nn {
 namespace parsers {
     using GRects      = GArray<Rect>;
@@ -121,10 +121,10 @@ GAPI_EXPORTS_W std::tuple<GArray<Rect>, GArray<int>> parseYolo(const GMat& in,
                                                                    = nn::parsers::GParseYolo::defaultAnchors());
 
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 // Reimport parseSSD & parseYolo under their initial namespace
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace streaming {
 
@@ -133,6 +133,6 @@ using cv::gapi::parseYolo;
 
 } // namespace streaming
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_PARSERS_HPP

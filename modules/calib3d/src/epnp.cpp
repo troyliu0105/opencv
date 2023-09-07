@@ -2,7 +2,7 @@
 #include "precomp.hpp"
 #include "epnp.h"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 epnp::epnp(const Mat& cameraMatrix, const Mat& opoints, const Mat& ipoints)

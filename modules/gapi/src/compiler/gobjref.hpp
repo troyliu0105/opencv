@@ -11,7 +11,7 @@
 #include "opencv2/gapi/util/variant.hpp"
 #include "opencv2/gapi/garg.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 namespace gimpl

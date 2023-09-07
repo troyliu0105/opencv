@@ -6,7 +6,7 @@
 #include "opencv2/video/detail/tracking.detail.hpp"
 #include "tracking_feature.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 inline namespace tracking {
 inline namespace internal {
@@ -118,4 +118,4 @@ bool TrackerFeatureHAAR::computeImpl(const std::vector<Mat>& images, Mat& respon
     return true;
 }
 
-}}}}  // namespace cv::detail::tracking::internal
+}}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::detail::tracking::internal

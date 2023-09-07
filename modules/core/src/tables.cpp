@@ -48,7 +48,7 @@
 
 #include "precomp.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 const float g_8x32fTab[] =

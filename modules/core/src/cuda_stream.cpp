@@ -343,7 +343,7 @@ cv::cuda::Stream::Impl::~Impl()
 
 #ifdef HAVE_CUDA
 
-namespace cv { namespace cuda
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda
 {
     class DefaultDeviceInitializer
     {

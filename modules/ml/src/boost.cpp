@@ -42,7 +42,7 @@
 
 #include "precomp.hpp"
 
-namespace cv { namespace ml {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ml {
 
 static inline double
 log_ratio( double val )

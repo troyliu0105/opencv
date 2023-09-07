@@ -16,7 +16,7 @@
 #include <opencv2/gapi/gproto.hpp>
 #include <opencv2/gapi/gcommon.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace detail
 {
@@ -241,6 +241,6 @@ public:
     }
 };
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // !defined(GAPI_STANDALONE)
 #endif // OPENCV_GAPI_GTYPED_HPP

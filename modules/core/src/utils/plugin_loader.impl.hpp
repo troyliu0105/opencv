@@ -21,7 +21,7 @@
 #include <opencv2/core/utils/logger.hpp>
 #endif
 
-namespace cv { namespace plugin { namespace impl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace plugin { namespace impl {
 
 DynamicLib::DynamicLib(const FileSystemPath_t& filename)
     : handle(0), fname(filename), disableAutoUnloading_(false)

@@ -55,7 +55,7 @@
 
 #include <type_traits>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup core_basic

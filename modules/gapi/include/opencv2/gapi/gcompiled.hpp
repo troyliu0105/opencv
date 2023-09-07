@@ -14,7 +14,7 @@
 #include <opencv2/gapi/own/assert.hpp>
 #include <opencv2/gapi/garg.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // This class represents a compiled computation.
 // In theory (and ideally), it can be used w/o the rest of APIs.

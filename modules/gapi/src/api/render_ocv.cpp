@@ -4,7 +4,7 @@
 #include "api/render_ocv.hpp"
 #include "backends/render/ft_render.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -260,4 +260,4 @@ void drawPrimitivesOCVYUV(cv::Mat                                               
 } // namespace draw
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

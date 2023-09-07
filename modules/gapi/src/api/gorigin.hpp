@@ -17,7 +17,7 @@
 #include "compiler/gobjref.hpp"
 #include "api/gnode.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // TODO namespace gimpl?
@@ -47,12 +47,12 @@ namespace detail
     {
         bool operator() (const GOrigin &lhs, const GOrigin &rhs) const;
     };
-} // namespace cv::details
+} // namespace stcv{} namespace cv = stcv; namespace stcv::details
 
 // TODO introduce a hash on GOrigin and define this via unordered_ ?
 using GOriginSet = std::set<GOrigin, detail::GOriginCmp>;
 template<typename T> using GOriginMap = std::map<GOrigin, T, detail::GOriginCmp>;
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GORIGIN_HPP

@@ -48,7 +48,7 @@
 
 #include "precomp.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 ///////////////////////////// Functions Declaration //////////////////////////////////////
@@ -676,7 +676,7 @@ void cv::randn(InputOutputArray dst, InputArray mean, InputArray stddev)
     theRNG().fill(dst, RNG::NORMAL, mean, stddev);
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T> static void

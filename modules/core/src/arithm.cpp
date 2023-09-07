@@ -50,7 +50,7 @@
 #include "precomp.hpp"
 #include "opencl_kernels_core.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /****************************************************************************************\
@@ -440,7 +440,7 @@ void cv::min(const UMat& src1, const UMat& src2, UMat& dst)
 *                                      add/subtract                                      *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static int actualScalarDepth(const double* data, int len)
@@ -944,7 +944,7 @@ void cv::copyTo(InputArray _src, OutputArray _dst, InputArray _mask)
 *                                    multiply/divide                                     *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static BinaryFuncC* getMulTab()
@@ -1047,7 +1047,7 @@ void cv::addWeighted( InputArray src1, double alpha, InputArray src2,
 *                                          compare                                       *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static BinaryFuncC getCmpFunc(int depth)
@@ -1320,7 +1320,7 @@ void cv::compare(InputArray _src1, InputArray _src2, OutputArray _dst, int op)
 *                                        inRange                                         *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template <typename T>

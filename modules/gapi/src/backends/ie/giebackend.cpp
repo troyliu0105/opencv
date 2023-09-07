@@ -1108,7 +1108,7 @@ void cv::gimpl::ie::GIEExecutable::run(cv::gimpl::GIslandExecutable::IInput  &in
     }
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace ie {
 static void configureInputReshapeByImage(const IE::InputInfo::Ptr& ii,
@@ -1860,7 +1860,7 @@ struct InferList2: public cv::detail::KernelTag {
 
 } // namespace ie
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 // IE backend implementation of GBackend::Priv ///////////////////////

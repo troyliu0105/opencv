@@ -14,7 +14,7 @@
 #ifndef _OPENCV_ZMAXHEAP_HPP_
 #define _OPENCV_ZMAXHEAP_HPP_
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 typedef struct zmaxheap zmaxheap_t;
 

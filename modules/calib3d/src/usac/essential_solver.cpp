@@ -10,7 +10,7 @@
 #include "opencv_lapack.h"
 #endif
 
-namespace cv { namespace usac {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace usac {
 // Essential matrix solver:
 /*
 * H. Stewenius, C. Engels, and D. Nister. Recent developments on direct relative orientation.

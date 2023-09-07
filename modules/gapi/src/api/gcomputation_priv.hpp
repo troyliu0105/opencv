@@ -19,7 +19,7 @@
 
 #include "backends/common/serialization.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 struct GraphInfo
 {

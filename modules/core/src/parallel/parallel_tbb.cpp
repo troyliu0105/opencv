@@ -10,7 +10,7 @@
 #include "parallel.hpp"
 #include "opencv2/core/parallel/backend/parallel_for.tbb.hpp"
 
-namespace cv { namespace parallel {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace parallel {
 
 static
 std::shared_ptr<cv::parallel::tbb::ParallelForBackend>& getInstance()

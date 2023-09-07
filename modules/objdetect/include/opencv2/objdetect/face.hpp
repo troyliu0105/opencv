@@ -7,7 +7,7 @@
 
 #include <opencv2/core.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup objdetect_dnn_face
@@ -125,6 +125,6 @@ public:
 };
 
 //! @}
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif

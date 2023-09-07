@@ -86,7 +86,7 @@ static unsigned char const stackblurShr[255] =
                 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24
         };
 
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
 
 #if CV_SIMD
 template<typename T>

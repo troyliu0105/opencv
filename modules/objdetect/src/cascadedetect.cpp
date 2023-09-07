@@ -50,7 +50,7 @@
 #  pragma warning(disable:4458)  // declaration of 'origWinSize' hides class member
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename _Tp> void copyVectorToUMat(const std::vector<_Tp>& v, UMat& um)
@@ -1760,4 +1760,4 @@ Ptr<BaseCascadeClassifier::MaskGenerator> CascadeClassifier::getMaskGenerator()
     return cc->getMaskGenerator();
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

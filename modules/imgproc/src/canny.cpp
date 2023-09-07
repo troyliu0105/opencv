@@ -47,7 +47,7 @@
 
 #include "opencv2/core/openvx/ovx_defs.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #ifdef HAVE_IPP
@@ -1001,7 +1001,7 @@ void Canny( InputArray _dx, InputArray _dy, OutputArray _dst,
     parallel_for_(Range(0, dx.rows), finalPass(map, dst), dx.total()/(double)(1<<16));
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 void cvCanny( const CvArr* image, CvArr* edges, double threshold1,
               double threshold2, int aperture_size )

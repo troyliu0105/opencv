@@ -38,7 +38,7 @@
 #include <cmath>
 #include <algorithm>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 
@@ -2252,7 +2252,7 @@ GAPI_FLUID_KERNEL(GFluidResize, cv::gapi::imgproc::GResize, true)
 
 } // namespace fluid
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 cv::GKernelPackage cv::gapi::imgproc::fluid::kernels()
 {

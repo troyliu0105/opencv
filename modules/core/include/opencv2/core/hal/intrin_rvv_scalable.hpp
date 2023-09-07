@@ -24,7 +24,7 @@
 #define CV_RVV_MAX_VLEN 1024
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN
 
@@ -2075,6 +2075,6 @@ inline void v_cleanup() {}
 
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_END
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif //OPENCV_HAL_INTRIN_RVV_SCALABLE_HPP

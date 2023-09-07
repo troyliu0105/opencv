@@ -12,7 +12,7 @@
 #include "precomp.hpp"
 #include <opencv2/core/utils/logger.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //This and its overload below are used in various MatExpr operator overloads

@@ -84,7 +84,7 @@
 #define GSTREAMER_INTERRUPT_READ_DEFAULT_TIMEOUT_NS (30 * GST_SECOND)
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static void toFraction(double decimal, CV_OUT int& numerator, CV_OUT int& denominator);
 static void handleMessage(GstElement * pipeline);
@@ -2800,7 +2800,7 @@ void handleMessage(GstElement * pipeline)
     }
 }
 
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 //==================================================================================================
 
@@ -2813,7 +2813,7 @@ void handleMessage(GstElement * pipeline)
 #define WRITER_API_VERSION 1
 #include "plugin_writer_api.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static
 CvResult CV_API_CALL cv_capture_open_with_params(

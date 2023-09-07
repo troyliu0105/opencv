@@ -52,7 +52,7 @@ using namespace cv::dnn::cuda4dnn;
 
 #include "layers_common.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {

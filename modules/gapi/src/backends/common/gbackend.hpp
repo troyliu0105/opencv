@@ -19,7 +19,7 @@
 
 #include "compiler/gmodel.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 
     inline cv::Mat asMat(RMat::View& v) {

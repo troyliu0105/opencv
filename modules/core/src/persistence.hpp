@@ -80,7 +80,7 @@ inline char* cv_skip_BOM(char* ptr)
     return ptr;
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace fs
 {

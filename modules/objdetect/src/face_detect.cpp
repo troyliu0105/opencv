@@ -12,7 +12,7 @@
 
 #include <algorithm>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #ifdef HAVE_OPENCV_DNN
@@ -295,4 +295,4 @@ Ptr<FaceDetectorYN> FaceDetectorYN::create(const String& model,
 #endif
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

@@ -22,7 +22,7 @@
 #include <opencv2/gapi/infer.hpp>   // Generic
 #include <opencv2/gapi/streaming/onevpl/accel_types.hpp> // Preproc Dev & Ctx
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 // FIXME: introduce a new sub-namespace for NN?
 
@@ -573,6 +573,6 @@ protected:
 
 } // namespace ie
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_INFER_IE_HPP

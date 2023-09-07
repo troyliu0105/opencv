@@ -11,7 +11,7 @@
 
 #include "opencv2/core/utils/logger.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace {
 
@@ -805,6 +805,6 @@ bool Jpeg2KOpjEncoder::write(const Mat& img, const std::vector<int>& params)
 }
 
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif

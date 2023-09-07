@@ -10,7 +10,7 @@
 #include "streaming/onevpl/data_provider_dispatcher.hpp"
 #include "streaming/onevpl/cfg_param_device_selector.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -123,4 +123,4 @@ GMetaArg GSource::descr_of() const
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

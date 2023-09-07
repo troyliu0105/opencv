@@ -23,7 +23,7 @@
 #undef CV_IPP_RUN
 #define CV_IPP_RUN(c, f, ...)
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 #if defined HAVE_IPP
 static bool ipp_mean( Mat &src, Mat &mask, Scalar &ret )

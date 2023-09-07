@@ -54,7 +54,7 @@
 #include "box_filter.simd_declarations.hpp" // defines CV_CPU_DISPATCH_MODES_ALL=AVX2,...,BASELINE based on CMakeLists.txt content
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 #ifdef HAVE_OPENCL
 

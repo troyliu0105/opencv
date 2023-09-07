@@ -49,7 +49,7 @@
 #include <iostream>
 #include <functional>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 struct greaterThanPtr

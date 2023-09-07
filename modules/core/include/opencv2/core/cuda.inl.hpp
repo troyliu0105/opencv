@@ -48,7 +48,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda {
 
 //===================================================================================
 // GpuMat
@@ -741,13 +741,13 @@ bool DeviceInfo::supports(FeatureSet feature_set) const
 #endif
 
 
-}} // namespace cv { namespace cuda {
+}} // namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda {
 
 //===================================================================================
 // Mat
 //===================================================================================
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 inline
 Mat::Mat(const cuda::GpuMat& m)

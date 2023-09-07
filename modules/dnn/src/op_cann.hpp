@@ -48,7 +48,7 @@
 
 #endif
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 #ifdef HAVE_CANN
 
@@ -159,6 +159,6 @@ CV__DNN_INLINE_NS_END
 
 #endif // HAVE_CANN
 
-}} // namespace cv::dnn
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn
 
 #endif // OPENCV_DNN_OP_CANN_HPP

@@ -71,7 +71,7 @@
 
 #include <opencv2/dnn/dnn.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
     namespace dnn {
         namespace darknet {
 

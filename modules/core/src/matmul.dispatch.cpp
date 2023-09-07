@@ -52,7 +52,7 @@
 #include "matmul.simd.hpp"
 #include "matmul.simd_declarations.hpp" // defines CV_CPU_DISPATCH_MODES_ALL=AVX2,...,BASELINE based on CMakeLists.txt content
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /****************************************************************************************\
@@ -1087,7 +1087,7 @@ double UMat::dot(InputArray m) const
     return getMat(ACCESS_READ).dot(m);
 }
 
-}  // namespace cv::
+}  // namespace stcv{} namespace cv = stcv; namespace stcv::
 
 
 #ifndef OPENCV_EXCLUDE_C_API

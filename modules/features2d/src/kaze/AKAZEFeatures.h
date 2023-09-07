@@ -13,7 +13,7 @@
 // Includes
 #include "AKAZEConfig.h"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /// A-KAZE nonlinear diffusion filtering evolution

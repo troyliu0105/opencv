@@ -45,7 +45,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "cvdef.h"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /** @addtogroup core_utils_softfloat
@@ -400,7 +400,7 @@ CV_EXPORTS int cvFloor(const cv::softdouble& a);
 CV_EXPORTS int  cvCeil(const cv::softfloat&  a);
 CV_EXPORTS int  cvCeil(const cv::softdouble& a);
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 /** @brief Saturate casts */
 template<typename _Tp> static inline _Tp saturate_cast(softfloat  a) { return _Tp(a); }

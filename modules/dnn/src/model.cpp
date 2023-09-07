@@ -11,7 +11,7 @@
 
 #include <opencv2/imgproc.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 
 struct Model::Impl

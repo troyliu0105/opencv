@@ -72,7 +72,7 @@
 #endif
 
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
 void PrintTo(const cv::dnn::Backend& v, std::ostream* os);
@@ -82,7 +82,7 @@ using opencv_test::get;
 void PrintTo(const tuple<cv::dnn::Backend, cv::dnn::Target> v, std::ostream* os);
 
 CV__DNN_INLINE_NS_END
-}} // namespace cv::dnn
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn
 
 
 

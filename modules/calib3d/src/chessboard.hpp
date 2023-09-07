@@ -11,7 +11,7 @@
 #include <set>
 #include <map>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace details{
 /**
  * \brief Fast point sysmetric cross detector based on a localized radon transformation

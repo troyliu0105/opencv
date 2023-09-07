@@ -19,7 +19,7 @@
 #include "compiler/gislandmodel.hpp"
 #include "compiler/passes/passes.hpp"
 
-namespace cv { namespace gimpl { namespace passes {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl { namespace passes {
 
 /**
  * This pass extends a GIslandModel with streaming-oriented

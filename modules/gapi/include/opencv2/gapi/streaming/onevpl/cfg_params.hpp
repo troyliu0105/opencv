@@ -14,7 +14,7 @@
 #include <opencv2/gapi/streaming/source.hpp>
 #include <opencv2/gapi/util/variant.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -204,6 +204,6 @@ private:
 } //namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_STREAMING_ONEVPL_CFG_PARAMS_HPP

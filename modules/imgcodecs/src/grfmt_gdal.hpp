@@ -58,7 +58,7 @@
 
 
 /// Start of CV Namespace
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /**
  * Convert GDAL Pixel Range to OpenCV Pixel Range

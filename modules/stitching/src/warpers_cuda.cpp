@@ -48,7 +48,7 @@ using namespace cv::cuda;
 
 #ifdef HAVE_CUDA
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     namespace imgproc
     {

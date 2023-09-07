@@ -2698,7 +2698,7 @@ cv::Ptr<cv::IVideoWriter> cv::cvCreateVideoWriter_MSMF( const std::string& filen
 #include "plugin_writer_api.hpp"
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 typedef CvCapture_MSMF CaptureT;
 typedef CvVideoWriter_MSMF WriterT;

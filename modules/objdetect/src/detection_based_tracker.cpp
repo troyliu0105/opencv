@@ -106,7 +106,7 @@ static inline cv::Rect scale_rect(const cv::Rect& r, float scale)
     return cv::Rect(x, y, cvRound(width), cvRound(height));
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     void* workcycleObjectDetectorFunction(void* p);
 }

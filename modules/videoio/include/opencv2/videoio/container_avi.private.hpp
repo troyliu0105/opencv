@@ -13,7 +13,7 @@
 #include "opencv2/videoio/videoio_c.h"
 #include <deque>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /*

@@ -295,7 +295,7 @@ enum {
 // if enabled, then bad JPEG warnings become errors and cause NULL returned instead of image
 #define V4L_ABORT_BADJPEG
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static const char* decode_ioctl_code(unsigned long ioctlCode)
 {

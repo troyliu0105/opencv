@@ -8,7 +8,7 @@
 #ifndef OPENCV_DNN_VKCOM_CONTEXT_HPP
 #define OPENCV_DNN_VKCOM_CONTEXT_HPP
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 #ifdef HAVE_VULKAN
 
@@ -23,6 +23,6 @@ void createContext();
 
 #endif // HAVE_VULKAN
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom
 
 #endif // OPENCV_DNN_VKCOM_CONTEXT_HPP

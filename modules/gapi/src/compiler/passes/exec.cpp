@@ -41,7 +41,7 @@
 // FIXME: make it user-configurable run-time option
 // #define DEBUG_MERGE
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gimpl
 {
@@ -703,4 +703,4 @@ void passes::topoSortIslands(ade::passes::PassContext &ctx)
     auto pass_ctx = ade::passes::PassContext{*gptr};
     ade::passes::TopologicalSort{}(pass_ctx);
 }
-}} // namespace cv::gimpl
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::gimpl

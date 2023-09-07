@@ -9,7 +9,7 @@
 
 #include <opencv2/gapi/streaming/onevpl/cfg_params.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -257,4 +257,4 @@ bool CfgParam::operator!=(const CfgParam& rhs) const {
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

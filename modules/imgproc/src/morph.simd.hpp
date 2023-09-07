@@ -48,7 +48,7 @@
                      Basic Morphological Operations: Erosion & Dilation
 \****************************************************************************************/
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 // forward declarations
 Ptr<BaseRowFilter> getMorphologyRowFilter(int op, int type, int ksize, int anchor);

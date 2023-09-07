@@ -1877,7 +1877,7 @@ double CvDTree::calc_node_dir( CvDTreeNode* node )
 }
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 void DefaultDeleter<CvDTreeSplit>::operator ()(CvDTreeSplit* obj) const { fastFree(obj); }

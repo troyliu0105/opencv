@@ -29,7 +29,7 @@
 #include <condition_variable>
 #include <thread>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace obsensor {
 #define MAX_FRAME_BUFFER_NUM 4
 struct V4L2FrameBuffer
@@ -85,6 +85,6 @@ private:
     std::vector<uint8_t> xuRecvBuf_;
     std::vector<uint8_t> xuSendBuf_;
 };
-}} // namespace cv::obsensor::
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::obsensor::
 #endif // HAVE_OBSENSOR_V4L2
 #endif // OPENCV_VIDEOIO_OBSENSOR_STREAM_CHANNEL_V4L2_HPP

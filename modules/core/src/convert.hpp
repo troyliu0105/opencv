@@ -8,7 +8,7 @@
 
 #include "opencv2/core/types.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #if CV_SIMD

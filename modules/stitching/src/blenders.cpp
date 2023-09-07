@@ -44,7 +44,7 @@
 #include "opencl_kernels_stitching.hpp"
 
 #ifdef HAVE_CUDA
-    namespace cv { namespace cuda { namespace device
+    namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
     {
         namespace blend
         {
@@ -60,7 +60,7 @@
     }}}
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 static const float WEIGHT_EPS = 1e-5f;
@@ -900,4 +900,4 @@ void restoreImageFromLaplacePyrGpu(std::vector<UMat> &pyr)
 }
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

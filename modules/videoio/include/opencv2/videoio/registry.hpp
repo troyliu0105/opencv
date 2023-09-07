@@ -7,7 +7,7 @@
 
 #include <opencv2/videoio.hpp>
 
-namespace cv { namespace videoio_registry {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace videoio_registry {
 /** @addtogroup videoio_registry
 This section contains API description how to query/configure available Video I/O backends.
 

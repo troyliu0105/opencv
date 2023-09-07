@@ -49,7 +49,7 @@
                                    Bilateral Filtering
 \****************************************************************************************/
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 // forward declarations
 void bilateralFilterInvoker_8u(

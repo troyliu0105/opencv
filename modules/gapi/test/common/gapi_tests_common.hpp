@@ -1052,7 +1052,7 @@ inline std::ostream& operator<<(std::ostream& os, const opencv_test::compare_vec
 }  // anonymous namespace
 
 // Note: namespace must match the namespace of the type of the printed object
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 inline std::ostream& operator<<(std::ostream& os, CmpTypes op)
 {
@@ -1180,6 +1180,6 @@ inline std::ostream& operator<<(std::ostream& os, KmeansFlags op)
     }
     return os;
 }
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif //OPENCV_GAPI_TESTS_COMMON_HPP

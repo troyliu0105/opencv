@@ -11,7 +11,7 @@
 #include <opencv2/gapi/gkernel.hpp> // GKernelPackage
 #include <opencv2/gapi/own/exports.hpp> // GAPI_EXPORTS
 
-namespace cv { namespace gapi { namespace imgproc { namespace fluid {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi { namespace imgproc { namespace fluid {
 
 GAPI_EXPORTS GKernelPackage kernels();
 

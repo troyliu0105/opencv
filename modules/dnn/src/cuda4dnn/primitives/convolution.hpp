@@ -30,7 +30,7 @@
 #include <utility>
 #include <algorithm>
 
-namespace cv { namespace dnn { namespace cuda4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn {
 
     struct ConvolutionConfiguration {
         /* the size of the following vectors must be equal to the kernel size */
@@ -603,6 +603,6 @@ namespace cv { namespace dnn { namespace cuda4dnn {
         } fusion_location;
     };
 
-}}} /* namespace cv::dnn::cuda4dnn */
+}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_PRIMITIVES_CONVOLUTION_HPP */

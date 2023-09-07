@@ -44,7 +44,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace detail {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace detail {
 template <class TWeight> class GCGraph
 {
 public:

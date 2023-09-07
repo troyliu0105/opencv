@@ -53,7 +53,7 @@ cv::GScalarDesc cv::descr_of(const cv::Scalar &)
     return empty_scalar_desc();
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 std::ostream& operator<<(std::ostream& os, const cv::GScalarDesc &)
 {
     os << "(scalar)";

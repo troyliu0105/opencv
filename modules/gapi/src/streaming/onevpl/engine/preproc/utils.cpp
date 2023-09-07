@@ -12,7 +12,7 @@
 #include "streaming/onevpl/onevpl_export.hpp"
 #include "logger.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -78,7 +78,7 @@ mfxFrameInfo to_mfxFrameInfo(const cv::GFrameDesc& frame_info) {
     return ret;
 }
 } // namespace utils
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 } // namespace gapi
 } // namespace wip
 } // namespace onevpl

@@ -13,7 +13,7 @@
 #include <opencv2/gapi/util/compiler_hints.hpp> //suppress_unused_warning
 #include <opencv2/gapi/own/saturate.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 
@@ -88,6 +88,6 @@ using cv::gapi::own::rintd;
 
 } // namespace fluid
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // GFLUIDUTILS_HPP

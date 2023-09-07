@@ -49,7 +49,7 @@
 #include "precomp.hpp"
 #include <vector>
 
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
     namespace connectedcomponents{
 
     struct NoOp{

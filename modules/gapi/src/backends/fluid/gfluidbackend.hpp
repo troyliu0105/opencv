@@ -19,7 +19,7 @@
 #include "backends/common/gbackend.hpp"
 #include "compiler/gislandmodel.hpp"
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 struct FluidUnit
 {

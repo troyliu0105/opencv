@@ -40,7 +40,7 @@
 // directly with Mat, not the older C cv interface
 // (which may have added overhead for IPL file conversion)
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
     class VideoCapture_WinRT : public IVideoCapture
     {

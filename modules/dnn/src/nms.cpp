@@ -10,7 +10,7 @@
 
 #include <opencv2/imgproc.hpp>
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
 template <typename T>

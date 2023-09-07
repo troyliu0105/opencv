@@ -5,7 +5,7 @@
 #include "precomp.hpp"
 #include "persistence.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 void write( FileStorage& fs, const String& name, const Mat& m )

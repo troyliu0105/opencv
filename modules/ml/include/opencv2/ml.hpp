@@ -68,7 +68,7 @@
   See detailed overview here: @ref ml_intro.
  */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 namespace ml

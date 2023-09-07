@@ -8,7 +8,7 @@
 
 #include <algorithm> // std::swap_ranges
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 ////////////////////////////////////// transpose /////////////////////////////////////////
 

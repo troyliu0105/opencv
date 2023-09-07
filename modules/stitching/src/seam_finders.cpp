@@ -44,7 +44,7 @@
 #include "opencv2/imgproc/detail/gcgraph.hpp"
 #include <map>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 Ptr<SeamFinder> SeamFinder::createDefault(int type)
@@ -1714,4 +1714,4 @@ void GraphCutSeamFinderGpu::setGraphWeightsColorGrad(
 #endif
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

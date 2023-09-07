@@ -50,7 +50,7 @@
 #include "opencv2/core.hpp"
 #include "ocl.hpp"
 
-namespace cv { namespace ogl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ogl {
 
 /** @addtogroup core_opengl
 This section describes OpenGL interoperability.
@@ -523,7 +523,7 @@ using namespace cv::ocl;
  */
 CV_EXPORTS Context& initializeContextFromGL();
 
-} // namespace cv::ogl::ocl
+} // namespace stcv{} namespace cv = stcv; namespace stcv::ogl::ocl
 
 /** @brief Converts InputArray to Texture2D object.
 @param src     - source InputArray.
@@ -559,9 +559,9 @@ by the call to mapGLBuffer() function.
 CV_EXPORTS void unmapGLBuffer(UMat& u);
 
 //! @}
-}} // namespace cv::ogl
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::ogl
 
-namespace cv { namespace cuda {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda {
 
 /** @brief Sets a CUDA device and initializes it for the current thread with OpenGL interoperability.
 

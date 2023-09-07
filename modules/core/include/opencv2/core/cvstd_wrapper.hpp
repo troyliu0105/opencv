@@ -11,7 +11,7 @@
 #include <memory>  // std::shared_ptr
 #include <type_traits>  // std::enable_if
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 using std::nullptr_t;
 

@@ -5,7 +5,7 @@
 #ifndef OPENCV_USAC_USAC_HPP
 #define OPENCV_USAC_USAC_HPP
 
-namespace cv { namespace usac {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace usac {
 enum EstimationMethod { Homography, Fundamental, Fundamental8, Essential, Affine, P3P, P6P};
 enum VerificationMethod { NullVerifier, SprtVerifier };
 enum PolishingMethod { NonePolisher, LSQPolisher };

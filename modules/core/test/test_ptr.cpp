@@ -384,7 +384,7 @@ struct SpeciallyDeletable
 
 } // namespace
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 template<> struct DefaultDeleter<SpeciallyDeletable>
 {
     void operator()(SpeciallyDeletable * obj) const { obj->deleted = true; }

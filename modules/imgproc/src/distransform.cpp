@@ -41,7 +41,7 @@
 //M*/
 #include "precomp.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static const int DIST_SHIFT = 16;
@@ -681,7 +681,7 @@ distanceATS_L1_8u( const Mat& src, Mat& dst )
 
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static void distanceTransform_L1_8U(InputArray _src, OutputArray _dst)
 {

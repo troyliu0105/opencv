@@ -14,7 +14,7 @@ static cv::Mat debug_image;
 #endif
 
 using namespace std;
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace details {
 
 /////////////////////////////////////////////////////////////////////////////
@@ -3977,4 +3977,4 @@ cv::Scalar estimateChessboardSharpness(InputArray image_, Size patternSize, Inpu
 }
 
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

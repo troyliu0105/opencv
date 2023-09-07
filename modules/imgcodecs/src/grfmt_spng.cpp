@@ -43,7 +43,7 @@ void spngCvt_BGRA2Gray_16u_CnC1R(const ushort *bgr, int bgr_step,
                                  ushort *gray, int gray_step,
                                  cv::Size size, int ncn, int _swap_rb);
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /////////////////////// SPngDecoder ///////////////////

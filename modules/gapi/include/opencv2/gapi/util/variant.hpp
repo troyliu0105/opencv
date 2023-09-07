@@ -17,7 +17,7 @@
 #include <opencv2/gapi/util/type_traits.hpp>
 
 // A poor man's `variant` implementation, incompletely modeled against C++17 spec.
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace util
 {
@@ -653,6 +653,6 @@ namespace detail
                                     return_t{});
     }
 } // namespace util
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_UTIL_VARIANT_HPP

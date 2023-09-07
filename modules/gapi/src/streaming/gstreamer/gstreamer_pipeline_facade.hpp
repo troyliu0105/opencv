@@ -16,7 +16,7 @@
 #ifdef HAVE_GSTREAMER
 #include <gst/gst.h>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace gst {
@@ -84,6 +84,6 @@ private:
 } // namespace gst
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // HAVE_GSTREAMER
 #endif // OPENCV_GAPI_STREAMING_GSTREAMER_GSTREAMER_PIPELINE_FACADE_HPP

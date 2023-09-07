@@ -13,7 +13,7 @@
 #include <opencv2/gapi/gkernel.hpp>
 #include <opencv2/gapi/gtype_traits.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace streaming {
 
@@ -74,6 +74,6 @@ cv::GOpaque<int64_t> seqNo(G g) {
 
 } // namespace streaming
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GSTREAMING_META_HPP

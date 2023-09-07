@@ -137,7 +137,7 @@ multiple lines in three dimensions as not all lines intersect in three dimension
 
 */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class DownhillSolverImpl CV_FINAL : public DownhillSolver

@@ -5,7 +5,7 @@
 #ifndef OPENCV_ML_INL_HPP
 #define OPENCV_ML_INL_HPP
 
-namespace cv { namespace ml {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ml {
 
 // declared in ml.hpp
 template<class SimulatedAnnealingSolverSystem>

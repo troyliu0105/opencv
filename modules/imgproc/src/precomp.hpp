@@ -116,11 +116,11 @@ inline bool isStorageOrMat(void * arr)
 }
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 CV_EXPORTS
 cv::Mutex& getInitializationMutex();  // defined in core module
 
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif /*__OPENCV_PRECOMP_H__*/

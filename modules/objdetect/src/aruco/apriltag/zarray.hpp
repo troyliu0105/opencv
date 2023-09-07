@@ -15,7 +15,7 @@
 #define _OPENCV_ZARRAY_HPP_
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 
 

@@ -158,7 +158,7 @@ inline double log_gamma_lanczos(const double& x)
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
 
 class LineSegmentDetectorImpl CV_FINAL : public LineSegmentDetector
 {
@@ -1228,4 +1228,4 @@ int LineSegmentDetectorImpl::compareSegments(const Size& size, InputArray lines1
     return N;
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

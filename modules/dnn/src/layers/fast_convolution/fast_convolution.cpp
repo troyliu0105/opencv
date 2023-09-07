@@ -13,7 +13,7 @@
 #include "fast_convolution.hpp"
 #include "fast_convolution.simd.hpp"
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 enum { VEC_ALIGN = 32, DFT_TYPE = CV_32F }; // Memory alignment.
 Ptr<FastConv> initFastConv(
         InputArray _weightsMat,
@@ -1081,4 +1081,4 @@ void runFastConv(InputArray _input, OutputArray _output, const Ptr<FastConv>& co
     }
     });
 }
-}} // namespace cv::dnn
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

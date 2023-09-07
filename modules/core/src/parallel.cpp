@@ -158,7 +158,7 @@
 
 using namespace cv;
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 ParallelLoopBody::~ParallelLoopBody() {}
 
@@ -1026,7 +1026,7 @@ const char* currentParallelFramework()
 #endif
 }
 
-}  // namespace cv::
+}  // namespace stcv{} namespace cv = stcv; namespace stcv::
 
 CV_IMPL void cvSetNumThreads(int nt)
 {

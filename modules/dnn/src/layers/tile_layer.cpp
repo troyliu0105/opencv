@@ -7,7 +7,7 @@
 
 #include <opencv2/dnn/shape_utils.hpp>
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class TileLayerImpl CV_FINAL : public TileLayer
 {
@@ -94,4 +94,4 @@ Ptr<TileLayer> TileLayer::create(const LayerParams& params)
     return makePtr<TileLayerImpl>(params);
 }
 
-}} // namespace cv::dnn
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

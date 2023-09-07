@@ -11,7 +11,7 @@ enum
     CV_YML_INDENT_FLOW = 1
 };
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class YAMLEmitter : public FileStorageEmitter

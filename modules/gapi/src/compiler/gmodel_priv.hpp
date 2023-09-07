@@ -11,7 +11,7 @@
 #include "compiler/gmodel.hpp"
 #include "api/gproto_priv.hpp" // origin_of
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 // The mapping between user-side GMat/GScalar/... objects
 // and its  appropriate nodes. Can be stored in graph optionally

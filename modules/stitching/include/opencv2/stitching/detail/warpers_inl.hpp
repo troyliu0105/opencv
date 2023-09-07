@@ -49,7 +49,7 @@
 
 //! @cond IGNORED
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 template <class P>
@@ -775,7 +775,7 @@ void PlanePortraitProjector::mapBackward(float u0, float v0, float &x, float &y)
 
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 //! @endcond
 

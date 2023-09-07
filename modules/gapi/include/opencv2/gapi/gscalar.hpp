@@ -15,7 +15,7 @@
 #include <opencv2/gapi/gcommon.hpp> // GShape
 #include <opencv2/gapi/util/optional.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 // Forward declaration; GNode and GOrigin are an internal
 // (user-inaccessible) classes.
@@ -136,6 +136,6 @@ GAPI_EXPORTS GScalarDesc descr_of(const cv::Scalar &scalar);
 
 std::ostream& operator<<(std::ostream& os, const cv::GScalarDesc &desc);
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GSCALAR_HPP

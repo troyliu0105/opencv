@@ -65,7 +65,7 @@
 using namespace cv::dnn::cuda4dnn;
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {
@@ -253,4 +253,4 @@ Ptr<ReorgLayer> ReorgLayer::create(const LayerParams& params)
 }
 
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

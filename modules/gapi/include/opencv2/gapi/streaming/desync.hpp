@@ -16,7 +16,7 @@
 #include <opencv2/gapi/gcall.hpp>
 #include <opencv2/gapi/gkernel.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace streaming {
 
@@ -80,6 +80,6 @@ GAPI_EXPORTS GFrame desync(const GFrame &f);
 
 } // namespace streaming
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GSTREAMING_DESYNC_HPP

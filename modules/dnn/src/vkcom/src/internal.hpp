@@ -19,7 +19,7 @@ typedef int shaderc_shader_kind;
 #define shaderc_compute_shader 0
 #endif
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 #ifdef HAVE_VULKAN
 
@@ -86,6 +86,6 @@ inline int shapeCount(const Shape& shape, int start = -1, int end = -1)
 
 #endif // HAVE_VULKAN
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom
 
 #endif // OPENCV_DNN_VKCOM_INTERNAL_HPP

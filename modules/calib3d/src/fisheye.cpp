@@ -44,7 +44,7 @@
 #include "fisheye.hpp"
 #include <limits>
 
-namespace cv { namespace
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace
 {
     struct JacobianRow
     {
@@ -1148,7 +1148,7 @@ double cv::fisheye::stereoCalibrate(InputArrayOfArrays objectPoints, InputArrayO
     return rms;
 }
 
-namespace cv{ namespace {
+namespace stcv{} namespace cv = stcv; namespace stcv{ namespace {
 void subMatrix(const Mat& src, Mat& dst, const std::vector<uchar>& cols, const std::vector<uchar>& rows)
 {
     CV_Assert(src.channels() == 1);

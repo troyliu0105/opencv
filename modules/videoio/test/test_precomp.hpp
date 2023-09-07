@@ -11,7 +11,7 @@
 #include "opencv2/videoio/registry.hpp"
 #include "opencv2/core/private.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static inline
 std::ostream& operator<<(std::ostream& out, const VideoCaptureAPIs& api)

@@ -48,7 +48,7 @@
 #include <iostream>
 #include "mathfuncs.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 typedef void (*MathFunc)(const void* src, void* dst, int len);
@@ -2051,7 +2051,7 @@ void cvSolvePoly(const CvMat* a, CvMat *r, int maxiter, int)
 
 
 // Common constants for dispatched code
-namespace cv { namespace details {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace details {
 
 #define EXPTAB_SCALE 6
 #define EXPTAB_MASK  ((1 << EXPTAB_SCALE) - 1)

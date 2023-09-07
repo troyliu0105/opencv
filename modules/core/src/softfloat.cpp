@@ -67,7 +67,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "opencv2/core/softfloat.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /*----------------------------------------------------------------------------
@@ -261,7 +261,7 @@ int cvCeil (const cv::softdouble& a) { return cv::f64_to_i32(a, cv::round_max, f
 
 int64_t cvRound64(const cv::softdouble& a) { return cv::f64_to_i64(a, cv::round_near_even, false); }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 softdouble::operator softfloat() const { return f64_to_f32(*this); }
 

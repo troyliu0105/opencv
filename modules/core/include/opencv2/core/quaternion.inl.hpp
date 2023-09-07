@@ -34,7 +34,7 @@
 //@cond IGNORE
 ///////////////////////////////////////////////////////////////////////////////////////
 //Implementation
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 template <typename T>
 Quat<T>::Quat() : w(0), x(0), y(0), z(0) {}

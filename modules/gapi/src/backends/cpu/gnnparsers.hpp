@@ -9,7 +9,7 @@
 #ifndef OPENCV_NNPARSERS_OCV_HPP
 #define OPENCV_NNPARSERS_OCV_HPP
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 void ParseSSD(const cv::Mat&  in_ssd_result,
               const cv::Size& in_size,

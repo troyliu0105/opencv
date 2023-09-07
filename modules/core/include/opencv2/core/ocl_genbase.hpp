@@ -44,7 +44,7 @@
 
 //! @cond IGNORED
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace ocl {
 
 class ProgramSource;

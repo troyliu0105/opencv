@@ -18,7 +18,7 @@
 #include "backend.hpp"
 #include "factory.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
@@ -158,4 +158,4 @@ std::vector<Target> getAvailableTargets(Backend be)
 
 
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

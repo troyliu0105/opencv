@@ -11,7 +11,7 @@
 #include "../../precomp.hpp"
 #include "vkcom.hpp"
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 #ifdef HAVE_VULKAN
 
@@ -52,6 +52,6 @@ protected:
 
 #endif // HAVE_VULKAN
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom
 
 #endif // OPENCV_DNN_VKCOM_OP_BASE_HPP

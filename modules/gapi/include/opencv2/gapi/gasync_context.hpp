@@ -15,7 +15,7 @@
 
 #include <opencv2/gapi/own/exports.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi{
 
 /**
@@ -58,6 +58,6 @@ public:
 };
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif //OPENCV_GAPI_GASYNC_CONTEXT_HPP

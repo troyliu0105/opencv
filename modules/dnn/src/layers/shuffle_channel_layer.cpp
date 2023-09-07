@@ -12,7 +12,7 @@
 using namespace cv::dnn::cuda4dnn;
 #endif
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class ShuffleChannelLayerImpl CV_FINAL : public ShuffleChannelLayer
 {
@@ -164,4 +164,4 @@ Ptr<Layer> ShuffleChannelLayer::create(const LayerParams& params)
 }
 
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

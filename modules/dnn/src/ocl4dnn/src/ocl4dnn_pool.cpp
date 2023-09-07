@@ -46,7 +46,7 @@
 #include "../include/ocl4dnn.hpp"
 #include "opencl_kernels_dnn.hpp"
 
-namespace cv { namespace dnn { namespace ocl4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace ocl4dnn {
 template<typename Dtype>
 OCL4DNNPool<Dtype>::OCL4DNNPool(OCL4DNNPoolConfig config)
 {
@@ -221,4 +221,4 @@ bool OCL4DNNPool<Dtype>::Forward(const UMat& bottom,
 
 template class OCL4DNNPool<float>;
 
-}}} // namespace cv::dnn::ocl4dnn
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::ocl4dnn

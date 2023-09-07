@@ -26,7 +26,7 @@
 #include "../include/vkcom.hpp"
 #include "../shader/spv_shader.hpp"
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 #ifdef HAVE_VULKAN
 extern VkPhysicalDevice kPhysicalDevice;
@@ -82,6 +82,6 @@ enum ShapeIdx
 
 #endif // HAVE_VULKAN
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom
 
 #endif // OPENCV_DNN_VKCOM_COMMON_HPP

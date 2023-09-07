@@ -85,7 +85,7 @@
 #include "precomp.hpp"
 #include "opencl_kernels_video.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /*

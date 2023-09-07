@@ -49,7 +49,7 @@
 #define CV_MAHALANOBIS_BASELINE_ONLY
 #define CV_MULTRANSPOSED_BASELINE_ONLY
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // forward declarations
 typedef void (*TransformFunc)(const uchar* src, uchar* dst, const uchar* m, int len, int scn, int dcn);

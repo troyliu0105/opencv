@@ -7,7 +7,7 @@
 #include "accum.simd.hpp"
 #include "accum.simd_declarations.hpp" // defines CV_CPU_DISPATCH_MODES_ALL=AVX2,...,BASELINE based on CMakeLists.txt content
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 DEF_ACC_INT_FUNCS(8u32f, uchar, float)
 DEF_ACC_INT_FUNCS(8u64f, uchar, double)

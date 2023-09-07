@@ -6,7 +6,7 @@
 
 #include "gnnparsers.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -330,4 +330,4 @@ void parseYolo(const cv::Mat&  in_yolo_result,
         }
     }
 }
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

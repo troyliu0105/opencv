@@ -10,7 +10,7 @@
 
 #include <opencv2/gapi/own/exports.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -42,6 +42,6 @@ inline bool operator==(const Scalar& lhs, const Scalar& rhs)
 
 } // namespace own
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GAPI_OWN_SCALAR_HPP

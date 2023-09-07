@@ -45,7 +45,7 @@
 
 #include <opencv2/core/utils/logger.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace ml {
 
 using std::vector;

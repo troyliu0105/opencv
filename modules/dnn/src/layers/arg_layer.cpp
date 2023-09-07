@@ -6,7 +6,7 @@
 #include "layers_common.hpp"
 
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class ArgLayerImpl CV_FINAL : public ArgLayer
 {
@@ -117,4 +117,4 @@ Ptr<ArgLayer> ArgLayer::create(const LayerParams& params)
     return Ptr<ArgLayer>(new ArgLayerImpl(params));
 }
 
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

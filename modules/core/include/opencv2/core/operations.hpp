@@ -63,7 +63,7 @@
 
 //! @cond IGNORED
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 ////////////////////////////// Matx methods depending on core API /////////////////////////////

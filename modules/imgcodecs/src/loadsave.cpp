@@ -62,7 +62,7 @@
 *                                      Image Codecs                                      *
 \****************************************************************************************/
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static const size_t CV_IO_MAX_IMAGE_PARAMS = cv::utils::getConfigurationParameterSizeT("OPENCV_IO_MAX_IMAGE_PARAMS", 50);
 static const size_t CV_IO_MAX_IMAGE_WIDTH = utils::getConfigurationParameterSizeT("OPENCV_IO_MAX_IMAGE_WIDTH", 1 << 20);

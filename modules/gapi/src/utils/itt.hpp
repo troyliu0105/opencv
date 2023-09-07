@@ -19,7 +19,7 @@
 #if defined(OPENCV_WITH_ITT)
 #include <ittnotify.h>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace util {
     template< class T >
     using remove_reference_t = typename std::remove_reference<T>::type;
@@ -43,7 +43,7 @@ namespace gimpl {
         };
     }  // namespace
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #define GAPI_ITT_NAMED_TRACE_GUARD(name, h)      auto name = cv::gimpl::make_itt_guard(h); \
                                                  cv::util::suppress_unused_warning(name)
@@ -53,11 +53,11 @@ namespace gimpl {
                                                  __itt_string_handle_create(h)
 #else // OPENCV_WITH_ITT
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 struct dumb_guard { void reset() { } };
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #define GAPI_ITT_NAMED_TRACE_GUARD(name, h)      cv::gimpl::dumb_guard name; \
                                                  cv::util::suppress_unused_warning(name); \

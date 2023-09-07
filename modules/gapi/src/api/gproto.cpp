@@ -282,7 +282,7 @@ void cv::validate_input_args(const GRunArgs& args)
     }
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 std::ostream& operator<<(std::ostream& os, const cv::GMetaArg &arg)
 {
     // FIXME: Implement via variant visitor
@@ -318,7 +318,7 @@ std::ostream& operator<<(std::ostream& os, const cv::GMetaArg &arg)
 
     return os;
 }
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 const void* cv::gimpl::proto::ptr(const GRunArgP &arg)
 {

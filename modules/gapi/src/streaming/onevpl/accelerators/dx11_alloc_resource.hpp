@@ -26,7 +26,7 @@
 #undef D3D11_NO_HELPERS
 #undef NOMINMAX
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -143,7 +143,7 @@ private:
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // HAVE_D3D11
 #endif // HAVE_DIRECTX
 #endif // HAVE_ONEVPL

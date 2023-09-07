@@ -5,7 +5,7 @@
 #include "opencv2/core/cvstd.hpp"
 #include "opencv2/core/hal/interface.h"
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 
 //! @addtogroup imgproc_hal_functions
 //! @{

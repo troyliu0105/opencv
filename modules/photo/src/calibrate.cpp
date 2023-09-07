@@ -45,7 +45,7 @@
 #include "opencv2/imgproc.hpp"
 #include "hdr_common.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class CalibrateDebevecImpl CV_FINAL : public CalibrateDebevec

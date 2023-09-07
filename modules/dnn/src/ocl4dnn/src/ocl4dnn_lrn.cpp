@@ -45,7 +45,7 @@
 #include "../include/ocl4dnn.hpp"
 #include "opencl_kernels_dnn.hpp"
 
-namespace cv { namespace dnn { namespace ocl4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace ocl4dnn {
 template<typename Dtype>
 OCL4DNNLRN<Dtype>::OCL4DNNLRN(OCL4DNNLRNConfig config)
 {
@@ -119,4 +119,4 @@ bool OCL4DNNLRN<Dtype>::crossChannelForward(const UMat& bottom, UMat& top)
 
 template class OCL4DNNLRN<float>;
 
-}}} // namespace cv::dnn::ocl4dnn
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::ocl4dnn

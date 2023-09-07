@@ -17,7 +17,7 @@
 #include <vector>
 #include <utility>
 
-namespace cv { namespace dnn { namespace cuda4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn {
 
     struct MaxPoolingConfiguration {
         /* the size of the following vectors must be equal to the pooling order */
@@ -176,6 +176,6 @@ namespace cv { namespace dnn { namespace cuda4dnn {
         std::vector<std::size_t> window_size, strides, padding_left;
     };
 
-}}} /* namespace cv::dnn::cuda4dnn */
+}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_PRIMITIVES_MAX_UNPOOLING_HPP */

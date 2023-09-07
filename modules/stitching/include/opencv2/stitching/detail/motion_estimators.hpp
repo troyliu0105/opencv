@@ -48,7 +48,7 @@
 #include "util.hpp"
 #include "camera.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 //! @addtogroup stitching_rotation
@@ -368,6 +368,6 @@ void CV_EXPORTS findMaxSpanningTree(
 //! @} stitching_rotation
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_STITCHING_MOTION_ESTIMATORS_HPP

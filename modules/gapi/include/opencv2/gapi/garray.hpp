@@ -23,7 +23,7 @@
 #include <opencv2/gapi/gmat.hpp>    // flatten_g only!
 #include <opencv2/gapi/gscalar.hpp> // flatten_g only!
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 // Forward declaration; GNode and GOrigin are an internal
 // (user-inaccessible) classes.
@@ -435,6 +435,6 @@ private:
 
 /** @} */
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GARRAY_HPP

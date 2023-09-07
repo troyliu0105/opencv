@@ -7,7 +7,7 @@
 
 #include "backend.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /** Capabilities bitmask */

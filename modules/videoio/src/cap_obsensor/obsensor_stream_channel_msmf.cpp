@@ -36,7 +36,7 @@
 #pragma comment(lib, "dxgi")
 #pragma comment(lib, "Shlwapi")
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace obsensor {
 std::string wideCharToUTF8(const WCHAR* s)
 {
@@ -507,5 +507,5 @@ STDMETHODIMP MSMFStreamChannel::OnFlush(DWORD)
     }
     return S_OK;
 }
-}} // namespace cv::obsensor::
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::obsensor::
 #endif // HAVE_OBSENSOR_MSMF

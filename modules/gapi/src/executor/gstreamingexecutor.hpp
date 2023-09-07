@@ -27,7 +27,7 @@ template<typename T> using QueueClass = cv::gapi::own::concurrent_bounded_queue<
 
 #include "executor/gabstractstreamingexecutor.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 
 namespace stream {
@@ -204,6 +204,6 @@ public:
 };
 
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GSTREAMING_EXECUTOR_HPP

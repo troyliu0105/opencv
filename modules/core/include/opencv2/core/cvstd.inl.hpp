@@ -55,7 +55,7 @@
 #pragma warning( disable: 4127 )
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename _Tp> class DataType< std::complex<_Tp> >

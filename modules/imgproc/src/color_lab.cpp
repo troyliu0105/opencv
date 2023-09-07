@@ -94,7 +94,7 @@ template<typename _Tp> static inline cv::v_float32 splineInterpolate(const cv::v
 
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 ////////////////////////////////////// RGB <-> XYZ ///////////////////////////////////////
@@ -4821,4 +4821,4 @@ void cvtColorXYZ2BGR( InputArray _src, OutputArray _dst, int dcn, bool swapb )
     hal::cvtXYZtoBGR(h.src.data, h.src.step, h.dst.data, h.dst.step, h.src.cols, h.src.rows, h.depth, dcn, swapb);
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

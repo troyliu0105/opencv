@@ -66,7 +66,7 @@
 #endif  // EIGEN_WORLD_VERSION == 3 && EIGEN_MAJOR_VERSION >= 3
 #endif  // !defined(OPENCV_DISABLE_EIGEN_TENSOR_SUPPORT)
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /** @addtogroup core_eigen

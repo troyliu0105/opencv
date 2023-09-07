@@ -29,7 +29,7 @@ _IplImage cvIplImage(const cv::Mat& m)
     return self;
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static Mat cvMatToMat(const CvMat* m, bool copyData)
 {

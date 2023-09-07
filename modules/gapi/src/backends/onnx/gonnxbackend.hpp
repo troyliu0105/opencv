@@ -15,7 +15,7 @@
 
 #include "backends/common/gbackend.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace onnx {
 
@@ -50,7 +50,7 @@ public:
                      std::vector<OutObj> &&output_objs) override;
 };
 
-}}} // namespace cv::gimpl::onnx
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::gimpl::onnx
 
 #endif // HAVE_ONNX
 #endif // OPENCV_GAPI_GONNXBACKEND_HPP

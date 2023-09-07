@@ -8,7 +8,7 @@
 #include <Eigen/Eigen>
 #endif
 
-namespace cv { namespace usac {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace usac {
 // Fundamental Matrix Solver:
 class FundamentalMinimalSolver7ptsImpl: public FundamentalMinimalSolver7pts {
 private:

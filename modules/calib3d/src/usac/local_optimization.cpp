@@ -6,7 +6,7 @@
 #include "../usac.hpp"
 #include "opencv2/imgproc/detail/gcgraph.hpp"
 
-namespace cv { namespace usac {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace usac {
 class GraphCutImpl : public GraphCut {
 protected:
     const Ptr<NeighborhoodGraph> neighborhood_graph;

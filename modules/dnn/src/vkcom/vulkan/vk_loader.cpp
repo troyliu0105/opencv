@@ -39,7 +39,7 @@ typedef void* VulkanHandle;
 #define GET_VK_ENTRY_POINT(handle) nullptr
 #endif
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 #ifdef HAVE_VULKAN
 static VulkanHandle handle = nullptr;
@@ -121,4 +121,4 @@ bool loadVulkanLibrary()
 
 #endif // HAVE_VULKAN
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom

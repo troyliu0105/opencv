@@ -13,7 +13,7 @@
 #include "opencv2/core/utils/filesystem.hpp"
 #include "opencv2/core/utils/filesystem.private.hpp"
 
-namespace cv { namespace samples {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace samples {
 
 static cv::Ptr< std::vector<cv::String> > g_data_search_path;
 static cv::Ptr< std::vector<cv::String> > g_data_search_subdir;

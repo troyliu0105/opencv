@@ -25,7 +25,7 @@
     #include <opencv2/imgproc.hpp>
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 
 static void ptsort_(struct pt *pts, int sz); // forward delaration

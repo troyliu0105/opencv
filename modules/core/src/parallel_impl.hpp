@@ -4,7 +4,7 @@
 #ifndef OPENCV_CORE_PARALLEL_IMPL_HPP
 #define OPENCV_CORE_PARALLEL_IMPL_HPP
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 unsigned defaultNumberOfThreads();
 

@@ -15,7 +15,7 @@
 #define DUMP_MESSAGE_STDOUT(...) do { std::cout << __VA_ARGS__ << std::endl; } while (false)
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace {
 static std::string bytesToStringRepr(size_t value)

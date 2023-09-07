@@ -24,7 +24,7 @@
 using namespace cv::dnn::cuda4dnn;
 #endif
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class ConstLayerImpl CV_FINAL : public ConstLayer
 {
@@ -170,4 +170,4 @@ Ptr<Layer> ConstLayer::create(const LayerParams& params)
     return Ptr<Layer>(new ConstLayerImpl(params));
 }
 
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

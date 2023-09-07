@@ -28,7 +28,7 @@
 #endif
 
 #if OPENCV_HAVE_FILESYSTEM_SUPPORT
-namespace cv { namespace utils { namespace fs {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils { namespace fs {
 
 /**
  * File-based lock object.

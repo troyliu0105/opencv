@@ -47,7 +47,7 @@
 #include "opencl_kernels_imgproc.hpp"
 #include "opencv2/core/hal/intrin.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 #if CV_SIMD
 static inline v_float32 blend(const v_float32& v_src1, const v_float32& v_src2, const v_float32& v_w1, const v_float32& v_w2)
 {

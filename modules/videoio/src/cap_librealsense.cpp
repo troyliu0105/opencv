@@ -7,7 +7,7 @@
 #ifdef HAVE_LIBREALSENSE
 #include "cap_librealsense.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 VideoCapture_LibRealsense::VideoCapture_LibRealsense(int) : mAlign(RS2_STREAM_COLOR)

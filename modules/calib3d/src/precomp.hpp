@@ -56,7 +56,7 @@
 #define GET_OPTIMIZED(func) (func)
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /**
@@ -135,7 +135,7 @@ static inline bool haveCollinearPoints( const Mat& m, int count )
     return false;
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 int checkChessboardBinary(const cv::Mat & img, const cv::Size & size);
 

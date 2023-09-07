@@ -11,7 +11,7 @@
 #include <opencv2/gapi/gscalar.hpp>
 #include <opencv2/gapi/gkernel.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 
 /**
@@ -80,6 +80,6 @@ GAPI_EXPORTS GMat stereo(const GMat& left,
                          const GMat& right,
                          const StereoOutputFormat of = StereoOutputFormat::DEPTH_FLOAT32);
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_STEREO_HPP

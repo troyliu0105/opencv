@@ -41,7 +41,7 @@
 #include "precomp.hpp"
 #include "opencv2/core/hal/intrin.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 const float EPS = 1.0e-4f;
@@ -188,7 +188,7 @@ static void findMinEnclosingCircle(const PT *pts, int count, Point2f &center, fl
         }
     }
 }
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 // see Welzl, Emo. Smallest enclosing disks (balls and ellipsoids). Springer Berlin Heidelberg, 1991.
 void cv::minEnclosingCircle( InputArray _points, Point2f& _center, float& _radius )
@@ -337,7 +337,7 @@ double cv::contourArea( InputArray _contour, bool oriented )
     return a00;
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static inline Point2f getOfs(int i, float eps)
@@ -863,7 +863,7 @@ cv::RotatedRect cv::fitEllipseDirect( InputArray _points )
 }
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // Calculates bounding rectangle of a point set or retrieves already calculated

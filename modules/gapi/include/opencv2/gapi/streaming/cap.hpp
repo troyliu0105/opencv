@@ -27,7 +27,7 @@
 #include <opencv2/gapi/garg.hpp>
 #include <opencv2/gapi/streaming/meta.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 
@@ -127,6 +127,6 @@ GAPI_EXPORTS_W cv::Ptr<IStreamSource> inline make_capture_src(const int id)
 
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_STREAMING_CAP_HPP

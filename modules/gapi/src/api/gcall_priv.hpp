@@ -17,7 +17,7 @@
 
 #include "api/gnode.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // GCall is used to capture details (arguments) passed to operation when the graph is
 // constructed. It is, in fact, just a "serialization" of a function call (to some extent). The

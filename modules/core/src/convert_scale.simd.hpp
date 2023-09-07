@@ -6,7 +6,7 @@
 #include "precomp.hpp"
 #include "convert.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 
 BinaryFunc getCvtScaleAbsFunc(int depth);

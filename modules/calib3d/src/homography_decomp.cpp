@@ -50,7 +50,7 @@
 #include "precomp.hpp"
 #include <memory>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 namespace HomographyDecomposition
@@ -562,4 +562,4 @@ void filterHomographyDecompByVisibleRefpoints(InputArrayOfArrays _rotations,
     Mat(possibleSolutions).copyTo(_possibleSolutions);
 }
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv

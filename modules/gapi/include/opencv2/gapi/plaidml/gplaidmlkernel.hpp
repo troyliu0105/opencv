@@ -20,7 +20,7 @@ namespace edsl
 } // namespace edsl
 } // namespace plaidml
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -135,6 +135,6 @@ public:
 
 #define GAPI_PLAIDML_KERNEL(Name, API) struct Name: public cv::GPlaidMLKernelImpl<Name, API>
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GPLAIDMLKERNEL_HPP

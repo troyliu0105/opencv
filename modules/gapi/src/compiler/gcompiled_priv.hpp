@@ -22,7 +22,7 @@
 // As the thing becomes more complex, appropriate API and implementation
 // part will be placed to api/ and compiler/ modules respectively.
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace gimpl
 {

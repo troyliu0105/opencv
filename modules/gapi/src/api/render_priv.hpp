@@ -10,7 +10,7 @@
 
 #include <opencv2/gapi/render/render.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -26,6 +26,6 @@ GAPI_EXPORTS void cvtYUVToNV12(const cv::Mat& yuv, cv::Mat& y, cv::Mat& uv);
 } // namespace draw
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_RENDER_PRIV_HPP

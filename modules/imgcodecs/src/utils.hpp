@@ -42,7 +42,7 @@
 #ifndef _UTILS_H_
 #define _UTILS_H_
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 int validateToInt(size_t step);
 

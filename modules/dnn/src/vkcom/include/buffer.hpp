@@ -12,7 +12,7 @@
 #include <vulkan/vulkan.h>
 #endif // HAVE_VULKAN
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 #ifdef HAVE_VULKAN
 
@@ -36,6 +36,6 @@ private:
 
 #endif // HAVE_VULKAN
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom
 
 #endif // OPENCV_DNN_VKCOM_BUFFER_HPP

@@ -3533,7 +3533,7 @@ cvPrevTreeNode( CvTreeNodeIterator* treeIterator )
     return prevNode;
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 ////////////////////////////////////////////////////////////////////////////////

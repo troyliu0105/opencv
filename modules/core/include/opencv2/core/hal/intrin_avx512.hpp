@@ -106,7 +106,7 @@ inline __m512d _v512_insert(const __m512d& a, const __m256d& b)
 
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @cond IGNORED

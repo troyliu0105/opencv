@@ -49,7 +49,7 @@
 #include "accum.simd_declarations.hpp"
 #include "opencv2/core/openvx/ovx_defs.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 typedef void(*AccFunc)(const uchar*, uchar*, const uchar*, int, int);
@@ -166,7 +166,7 @@ static bool ocl_accumulate( InputArray _src, InputArray _src2, InputOutputArray 
 }
 
 #if defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_accumulate(InputArray _src, InputOutputArray _dst, InputArray _mask)
 {
@@ -232,7 +232,7 @@ static bool ipp_accumulate(InputArray _src, InputOutputArray _dst, InputArray _m
 #endif
 
 #ifdef HAVE_OPENVX
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 enum
 {
@@ -341,7 +341,7 @@ void cv::accumulate( InputArray _src, InputOutputArray _dst, InputArray _mask )
 }
 
 #if defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_accumulate_square(InputArray _src, InputOutputArray _dst, InputArray _mask)
 {
@@ -439,7 +439,7 @@ void cv::accumulateSquare( InputArray _src, InputOutputArray _dst, InputArray _m
 }
 
 #if defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_accumulate_product(InputArray _src1, InputArray _src2,
                             InputOutputArray _dst, InputArray _mask)
@@ -542,7 +542,7 @@ void cv::accumulateProduct( InputArray _src1, InputArray _src2,
 }
 
 #if defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_accumulate_weighted( InputArray _src, InputOutputArray _dst,
                              double alpha, InputArray _mask )

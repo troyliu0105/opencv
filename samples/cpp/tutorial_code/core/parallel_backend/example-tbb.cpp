@@ -8,7 +8,7 @@
 #include "opencv2/core/parallel/backend/parallel_for.tbb.hpp"
 //! [tbb_include]
 
-namespace cv { // private.hpp
+namespace stcv{} namespace cv = stcv; namespace stcv { // private.hpp
 CV_EXPORTS const char* currentParallelFramework();
 }
 

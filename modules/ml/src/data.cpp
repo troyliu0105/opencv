@@ -45,7 +45,7 @@
 
 #include <opencv2/core/utils/logger.hpp>
 
-namespace cv { namespace ml {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ml {
 
 static const float MISSED_VAL = TrainData::missingValue();
 static const int VAR_MISSED = VAR_ORDERED;

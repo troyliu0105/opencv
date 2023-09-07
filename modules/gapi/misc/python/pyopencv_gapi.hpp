@@ -55,7 +55,7 @@ using GArray_Prim    = cv::GArray<cv::gapi::wip::draw::Prim>;
 // WA: Create using
 using std::string;
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace detail
 {
@@ -72,7 +72,7 @@ private:
 };
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 class cv::detail::PyObjectHolder::Impl
 {

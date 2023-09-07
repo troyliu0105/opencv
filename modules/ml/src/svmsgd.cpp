@@ -52,7 +52,7 @@ using std::endl;
 *                        Stochastic Gradient Descent SVM Classifier                      *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace ml
 {

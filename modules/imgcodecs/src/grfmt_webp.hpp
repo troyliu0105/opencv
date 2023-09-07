@@ -49,7 +49,7 @@
 
 #include <fstream>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class WebPDecoder CV_FINAL : public BaseImageDecoder

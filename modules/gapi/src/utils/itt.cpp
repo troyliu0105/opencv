@@ -9,9 +9,9 @@
 #include <ittnotify.h>
 #include <opencv2/gapi/own/exports.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
     GAPI_EXPORTS __itt_domain* gapi_itt_domain = __itt_domain_create("GAPI Context");
 } // namespace gimpl
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // OPENCV_WITH_ITT

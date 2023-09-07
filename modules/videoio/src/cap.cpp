@@ -44,7 +44,7 @@
 #include "opencv2/videoio/registry.hpp"
 #include "videoio_registry.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static bool param_VIDEOIO_DEBUG = utils::getConfigurationParameterBool("OPENCV_VIDEOIO_DEBUG", false);
 static bool param_VIDEOCAPTURE_DEBUG = utils::getConfigurationParameterBool("OPENCV_VIDEOCAPTURE_DEBUG", false);
@@ -698,4 +698,4 @@ int VideoWriter::fourcc(char c1, char c2, char c3, char c4)
     return (c1 & 255) + ((c2 & 255) << 8) + ((c3 & 255) << 16) + ((c4 & 255) << 24);
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

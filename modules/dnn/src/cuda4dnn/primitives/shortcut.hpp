@@ -17,7 +17,7 @@
 
 #include <utility>
 
-namespace cv { namespace dnn { namespace cuda4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn {
 
     template <class T>
     class ShortcutOp final : public CUDABackendNode {
@@ -71,6 +71,6 @@ namespace cv { namespace dnn { namespace cuda4dnn {
         csl::Stream stream;
     };
 
-}}} /* namespace cv::dnn::cuda4dnn */
+}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_PRIMITIVES_SHORTCUT_HPP */

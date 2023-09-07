@@ -10,7 +10,7 @@
 
 #include "compiler/gislandmodel.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace streaming {
 
@@ -34,6 +34,6 @@ struct GStreamingKernel
 
 } // namespace streaming
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GSTREAMINGKERNEL_HPP

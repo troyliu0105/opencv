@@ -46,7 +46,7 @@
 
 #include "opencv2/core.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 //! @addtogroup stitching
@@ -86,6 +86,6 @@ public:
 //! @}
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_STITCHING_TIMELAPSERS_HPP

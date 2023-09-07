@@ -5,7 +5,7 @@
 #include "../../precomp.hpp"
 #include "opencv2/video/detail/tracking.detail.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 inline namespace tracking {
 
@@ -129,4 +129,4 @@ void TrackerTargetState::setTargetHeight(int height)
     targetHeight = height;
 }
 
-}}}  // namespace cv::detail::tracking
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::detail::tracking

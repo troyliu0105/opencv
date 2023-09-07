@@ -12,7 +12,7 @@
 #include <opencv2/gapi/core.hpp>
 #include <opencv2/gapi/own/saturate.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi_test_kernels
 {
@@ -624,4 +624,4 @@ cv::GKernelPackage fluidTestPackage = cv::gapi::kernels
         ,OCVCalcHist
         >();
 } // namespace gapi_test_kernels
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

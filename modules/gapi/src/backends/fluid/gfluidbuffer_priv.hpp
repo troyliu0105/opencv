@@ -13,7 +13,7 @@
 #include "opencv2/gapi/fluid/gfluidbuffer.hpp"
 #include "opencv2/gapi/own/exports.hpp" // GAPI_EXPORTS
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 
@@ -291,8 +291,8 @@ public:
     inline const Buffer::Cache& cache() const { return m_cache; }
 };
 
-} // namespace cv::gapi::fluid
-} // namespace cv::gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv::gapi::fluid
+} // namespace stcv{} namespace cv = stcv; namespace stcv::gapi
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_FLUID_BUFFER_PRIV_HPP

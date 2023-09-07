@@ -11,7 +11,7 @@
 #include <algorithm>              // std::max, std::min
 #include <ostream>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -146,6 +146,6 @@ inline std::ostream& operator<<(std::ostream& o, const Size& s)
 struct VoidType {};
 } // namespace own
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_TYPES_HPP

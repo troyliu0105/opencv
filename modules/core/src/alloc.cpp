@@ -66,7 +66,7 @@
 #include <map>
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static void* OutOfMemoryError(size_t size)
 {

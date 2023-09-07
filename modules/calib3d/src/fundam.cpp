@@ -46,7 +46,7 @@
 
 #include "usac.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /**
@@ -271,7 +271,7 @@ public:
 };
 } // end namesapce cv
 
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
 static bool createAndRunRHORegistrator(double confidence,
                                        int    maxIters,
                                        double ransacReprojThreshold,
@@ -470,7 +470,7 @@ cv::Mat cv::findHomography(InputArray srcPoints, InputArray dstPoints, OutputArr
    that can be found at http://www-sop.inria.fr/robotvis/personnel/zzhang/zzhang-eng.html */
 
 /************************************** 7-point algorithm *******************************/
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /**

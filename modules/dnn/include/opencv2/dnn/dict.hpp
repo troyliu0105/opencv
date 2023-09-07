@@ -48,7 +48,7 @@
 #ifndef OPENCV_DNN_DNN_DICT_HPP
 #define OPENCV_DNN_DNN_DICT_HPP
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 //! @addtogroup dnn

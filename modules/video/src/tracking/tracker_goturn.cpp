@@ -8,7 +8,7 @@
 #include "opencv2/dnn.hpp"
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 TrackerGOTURN::TrackerGOTURN()
 {
@@ -137,4 +137,4 @@ Ptr<TrackerGOTURN> TrackerGOTURN::create(const TrackerGOTURN::Params& parameters
 }
 #endif  // OPENCV_HAVE_DNN
 
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

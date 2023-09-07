@@ -8,7 +8,7 @@
 #ifndef __OPENCV_DNN_TEST_NPY_BLOB_HPP__
 #define __OPENCV_DNN_TEST_NPY_BLOB_HPP__
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // Parse serialized NumPy array by np.save(...)

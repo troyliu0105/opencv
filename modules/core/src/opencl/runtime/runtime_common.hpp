@@ -42,7 +42,7 @@
 #ifndef __OPENCV_CORE_OCL_RUNTIME_COMMON_HPP__
 #define __OPENCV_CORE_OCL_RUNTIME_COMMON_HPP__
 
-namespace cv { namespace ocl { namespace runtime {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ocl { namespace runtime {
 
 struct DynamicFnEntry
 {
@@ -50,7 +50,7 @@ struct DynamicFnEntry
     void** ppFn; // &clCreateContext_pfn
 };
 
-} } } // namespace cv::ocl::runtime
+} } } // namespace stcv{} namespace cv = stcv; namespace stcv::ocl::runtime
 
 using namespace cv::ocl::runtime;
 

@@ -28,7 +28,7 @@
 @}
  */
 
-namespace cv { namespace gapi {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi {
 /**
  * @brief This namespace contains G-API Operation Types for OpenCV
  * Core module functionality.
@@ -1906,6 +1906,6 @@ GAPI_EXPORTS_W GOpaque<Size> size(const GOpaque<Rect>& r);
 GAPI_EXPORTS_W GOpaque<Size> size(const GFrame& src);
 } //namespace streaming
 } //namespace gapi
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif //OPENCV_GAPI_CORE_HPP

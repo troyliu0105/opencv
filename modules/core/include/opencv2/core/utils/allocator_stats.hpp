@@ -7,7 +7,7 @@
 
 #include "../cvdef.h"
 
-namespace cv { namespace utils {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils {
 
 class AllocatorStatisticsInterface
 {

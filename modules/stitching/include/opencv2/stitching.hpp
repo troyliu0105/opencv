@@ -104,7 +104,7 @@ Homography model, as they work with different transformations.
 @}
   */
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 //! @addtogroup stitching
 //! @{
@@ -360,6 +360,6 @@ CV_DEPRECATED Ptr<Stitcher> createStitcherScans(bool try_use_gpu = false);
 
 //! @} stitching
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_STITCHING_STITCHER_HPP

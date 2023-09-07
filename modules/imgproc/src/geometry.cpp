@@ -267,7 +267,7 @@ cvPointPolygonTest( const CvArr* _contour, CvPoint2D32f pt, int measure_dist )
  --------------------------------------------------------------------
  */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 typedef enum { Pin, Qin, Unknown } tInFlag;
 

@@ -8,7 +8,7 @@ static int quietCallback( int, const char*, const char*, const char*, int, void*
     return 0;
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 void setErrorVerbosity(bool verbose)
 {

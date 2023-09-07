@@ -5,7 +5,7 @@
 
 #include "precomp.hpp"
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 
 /****************************************************************************************\
 *                     LU & Cholesky implementation for small matrices                    *

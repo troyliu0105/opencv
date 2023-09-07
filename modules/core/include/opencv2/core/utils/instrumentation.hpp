@@ -8,7 +8,7 @@
 #include <opencv2/core/utility.hpp>
 #include <opencv2/core/utils/tls.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 //! @addtogroup core_utils
 //! @{

@@ -4,7 +4,7 @@
 
 #include "precomp.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 typedef int (*CountNonZeroFunc)(const uchar*, int);
 

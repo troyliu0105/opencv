@@ -53,7 +53,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     template <typename T> struct L1Dist
     {
@@ -225,7 +225,7 @@ namespace cv { namespace cuda { namespace device
 
         U vec1Vals[MAX_LEN / THREAD_DIM];
     };
-}}} // namespace cv { namespace cuda { namespace cudev
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace cudev
 
 //! @endcond
 

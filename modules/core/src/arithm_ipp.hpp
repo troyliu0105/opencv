@@ -3,7 +3,7 @@
 // of this distribution and at http://opencv.org/license.html
 #if ARITHM_USE_IPP
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 
 //=======================================
 // Arithmetic and logical operations

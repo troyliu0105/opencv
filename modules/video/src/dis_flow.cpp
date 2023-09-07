@@ -48,7 +48,7 @@ using namespace std;
 #define EPS 0.001F
 #define INF 1E+10F
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 class DISOpticalFlowImpl CV_FINAL : public DISOpticalFlow
 {

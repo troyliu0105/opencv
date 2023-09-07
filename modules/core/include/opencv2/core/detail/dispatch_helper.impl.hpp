@@ -7,7 +7,7 @@
 
 //! @cond IGNORED
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 template<template<typename> class Functor, typename... Args>

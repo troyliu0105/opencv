@@ -47,7 +47,7 @@
 
 #include "opencv2/core/openvx/ovx_defs.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T, int shift> struct FixPtCast
@@ -1245,7 +1245,7 @@ static bool ocl_pyrUp( InputArray _src, OutputArray _dst, const Size& _dsz, int 
 }
 
 #if defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_pyrdown( InputArray _src, OutputArray _dst, const Size& _dsz, int borderType )
 {
@@ -1308,7 +1308,7 @@ static bool ipp_pyrdown( InputArray _src, OutputArray _dst, const Size& _dsz, in
 #endif
 
 #ifdef HAVE_OPENVX
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool openvx_pyrDown( InputArray _src, OutputArray _dst, const Size& _dsz, int borderType )
 {
@@ -1433,7 +1433,7 @@ void cv::pyrDown( InputArray _src, OutputArray _dst, const Size& _dsz, int borde
 
 
 #if defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_pyrup( InputArray _src, OutputArray _dst, const Size& _dsz, int borderType )
 {
@@ -1536,7 +1536,7 @@ void cv::pyrUp( InputArray _src, OutputArray _dst, const Size& _dsz, int borderT
 
 
 #ifdef HAVE_IPP
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_buildpyramid( InputArray _src, OutputArrayOfArrays _dst, int maxlevel, int borderType )
 {

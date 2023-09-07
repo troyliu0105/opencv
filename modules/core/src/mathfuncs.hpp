@@ -5,7 +5,7 @@
 #ifndef OPENCV_CORE_SRC_MATHFUNCS_HPP
 #define OPENCV_CORE_SRC_MATHFUNCS_HPP
 
-namespace cv { namespace details {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace details {
 const double* getExpTab64f();
 const float*  getExpTab32f();
 const double* getLogTab64f();

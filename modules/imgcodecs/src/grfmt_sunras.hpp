@@ -47,7 +47,7 @@
 
 #ifdef HAVE_IMGCODEC_SUNRASTER
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 enum SunRasType

@@ -8,7 +8,7 @@
 #include "opencv2/objdetect/charuco_detector.hpp"
 #include "aruco_utils.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 
 using namespace std;

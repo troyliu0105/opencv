@@ -470,7 +470,7 @@ cvApproxChains( CvSeq*              src_seq,
 
 /* Ramer-Douglas-Peucker algorithm for polygon simplification */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T> static int

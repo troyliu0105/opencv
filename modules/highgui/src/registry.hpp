@@ -7,7 +7,7 @@
 
 #include "factory.hpp"
 
-namespace cv { namespace highgui_backend {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace highgui_backend {
 
 struct BackendInfo
 {

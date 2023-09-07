@@ -24,7 +24,7 @@ namespace ade {
 }
 
 // Forward declarations - internal
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
     class GKernelPackage;
 
 namespace gapi {
@@ -75,6 +75,6 @@ void intrinFinalize(ade::passes::PassContext &ctx);
 
 }} // namespace gimpl::passes
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_COMPILER_PASSES_HPP

@@ -21,7 +21,7 @@
 #include <opencv2/gapi/render/render_types.hpp>
 #include <opencv2/gapi/s11n/base.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 class GMat; // FIXME: forward declaration for GOpaqueTraits
 
@@ -271,7 +271,7 @@ namespace detail
     };
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 // std::hash overload for GShape
 namespace std

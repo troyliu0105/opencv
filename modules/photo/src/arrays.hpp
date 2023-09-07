@@ -44,7 +44,7 @@
 #ifndef __OPENCV_DENOISING_ARRAYS_HPP__
 #define __OPENCV_DENOISING_ARRAYS_HPP__
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template <class T>

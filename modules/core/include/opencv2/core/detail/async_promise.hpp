@@ -9,7 +9,7 @@
 
 #include "exception_ptr.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /** @addtogroup core_async
 @{

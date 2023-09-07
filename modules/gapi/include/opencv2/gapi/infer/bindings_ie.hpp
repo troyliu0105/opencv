@@ -14,7 +14,7 @@
 
 #include <string>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace ie {
 
@@ -65,6 +65,6 @@ GAPI_EXPORTS_W PyParams params(const std::string &tag,
                                const std::string &device);
 } // namespace ie
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_INFER_BINDINGS_IE_HPP

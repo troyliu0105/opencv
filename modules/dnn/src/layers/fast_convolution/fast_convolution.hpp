@@ -46,7 +46,7 @@ enum { _FX_CONV_TYPE_GENERIC=0, _FX_CONV_TYPE_DEPTHWISE=1, _FX_CONV_TYPE_WINOGRA
 enum { CONV_1D = 0, CONV_2D = 1, CONV_3D = 2 };
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 
 struct FastConv
@@ -122,6 +122,6 @@ void _fx_winograd_AtXA_8x8_f32(const float* inptr, int inpstep, float* bpptr, in
 } // namespace opt_AVX2
 
 } // namespace dnn
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif //OPENCV_FAST_CONVOLUTION_HPP

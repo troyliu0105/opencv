@@ -27,7 +27,7 @@
 #include <vector>
 #include <algorithm>
 
-namespace cv { namespace dnn { namespace cuda4dnn { namespace csl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn { namespace csl {
 
     namespace tensor_ops {
 
@@ -557,6 +557,6 @@ namespace cv { namespace dnn { namespace cuda4dnn { namespace csl {
         TensorDescriptorsArray outputDesc;
     };
 
-}}}} /* namespace cv::dnn::cuda4dnn::csl */
+}}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn::csl */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_CSL_TENSOR_OPS_HPP */

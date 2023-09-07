@@ -13,7 +13,7 @@
 #include "vkcom/include/vkcom.hpp"
 #endif  // HAVE_VULKAN
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {
@@ -69,6 +69,6 @@ namespace dnn
 
     bool haveVulkan();
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif  // OPENCV_DNN_OP_VKCOM_HPP

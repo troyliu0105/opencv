@@ -13,7 +13,7 @@
 
 #include <opencv2/gapi/own/assert.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace own {
 
@@ -123,6 +123,6 @@ void concurrent_bounded_queue<T>::clear() {
     m_data = std::queue<T>{};
 }
 
-}}} // namespace cv::gapi::own
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::gapi::own
 
 #endif //  OPENCV_GAPI_EXECUTOR_CONC_QUEUE_HPP

@@ -7,7 +7,7 @@
 
 #include <limits>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 inline namespace tracking {
 
@@ -74,6 +74,6 @@ private:
 
 //! @}
 
-}}}  // namespace cv::detail::tracking
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::detail::tracking
 
 #endif

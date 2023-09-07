@@ -6,7 +6,7 @@
 #include "layers_common.hpp"
 #include "../op_timvx.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {

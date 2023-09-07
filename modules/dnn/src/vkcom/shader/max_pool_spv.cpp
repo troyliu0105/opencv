@@ -7,7 +7,7 @@
 
 #include "../../precomp.hpp"
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 extern const unsigned int max_pool_spv[1449] = {
     0x07230203,0x00010000,0x00080001,0x000000df,0x00000000,0x00020011,0x00000001,0x0006000b,
@@ -194,4 +194,4 @@ extern const unsigned int max_pool_spv[1449] = {
     0x00010038
 };
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom

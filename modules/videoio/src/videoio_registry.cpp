@@ -32,7 +32,7 @@
 
 using namespace cv;
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace {
 

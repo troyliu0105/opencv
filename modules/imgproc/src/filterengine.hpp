@@ -43,7 +43,7 @@ the use of this software, even if advised of the possibility of such damage.
 
 #include "opencv2/imgproc.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! type of the kernel

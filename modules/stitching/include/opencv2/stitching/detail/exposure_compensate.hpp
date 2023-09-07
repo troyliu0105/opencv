@@ -49,7 +49,7 @@
 
 #include "opencv2/core.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 //! @addtogroup stitching_exposure
@@ -240,6 +240,6 @@ public:
 //! @}
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_STITCHING_EXPOSURE_COMPENSATE_HPP

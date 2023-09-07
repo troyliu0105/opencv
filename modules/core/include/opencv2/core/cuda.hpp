@@ -62,7 +62,7 @@
   @}
  */
 
-namespace cv { namespace cuda {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda {
 
 //! @addtogroup cudacore_struct
 //! @{
@@ -1271,7 +1271,7 @@ CV_EXPORTS void convertFp16(InputArray _src, OutputArray _dst, Stream& stream = 
 
 //! @} cudacore_init
 
-}} // namespace cv { namespace cuda {
+}} // namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda {
 
 
 #include "opencv2/core/cuda.inl.hpp"

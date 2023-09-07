@@ -43,7 +43,7 @@
 #include "opencv2/photo.hpp"
 #include "hdr_common.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 void checkImageDimensions(const std::vector<Mat>& images)

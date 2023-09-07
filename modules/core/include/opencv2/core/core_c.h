@@ -2730,7 +2730,7 @@ static char cvFuncName[] = Name
 
 #include "opencv2/core/utility.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup core_c_glue

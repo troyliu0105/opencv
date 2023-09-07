@@ -76,7 +76,7 @@
 
 //! @cond IGNORED
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     class BlockedRange
     {
@@ -109,7 +109,7 @@ namespace cv
     // Returns a static string if there is a parallel framework,
     // NULL otherwise.
     CV_EXPORTS const char* currentParallelFramework();
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 /****************************************************************************************\
 *                                  Common declarations                                   *
@@ -141,7 +141,7 @@ static inline cv::Size cvGetMatSize( const CvMat* mat )
 }
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 CV_EXPORTS void scalarToRawData(const cv::Scalar& s, void* buf, int type, int unroll_to = 0);
 
@@ -264,7 +264,7 @@ T* allocSingletonNew() { return new(allocSingletonNewBuffer(sizeof(T))) T(); }
 #define ippCPUID_AVX512_KNL 0xFFFFFFFF
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace ipp
 {
@@ -651,7 +651,7 @@ typedef enum CvStatus
 CvStatus;
 
 #ifdef ENABLE_INSTRUMENTATION
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace instr
 {
@@ -803,7 +803,7 @@ CV_EXPORTS InstrNode*   getCurrentNode();
 #define CV_INSTRUMENT_REGION() CV_INSTRUMENT_REGION_();
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace utils {
 
@@ -889,7 +889,7 @@ CV_EXPORTS bool getBinLocation(std::wstring& dst);
 //! @}
 
 } // namespace utils
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 //! @endcond
 

@@ -62,7 +62,7 @@
 #pragma warning(disable: 4459)  // declaration of '...' hides global declaration
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup core_basic

@@ -10,7 +10,7 @@
 
 #include <opencv2/gapi/fluid/gfluidkernel.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi_test_kernels
 {
@@ -133,6 +133,6 @@ std::tuple<GMat, GMat, GMat> split3_4lpi(const GMat& src);
 extern cv::GKernelPackage fluidTestPackage;
 
 } // namespace gapi_test_kernels
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // GAPI_FLUID_TEST_KERNELS_HPP

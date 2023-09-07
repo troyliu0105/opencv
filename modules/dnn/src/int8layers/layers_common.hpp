@@ -17,7 +17,7 @@
 #include "../ocl4dnn/include/ocl4dnn.hpp"
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {

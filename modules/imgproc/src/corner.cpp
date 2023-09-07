@@ -46,7 +46,7 @@
 #include "opencv2/core/hal/intrin.hpp"
 #include "corner.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static void calcMinEigenVal( const Mat& _cov, Mat& _dst )
@@ -472,7 +472,7 @@ static bool ocl_preCornerDetect( InputArray _src, OutputArray _dst, int ksize, i
 }
 
 #if 0 //defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_cornerMinEigenVal( InputArray _src, OutputArray _dst, int blockSize, int ksize, int borderType )
 {
@@ -573,7 +573,7 @@ void cv::cornerMinEigenVal( InputArray _src, OutputArray _dst, int blockSize, in
 
 
 #if defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_cornerHarris( Mat &src, Mat &dst, int blockSize, int ksize, double k, int borderType )
 {

@@ -46,7 +46,7 @@
 #include "opencv2/core.hpp"
 #include "matchers.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 //! @addtogroup stitching_autocalib
@@ -81,6 +81,6 @@ bool CV_EXPORTS_W calibrateRotatingCamera(const std::vector<Mat> &Hs,CV_OUT Mat 
 //! @} stitching_autocalib
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_STITCHING_AUTOCALIB_HPP

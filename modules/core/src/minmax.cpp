@@ -23,7 +23,7 @@
 *                                       minMaxLoc                                        *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T, typename WT> static void

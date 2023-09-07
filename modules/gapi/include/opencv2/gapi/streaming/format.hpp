@@ -9,7 +9,7 @@
 
 #include <opencv2/gapi/gkernel.hpp> // GKernelPackage
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace streaming {
 
@@ -89,6 +89,6 @@ GAPI_EXPORTS GFrame copy(const GFrame& in);
 //! @} gapi_transform
 
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GSTREAMING_FORMAT_HPP

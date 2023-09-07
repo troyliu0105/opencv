@@ -13,7 +13,7 @@
 
 #include <opencv2/gapi/ocl/core.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace core {
 namespace gpu {
@@ -21,7 +21,7 @@ namespace gpu {
 } // namespace gpu
 } // namespace core
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 #endif // OPENCV_GAPI_GPU_CORE_API_HPP

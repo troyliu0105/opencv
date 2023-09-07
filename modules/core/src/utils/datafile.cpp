@@ -34,7 +34,7 @@
 #endif
 #endif
 
-namespace cv { namespace utils {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils {
 
 static cv::Ptr< std::vector<cv::String> > g_data_search_path;
 static cv::Ptr< std::vector<cv::String> > g_data_search_subdir;

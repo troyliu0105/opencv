@@ -96,7 +96,7 @@
 
 ///////////////////////////////////////////////////////////////////////////
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 
 #ifndef ARITHM_DISPATCHING_ONLY
     CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN

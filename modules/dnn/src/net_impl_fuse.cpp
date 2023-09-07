@@ -10,7 +10,7 @@
 #include "cuda4dnn/primitives/eltwise.hpp"  // required by fuseLayers
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
@@ -777,4 +777,4 @@ void Net::Impl::fuseLayers(const std::vector<LayerPin>& blobsToKeep_)
 
 
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

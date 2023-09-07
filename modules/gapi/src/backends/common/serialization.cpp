@@ -20,7 +20,7 @@
 
 #include "backends/common/serialization.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace s11n {
 namespace {
@@ -977,4 +977,4 @@ GAPI_EXPORTS std::vector<std::string> vector_of_strings_deserialize(IIStream& is
 
 } // namespace s11n
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

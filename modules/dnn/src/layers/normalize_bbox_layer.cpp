@@ -51,7 +51,7 @@
 using namespace cv::dnn::cuda4dnn;
 #endif
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class NormalizeBBoxLayerImpl CV_FINAL : public NormalizeBBoxLayer
 {

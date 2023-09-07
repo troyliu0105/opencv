@@ -17,7 +17,7 @@
 #include <opencv2/gapi/gcompiled.hpp>
 #include <opencv2/gapi/gstreaming.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace detail
 {
@@ -576,5 +576,5 @@ namespace gapi
                              GProtoOutputArgs &&outs);
 } // namespace gapi
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // OPENCV_GAPI_GCOMPUTATION_HPP

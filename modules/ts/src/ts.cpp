@@ -96,13 +96,13 @@
 #include "opencv2/core/opencl/opencl_info.hpp"
 
 #include "opencv2/core/utils/allocator_stats.hpp"
-namespace cv { namespace ocl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ocl {
 cv::utils::AllocatorStatisticsInterface& getOpenCLAllocatorStatistics();
 }}
 #endif // HAVE_OPENCL
 
 #include "opencv2/core/utils/allocator_stats.hpp"
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 CV_EXPORTS cv::utils::AllocatorStatisticsInterface& getAllocatorStatistics();
 }
 

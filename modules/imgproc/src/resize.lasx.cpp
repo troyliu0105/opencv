@@ -51,7 +51,7 @@
 #include "resize.hpp"
 #include "opencv2/core/hal/intrin.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace opt_LASX
 {

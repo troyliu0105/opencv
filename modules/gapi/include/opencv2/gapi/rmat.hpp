@@ -11,16 +11,16 @@
 #include <opencv2/gapi/own/exports.hpp>
 
 // Forward declaration
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace s11n {
 struct IOStream;
 struct IIStream;
 } // namespace s11n
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // "Remote Mat", a general class which provides an abstraction layer over the data
 // storage and placement (host, remote device etc) and allows to access this data.
@@ -155,6 +155,6 @@ template<typename T, typename... Ts>
 RMat make_rmat(Ts&&... args) { return { std::make_shared<T>(std::forward<Ts>(args)...) }; }
 /** @} */
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif /* OPENCV_GAPI_RMAT_HPP */

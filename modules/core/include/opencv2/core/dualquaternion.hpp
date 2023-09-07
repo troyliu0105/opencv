@@ -29,7 +29,7 @@
 #include <opencv2/core/quaternion.hpp>
 #include <opencv2/core/affine.hpp>
 
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
 //! @addtogroup core
 //! @{
 

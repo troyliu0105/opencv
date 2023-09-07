@@ -13,7 +13,7 @@
 
 #include "backends/common/gbackend.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 
 class GAbstractStreamingExecutor
@@ -44,6 +44,6 @@ public:
 };
 
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GABSTRACT_STREAMING_EXECUTOR_HPP

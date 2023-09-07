@@ -58,7 +58,7 @@
 
 using namespace cv;
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #if defined (HAVE_IPP) && (!IPP_DISABLE_WARPAFFINE || !IPP_DISABLE_WARPPERSPECTIVE || !IPP_DISABLE_REMAP)
@@ -2149,7 +2149,7 @@ void cv::convertMaps( InputArray _map1, InputArray _map2,
 }
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class WarpAffineInvoker :
@@ -2815,7 +2815,7 @@ void cv::warpAffine( InputArray _src, OutputArray _dst,
 }
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 #if CV_SIMD128_64F
 void WarpPerspectiveLine_ProcessNN_CV_SIMD(const double *M, short* xy, double X0, double Y0, double W0, int bw)

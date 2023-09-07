@@ -51,7 +51,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     template <typename T> struct IsSimpleParameter
     {

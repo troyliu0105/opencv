@@ -5,7 +5,7 @@
 #ifndef OPENCV_UTILS_FILESYSTEM_HPP
 #define OPENCV_UTILS_FILESYSTEM_HPP
 
-namespace cv { namespace utils { namespace fs {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils { namespace fs {
 
 
 CV_EXPORTS bool exists(const cv::String& path);

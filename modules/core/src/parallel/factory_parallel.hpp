@@ -7,7 +7,7 @@
 
 #include "opencv2/core/parallel/parallel_backend.hpp"
 
-namespace cv { namespace parallel {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace parallel {
 
 class IParallelBackendFactory
 {

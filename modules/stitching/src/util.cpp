@@ -42,7 +42,7 @@
 
 #include "precomp.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 void DisjointSets::createOneElemSets(int n)
@@ -185,4 +185,4 @@ int& stitchingLogLevel()
 }
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

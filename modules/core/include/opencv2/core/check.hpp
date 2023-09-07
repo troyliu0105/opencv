@@ -7,7 +7,7 @@
 
 #include <opencv2/core/base.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /** Returns string of cv::Mat depth value: CV_8U -> "CV_8U" or "<invalid depth>" */
 CV_EXPORTS const char* depthToString(int depth);

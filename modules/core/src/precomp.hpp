@@ -93,7 +93,7 @@
 
 #define GET_OPTIMIZED(func) (func)
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // -128.f ... 255.f

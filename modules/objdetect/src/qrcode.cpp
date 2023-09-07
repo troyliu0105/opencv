@@ -20,7 +20,7 @@
 #include <limits>
 #include <map>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 using std::vector;
 using std::pair;

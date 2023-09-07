@@ -26,7 +26,7 @@
 #include <plaidml2/exec/exec.h>
 #include <plaidml2/core/core.h>
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 struct PlaidMLUnit
 {

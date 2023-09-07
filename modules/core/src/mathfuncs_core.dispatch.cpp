@@ -11,7 +11,7 @@
 #define IPP_DISABLE_MAGNITUDE_32F 1  // accuracy: https://github.com/opencv/opencv/issues/19506
 
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 
 ///////////////////////////////////// ATAN2 ////////////////////////////////////
 
@@ -227,7 +227,7 @@ void invSqrt(const double* src, double* dst, int len)
     invSqrt64f(src, dst, len);
 }
 
-}} // namespace cv::hal::
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::hal::
 
 float cv::fastAtan2( float y, float x )
 {

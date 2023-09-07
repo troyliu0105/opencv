@@ -32,7 +32,7 @@
 #include <cassert>
 #include <cstdlib>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 
@@ -2558,7 +2558,7 @@ GAPI_FLUID_KERNEL(GFluidSqrt, cv::gapi::core::GSqrt, false)
 
 } // namespace fliud
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 cv::GKernelPackage cv::gapi::core::fluid::kernels()
 {

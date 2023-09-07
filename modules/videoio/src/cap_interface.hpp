@@ -36,7 +36,7 @@ struct CvVideoWriter
 
 // Modern classes
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace
 {

@@ -29,7 +29,7 @@ const cv::GOrigin& cv::GFrame::priv() const {
     return *m_priv;
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 bool GFrameDesc::operator== (const GFrameDesc &rhs) const {
     return fmt == rhs.fmt && size == rhs.size;
@@ -51,4 +51,4 @@ std::ostream& operator<<(std::ostream& os, const cv::GFrameDesc &d) {
     return os;
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

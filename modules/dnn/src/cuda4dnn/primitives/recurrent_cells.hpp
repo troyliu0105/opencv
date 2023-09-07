@@ -11,7 +11,7 @@
 #include "../csl/tensor_ops.hpp"
 #include "../csl/cudnn/recurrent.hpp"
 
-namespace cv { namespace dnn { namespace cuda4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn {
 
 struct RNNConfiguration
 {
@@ -92,6 +92,6 @@ private:
     csl::Tensor<T> c0Tensor;
 };
 
-}}} /* namespace cv::dnn::cuda4dnn */
+}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn */
 
 #endif //OPENCV_DNN_SRC_CUDA4DNN_PRIMITIVES_RECURRENT_CELLS_HPP

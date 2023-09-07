@@ -19,7 +19,7 @@
 #include <utility>
 #include <algorithm>
 
-namespace cv { namespace dnn { namespace cuda4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn {
 
     struct PoolingConfiguration {
         enum class PoolingMode {
@@ -253,6 +253,6 @@ namespace cv { namespace dnn { namespace cuda4dnn {
         csl::TensorTransform<T> inputTransformer;
     };
 
-}}} /* namespace cv::dnn::cuda4dnn */
+}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_PRIMITIVES_POOLING_HPP */

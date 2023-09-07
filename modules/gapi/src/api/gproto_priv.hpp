@@ -13,7 +13,7 @@
 
 #include "api/gorigin.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace proto {
 

@@ -61,7 +61,7 @@
  *  @}
  */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -191,6 +191,6 @@ namespace detail
     };
 } // namespace detail
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_RENDER_HPP

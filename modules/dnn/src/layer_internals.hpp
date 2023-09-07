@@ -5,7 +5,7 @@
 #ifndef __OPENCV_DNN_SRC_LAYER_INTERNALS_HPP__
 #define __OPENCV_DNN_SRC_LAYER_INTERNALS_HPP__
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 inline namespace detail {
 
@@ -339,5 +339,5 @@ struct DataLayer : public Layer
 
 }  // namespace detail
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn
 #endif  // __OPENCV_DNN_SRC_LAYER_INTERNALS_HPP__

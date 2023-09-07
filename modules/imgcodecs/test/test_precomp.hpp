@@ -8,7 +8,7 @@
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/imgproc/imgproc_c.h"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static inline
 void PrintTo(const ImreadModes& val, std::ostream* os)

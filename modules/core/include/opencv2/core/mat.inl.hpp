@@ -69,7 +69,7 @@
 #pragma clang diagnostic ignored "-Wdeprecated-anon-enum-enum-conversion"
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 CV__DEBUG_NS_BEGIN
 

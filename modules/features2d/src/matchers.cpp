@@ -59,7 +59,7 @@
 #  endif
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /////////////////////// ocl functions for BFMatcher ///////////////////////////

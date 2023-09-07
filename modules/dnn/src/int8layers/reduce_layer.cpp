@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <numeric>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {

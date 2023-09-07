@@ -39,7 +39,7 @@
 #define FLT_EPSILON 1.19209290e-7f
 #endif
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 const float kNegativeInfinity = -std::numeric_limits<float>::infinity();
 

@@ -18,7 +18,7 @@
 #include <opencv2/gapi/util/compiler_hints.hpp>
 #include <opencv2/gapi/gcomputation.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 struct GAPI_EXPORTS GTransform
@@ -82,7 +82,7 @@ public:
         return GTransform(K::descr(), &K::get_pattern, &K::get_substitute);
     }
 };
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #define G_DESCR_HELPER_CLASS(Class) Class##DescrHelper
 

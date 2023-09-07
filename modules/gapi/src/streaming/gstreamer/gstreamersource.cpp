@@ -23,7 +23,7 @@
 #include <gst/video/video-frame.h>
 #endif // HAVE_GSTREAMER
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace gst {
@@ -411,4 +411,4 @@ GStreamerSource::GStreamerSource(std::unique_ptr<Priv> priv):
 } // namespace gst
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

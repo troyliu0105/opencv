@@ -14,7 +14,7 @@
 #include <unordered_map>
 #include <memory>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace gst {
@@ -54,6 +54,6 @@ inline get_streaming_source(cv::Ptr<GStreamerPipeline>& pipeline,
 
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_STREAMING_GSTREAMER_GSTREAMERPIPELINE_HPP

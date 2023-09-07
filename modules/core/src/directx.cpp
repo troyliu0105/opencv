@@ -59,7 +59,7 @@
 
 using namespace cv::ocl;
 
-namespace cv { namespace directx {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace directx {
 
 int getTypeFromDXGI_FORMAT(const int iDXGI_FORMAT)
 {
@@ -894,7 +894,7 @@ Context& initializeContextFromDirect3DDevice9(IDirect3DDevice9* pDirect3DDevice9
 #endif
 }
 
-} // namespace cv::ocl
+} // namespace stcv{} namespace cv = stcv; namespace stcv::ocl
 
 } // namespace directx
 
@@ -1661,4 +1661,4 @@ void convertFromDirect3DSurface9(IDirect3DSurface9* pDirect3DSurface9, OutputArr
 #endif
 }
 
-} } // namespace cv::directx
+} } // namespace stcv{} namespace cv = stcv; namespace stcv::directx

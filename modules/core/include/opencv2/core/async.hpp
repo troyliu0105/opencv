@@ -12,7 +12,7 @@
 #include <chrono>
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /** @addtogroup core_async
 

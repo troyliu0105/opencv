@@ -42,7 +42,7 @@
 #include <ostream>
 #include <string>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 namespace gphoto2 {
@@ -1217,6 +1217,6 @@ Ptr<IVideoCapture> createGPhoto2Capture(const std::string & deviceName)
     return Ptr<gphoto2::DigitalCameraCapture>();
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif

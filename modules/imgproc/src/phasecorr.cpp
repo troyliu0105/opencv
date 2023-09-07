@@ -39,7 +39,7 @@
 #include "precomp.hpp"
 #include <vector>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static void magSpectrums( InputArray _src, OutputArray _dst)

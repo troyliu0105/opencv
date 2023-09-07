@@ -62,7 +62,7 @@
     #endif
 #endif
 
-namespace cv { namespace cuda {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda {
     static inline void checkCudaError(cudaError_t err, const char* file, const int line, const char* func)
     {
         if (cudaSuccess != err) {
@@ -76,7 +76,7 @@ namespace cv { namespace cuda {
     #define cudaSafeCall(expr)  cv::cuda::checkCudaError(expr, __FILE__, __LINE__, CV_Func)
 #endif
 
-namespace cv { namespace cuda
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda
 {
     template <typename T> static inline bool isAligned(const T* ptr, size_t size)
     {
@@ -89,7 +89,7 @@ namespace cv { namespace cuda
     }
 }}
 
-namespace cv { namespace cuda
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda
 {
     namespace device
     {

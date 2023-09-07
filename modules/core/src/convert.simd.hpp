@@ -10,7 +10,7 @@
 #warning "Non-optimal compiler flags: AVX2 without FP16. Generated code is very slow. Consider adding '-mf16c' compiler option."
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace hal {
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 
@@ -20,7 +20,7 @@ void addRNGBias32f(float* arr, const float* scaleBiasPairs, int len);
 void addRNGBias64f(double* arr, const double* scaleBiasPairs, int len);
 
 CV_CPU_OPTIMIZATION_NAMESPACE_END
-} // namespace cv::hal
+} // namespace stcv{} namespace cv = stcv; namespace stcv::hal
 
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 
@@ -94,7 +94,7 @@ void addRNGBias64f( double* arr, const double* scaleBiasPairs, int len )
 }
 
 CV_CPU_OPTIMIZATION_NAMESPACE_END
-} // namespace cv::hal
+} // namespace stcv{} namespace cv = stcv; namespace stcv::hal
 
 // cv::
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN

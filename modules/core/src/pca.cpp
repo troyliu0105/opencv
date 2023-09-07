@@ -47,7 +47,7 @@
 *                                          PCA                                           *
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 PCA::PCA() {}

@@ -45,7 +45,7 @@
 #include "opencv_lapack.h"
 #endif
 
-namespace cv { namespace usac {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace usac {
 // This is the estimator class for estimating a homography matrix between two images. A model estimation method and error calculation method are implemented
 class DLSPnPImpl : public DLSPnP {
 private:

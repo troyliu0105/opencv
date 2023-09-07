@@ -7,7 +7,7 @@
 #include "opencv2/flann/miniflann.hpp"
 #include <map>
 
-namespace cv { namespace usac {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace usac {
 double Utils::getCalibratedThreshold (double threshold, const Matx33d &K1, const Matx33d &K2) {
     return threshold / ((K1(0, 0) + K1(1, 1) +
                          K2(0, 0) + K2(1, 1)) / 4.0);

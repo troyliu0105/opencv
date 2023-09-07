@@ -9,7 +9,7 @@
 #include <vector>
 #include <string>
 
-namespace cv { namespace utils {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils {
 
 typedef std::vector<std::string> Paths;
 CV_EXPORTS bool getConfigurationParameterBool(const char* name, bool defaultValue);

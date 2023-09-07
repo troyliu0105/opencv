@@ -6,7 +6,7 @@
 
 #include "precomp.hpp"
 #include "qrcode_encoder_table.inl.hpp"
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 using std::vector;
 

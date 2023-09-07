@@ -59,7 +59,7 @@ WRAP_ARGS(cv::Size    , cv::gapi::ArgType::CV_SIZE,    G)  \
 WRAP_ARGS(cv::GArg    , cv::gapi::ArgType::CV_ANY,     G)  \
 WRAP_ARGS(cv::Rect    , cv::gapi::ArgType::CV_RECT,    G2) \
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 
 // NB: cv.gapi.CV_BOOL in python
@@ -235,7 +235,7 @@ GOutputs op(const std::string& id, cv::GKernel::M outMeta, T&&... args)
 
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 cv::gapi::wip::GOutputs cv::gapi::wip::op(const std::string& id,
                                           cv::GKernel::M outMeta,

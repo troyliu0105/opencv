@@ -11,7 +11,7 @@
 #include <memory> // unique_ptr
 #include "executor/gabstractstreamingexecutor.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace gimpl
 {
@@ -59,6 +59,6 @@ public:
     const GTypesInfo& inInfo() const { return m_in_info; }
 };
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GSTREAMING_COMPILED_PRIV_HPP

@@ -23,7 +23,7 @@
 #ifdef HAVE_ONEVPL
 #include "streaming/onevpl/onevpl_export.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -58,7 +58,7 @@ struct GAPI_EXPORTS EngineSession {
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // HAVE_ONEVPL
 #endif // GAPI_STREAMING_ONEVPL_ENGINE_ENGINE_SESSION_HPP

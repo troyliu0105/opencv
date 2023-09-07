@@ -41,7 +41,7 @@
 
 #include "precomp.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace ml
 {
@@ -854,6 +854,6 @@ Ptr<EM> EM::load(const String& filepath, const String& nodeName)
 }
 
 }
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 /* End of file. */

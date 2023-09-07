@@ -132,7 +132,7 @@ cv::GMatDesc cv::descr_of(const cv::RMat &mat)
     return mat.desc();
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 std::ostream& operator<<(std::ostream& os, const cv::GMatDesc &desc)
 {
     switch (desc.depth)
@@ -179,4 +179,4 @@ bool GMatDesc::canDescribe(const cv::RMat& mat) const
     return canDescribeHelper(*this, mat);
 }
 
-}// namespace cv
+}// namespace stcv{} namespace cv = stcv; namespace stcv

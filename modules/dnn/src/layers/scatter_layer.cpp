@@ -7,7 +7,7 @@
 
 #include <algorithm> // for std::max & std::min
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class ScatterLayerImpl CV_FINAL : public ScatterLayer
 {
@@ -205,4 +205,4 @@ Ptr<ScatterLayer> ScatterLayer::create(const LayerParams& params)
     return makePtr<ScatterLayerImpl>(params);
 }
 
-}} // namespace cv::dnn
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

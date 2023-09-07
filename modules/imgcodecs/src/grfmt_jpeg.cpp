@@ -88,7 +88,7 @@ extern "C" {
   #undef CV_MANUAL_JPEG_STD_HUFF_TABLES
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 struct JpegErrorMgr

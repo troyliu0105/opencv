@@ -56,7 +56,7 @@
 */
 
 //////////////////////////////// image codec ////////////////////////////////
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup imgcodecs

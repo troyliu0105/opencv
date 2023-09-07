@@ -46,7 +46,7 @@
 
 #include "opencv2/core/cvdef.h"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //#define OPENCV_TRAITS_ENABLE_DEPRECATED

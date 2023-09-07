@@ -6,7 +6,7 @@
 
 #include "opencv2/core/check.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 const char* depthToString(int depth)
 {

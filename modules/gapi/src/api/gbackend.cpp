@@ -114,7 +114,7 @@ bool cv::gapi::GBackend::operator== (const cv::gapi::GBackend &rhs) const
 
 // Abstract Host-side data manipulation ////////////////////////////////////////
 // Reused between CPU backend and more generic GExecutor
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace magazine {
 
@@ -421,4 +421,4 @@ void createMat(const cv::GMatDesc &desc, cv::Mat& mat)
 }
 
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

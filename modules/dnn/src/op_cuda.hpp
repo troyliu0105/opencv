@@ -23,7 +23,7 @@
 #include <memory>
 #include <iterator>
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
     constexpr bool IS_DNN_CUDA_TARGET(int id) {
         return id == DNN_TARGET_CUDA_FP16 || id == DNN_TARGET_CUDA;
@@ -526,6 +526,6 @@ namespace cv { namespace dnn {
     using GetCUDABackendWrapperType = typename GetCUDABackendWrapperType_<T>::type;
 
 #endif
-}} /* namespace cv::dnn */
+}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn */
 
 #endif /* OPENCV_DNN_SRC_OP_CUDA_HPP */

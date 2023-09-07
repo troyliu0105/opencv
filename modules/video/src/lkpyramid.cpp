@@ -821,7 +821,7 @@ int cv::buildOpticalFlowPyramid(InputArray _img, OutputArrayOfArrays pyramid, Si
     return maxLevel;
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace
 {
@@ -1404,7 +1404,7 @@ void SparsePyrLKOpticalFlowImpl::calc( InputArray _prevImg, InputArray _nextImg,
 }
 
 } // namespace
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 cv::Ptr<cv::SparsePyrLKOpticalFlow> cv::SparsePyrLKOpticalFlow::create(Size winSize, int maxLevel, TermCriteria crit, int flags, double minEigThreshold){
     return makePtr<SparsePyrLKOpticalFlowImpl>(winSize,maxLevel,crit,flags,minEigThreshold);
 }

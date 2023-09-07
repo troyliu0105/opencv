@@ -75,7 +75,7 @@
 #include "opencv2/core/hal/intrin.hpp"
 #include <opencv2/core/utils/buffer_area.private.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 #if !defined(CV_CPU_DISPATCH_MODE) || !defined(CV_CPU_OPTIMIZATION_DECLARATIONS_ONLY)
 /******************************* Defs and macros *****************************/

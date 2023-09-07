@@ -11,7 +11,7 @@
 #include <algorithm>
 #include "opencv2/core/utility.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @cond IGNORED

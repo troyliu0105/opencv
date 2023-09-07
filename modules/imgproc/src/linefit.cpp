@@ -40,7 +40,7 @@
 //M*/
 #include "precomp.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static const double eps = 1e-6;

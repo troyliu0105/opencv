@@ -11,7 +11,7 @@
 #include <opencv2/core/cvdef.h>     // GAPI_EXPORTS
 #include <opencv2/gapi/gkernel.hpp> // GKernelPackage
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace imgproc {
 namespace cpu {
@@ -21,7 +21,7 @@ GAPI_EXPORTS GKernelPackage kernels();
 } // namespace cpu
 } // namespace imgproc
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 #endif // OPENCV_GAPI_CPU_IMGPROC_API_HPP

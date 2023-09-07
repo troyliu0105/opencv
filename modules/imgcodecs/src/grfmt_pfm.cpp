@@ -73,7 +73,7 @@ template<typename T> void write_anything(cv::WLByteStream& strm, const T& t)
 
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 PFMDecoder::~PFMDecoder()
 {

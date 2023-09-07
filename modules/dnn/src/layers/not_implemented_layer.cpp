@@ -5,7 +5,7 @@
 #include "../precomp.hpp"
 #include "../dnn_common.hpp"
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
 inline namespace detail {
@@ -186,4 +186,4 @@ void NotImplemented::unRegister()
 } // namespace detail
 
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

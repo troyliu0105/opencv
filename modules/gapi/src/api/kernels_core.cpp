@@ -15,7 +15,7 @@
 #include <tuple>
 #include <numeric>
 
-namespace cv { namespace gapi {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi {
 
 GMat add(const GMat& src1, const GMat& src2, int dtype)
 {
@@ -429,4 +429,4 @@ GOpaque<Size> streaming::size(const GFrame& src)
 }
 
 } //namespace gapi
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv

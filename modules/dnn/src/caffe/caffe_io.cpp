@@ -105,7 +105,7 @@
 #include "caffe_io.hpp"
 #include "glog_emulator.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 
 using std::string;

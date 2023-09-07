@@ -11,7 +11,7 @@
 #include <opencv2/gapi/gkernel.hpp>     // GKernelPackage
 #include <opencv2/gapi/own/exports.hpp> // GAPI_EXPORTS
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 
 /**
@@ -66,6 +66,6 @@ private:
 
 } // namespace python
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_PYTHON_API_HPP

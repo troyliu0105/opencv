@@ -9,7 +9,7 @@
 
 #include <opencv2/gapi/gkernel.hpp> // GKernelPackage
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace calib3d {
 namespace cpu {
@@ -42,7 +42,7 @@ namespace detail {
 };
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 #endif // OPENCV_GAPI_CPU_STEREO_API_HPP

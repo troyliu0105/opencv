@@ -15,7 +15,7 @@
 
 #include "backends/fluid/gfluidutils.hpp" // saturate
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 bool operator == (const fluid::Border& b1, const fluid::Border& b2)
@@ -748,5 +748,5 @@ int fluid::Buffer::y() const
     return m_priv->y();
 }
 
-} // namespace cv::gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv::gapi
+} // namespace stcv{} namespace cv = stcv; namespace stcv

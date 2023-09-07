@@ -11,7 +11,7 @@
 #include <iterator>
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 enum Base64State{

@@ -8,7 +8,7 @@
 #include <opencv2/objdetect/aruco_dictionary.hpp>
 #include <numeric>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 using namespace std;
 

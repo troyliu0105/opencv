@@ -12,7 +12,7 @@
 #include <opencv2/dnn/shape_utils.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 #ifdef HAVE_CANN
 
@@ -326,4 +326,4 @@ void CannNet::destroyDataset(aclmdlDataset** dataset)
 
 #endif // HAVE_CANN
 
-}} // namespace cv::dnn
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

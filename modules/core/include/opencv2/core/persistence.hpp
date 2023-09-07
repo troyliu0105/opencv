@@ -100,7 +100,7 @@ JSON.
 #include "opencv2/core/types.hpp"
 #include "opencv2/core/mat.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /** @addtogroup core_xml
 

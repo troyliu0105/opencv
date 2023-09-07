@@ -199,7 +199,7 @@ location of points on the plane, building special graphs (such as NNG,RNG), and 
   @}
 */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /** @addtogroup imgproc

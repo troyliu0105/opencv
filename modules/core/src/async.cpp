@@ -22,7 +22,7 @@
 #include <chrono>
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /**
 Manages shared state of asynchronous result
@@ -241,7 +241,7 @@ struct AsyncArray::Impl
 
 #else  // OPENCV_DISABLE_THREAD_SUPPORT
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // no threading
 struct AsyncArray::Impl
@@ -401,7 +401,7 @@ struct AsyncArray::Impl
 
 #endif  // OPENCV_DISABLE_THREAD_SUPPORT
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 AsyncArray::AsyncArray() CV_NOEXCEPT
     : p(NULL)

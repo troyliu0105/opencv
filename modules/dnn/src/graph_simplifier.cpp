@@ -11,7 +11,7 @@
 
 #include <queue>
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 Subgraph::~Subgraph() {}
 
@@ -204,4 +204,4 @@ void simplifySubgraphs(const Ptr<ImportGraphWrapper>& net,
     }
 }
 
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

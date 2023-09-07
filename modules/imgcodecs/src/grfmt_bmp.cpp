@@ -43,7 +43,7 @@
 #include "precomp.hpp"
 #include "grfmt_bmp.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static const char* fmtSignBmp = "BM";

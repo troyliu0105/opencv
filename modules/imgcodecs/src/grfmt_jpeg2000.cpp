@@ -65,7 +65,7 @@
 #undef uchar
 #undef ulong
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 struct JasperInitializer

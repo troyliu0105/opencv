@@ -28,7 +28,7 @@
 
 #include <opencv2/gapi/oak/infer.hpp> // infer params
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 // Forward declaration
 class GOAKContext;
@@ -276,7 +276,7 @@ struct OAKComponent
     GOAKKernel k;
 };
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 using OAKGraph = ade::TypedGraph
     < cv::gimpl::Protocol
@@ -915,7 +915,7 @@ void cv::gimpl::GOAKExecutable::run(GIslandExecutable::IInput  &in,
     }
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace oak {
 
@@ -1051,7 +1051,7 @@ GAPI_OAK_KERNEL(GOAKSobelXY, cv::gapi::oak::GSobelXY) {
 } // anonymous namespace
 } // namespace oak
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 class GOAKBackendImpl final : public cv::gapi::GBackend::Priv {
     virtual void unpackKernel(ade::Graph            &graph,
@@ -1096,7 +1096,7 @@ cv::gapi::GBackend cv::gapi::oak::backend() {
     return this_backend;
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace oak {
 
@@ -1109,11 +1109,11 @@ cv::gapi::GKernelPackage kernels() {
 
 } // namespace oak
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #else
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace oak {
 
@@ -1127,6 +1127,6 @@ cv::gapi::GBackend backend() {
 
 } // namespace oak
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // HAVE_OAK

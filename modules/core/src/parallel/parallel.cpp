@@ -21,7 +21,7 @@
 #include "plugin_parallel_wrapper.impl.hpp"
 
 
-namespace cv { namespace parallel {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace parallel {
 
 int numThreads = -1;
 

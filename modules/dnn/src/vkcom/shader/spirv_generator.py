@@ -19,7 +19,7 @@ license_decl = \
 '// Third party copyrights are property of their respective owners.\n\n'
 precomp = '#include \"../../precomp.hpp\"\n'
 ns_head = '\nnamespace cv { namespace dnn { namespace vkcom {\n\n'
-ns_tail = '\n}}} // namespace cv::dnn::vkcom\n'
+ns_tail = '\n}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom\n'
 
 headfile = open('spv_shader.hpp', 'w')
 headfile.write(license_decl)

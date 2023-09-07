@@ -20,7 +20,7 @@
 namespace IE = InferenceEngine;
 using GIEParam = cv::gapi::ie::detail::ParamDesc;
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace ie {
 namespace wrap {

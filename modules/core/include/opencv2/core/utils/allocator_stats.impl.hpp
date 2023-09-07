@@ -34,7 +34,7 @@
 
 #endif  // CV_CXX11
 
-namespace cv { namespace utils {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils {
 
 #ifdef CV__ALLOCATOR_STATS_LOG
 namespace {

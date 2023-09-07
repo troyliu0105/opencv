@@ -65,7 +65,7 @@ using namespace cv::dnn::cuda4dnn;
 #endif
 #include <opencv2/core/utils/logger.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {

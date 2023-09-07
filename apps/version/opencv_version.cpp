@@ -15,7 +15,7 @@
 #endif
 
 // defined in core/private.hpp
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 CV_EXPORTS const char* currentParallelFramework();
 }
 

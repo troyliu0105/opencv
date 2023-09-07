@@ -6,7 +6,7 @@
 #include "opencv2/video/detail/tracking.detail.hpp"
 #include "tracking_feature.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 inline namespace tracking {
 
@@ -579,4 +579,4 @@ float CvHaarEvaluator::FeatureHaar::getSum(const Mat& image, Rect imageROI) cons
     return value;
 }
 
-}}}  // namespace cv::detail::tracking
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::detail::tracking

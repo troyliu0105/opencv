@@ -45,7 +45,7 @@ void cv::detail::GArrayU::setKind(cv::detail::OpaqueKind kind)
     m_priv->kind = kind;
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 std::ostream& operator<<(std::ostream& os, const cv::GArrayDesc &)
 {
     // FIXME: add type information here

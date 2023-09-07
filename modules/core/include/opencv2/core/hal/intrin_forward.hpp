@@ -6,7 +6,7 @@
 #error "Need to pre-define forward width"
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @cond IGNORED

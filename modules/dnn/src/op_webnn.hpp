@@ -27,7 +27,7 @@
 
 #endif  // HAVE_WEBNN
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 constexpr bool haveWebnn() {
 #ifdef HAVE_WEBNN
@@ -165,7 +165,7 @@ public:
 void forwardWebnn(const std::vector<Ptr<BackendWrapper> >& outBlobsWrappers,
                    Ptr<BackendNode>& node, bool isAsync);
 
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn
 
 
 #endif  // __OPENCV_DNN_OP_WEBNN_HPP__

@@ -28,7 +28,7 @@ Implementation of various functions which are related to Tensorflow models readi
 #include "../caffe/caffe_io.hpp"
 #include "../caffe/glog_emulator.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 
 using std::string;

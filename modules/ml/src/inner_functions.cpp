@@ -40,7 +40,7 @@
 
 #include "precomp.hpp"
 
-namespace cv { namespace ml {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ml {
 
 ParamGrid::ParamGrid() { minVal = maxVal = 0.; logStep = 1; }
 ParamGrid::ParamGrid(double _minVal, double _maxVal, double _logStep)

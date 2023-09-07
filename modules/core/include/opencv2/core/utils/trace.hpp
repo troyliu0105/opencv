@@ -7,7 +7,7 @@
 
 #include <opencv2/core/cvdef.h>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace utils {
 namespace trace {
 

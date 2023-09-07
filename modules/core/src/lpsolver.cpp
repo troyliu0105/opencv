@@ -45,7 +45,7 @@
 #define dprintf(x)
 #define print_matrix(x)
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 using std::vector;

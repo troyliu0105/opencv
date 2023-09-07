@@ -6,7 +6,7 @@
 
 #include "opencv2/objdetect/aruco_detector.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 
 //! @addtogroup objdetect_aruco

@@ -29,7 +29,7 @@
 
 using cv::gapi::own::saturate;
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 
@@ -3138,6 +3138,6 @@ CV_CPU_OPTIMIZATION_NAMESPACE_END
 
 }  // namespace fluid
 }  // namespace gapi
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // !defined(GAPI_STANDALONE)

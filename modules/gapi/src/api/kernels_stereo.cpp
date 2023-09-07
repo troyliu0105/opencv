@@ -6,7 +6,7 @@
 
 #include <opencv2/gapi/stereo.hpp>
 
-namespace cv { namespace gapi {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi {
 
 GMat stereo(const GMat& left, const GMat& right,
             const cv::gapi::StereoOutputFormat of)
@@ -14,5 +14,5 @@ GMat stereo(const GMat& left, const GMat& right,
     return calib3d::GStereo::on(left, right, of);
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 } // namespace gapi

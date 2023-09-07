@@ -40,7 +40,7 @@
 #include <codecvt>
 #include "opencv2/core/directx.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -471,5 +471,5 @@ CfgParamDeviceSelector::DeviceContexts CfgParamDeviceSelector::select_context() 
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // HAVE_ONEVPL

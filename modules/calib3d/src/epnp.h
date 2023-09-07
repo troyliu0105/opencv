@@ -4,7 +4,7 @@
 #include "precomp.hpp"
 #include "opencv2/core/core_c.h"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class epnp {

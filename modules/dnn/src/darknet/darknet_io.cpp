@@ -75,7 +75,7 @@
 
 #include "darknet_io.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
     namespace dnn {
         namespace darknet {
 

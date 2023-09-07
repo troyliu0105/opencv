@@ -66,7 +66,7 @@
     #define __CV_CUDA_HOST_DEVICE__
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     namespace cuda
     {

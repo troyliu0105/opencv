@@ -60,7 +60,7 @@ namespace tiff_dummy_namespace {
 }
 using namespace tiff_dummy_namespace;
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #define CV_TIFF_CHECK_CALL(call) \

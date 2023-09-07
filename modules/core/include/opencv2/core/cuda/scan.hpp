@@ -54,7 +54,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     enum ScanKind { EXCLUSIVE = 0,  INCLUSIVE = 1 };
 

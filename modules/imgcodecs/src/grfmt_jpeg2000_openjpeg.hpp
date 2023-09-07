@@ -12,7 +12,7 @@
 #include "grfmt_base.hpp"
 #include <openjpeg.h>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 struct OpjStreamDeleter
 {
@@ -105,7 +105,7 @@ public:
     ImageEncoder newEncoder() const CV_OVERRIDE;
 };
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif
 

@@ -14,7 +14,7 @@
 /* ************************************************************************* */
 // Declaration of functions
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // Gaussian 2D convolution

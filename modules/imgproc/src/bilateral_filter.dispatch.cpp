@@ -55,7 +55,7 @@
                                    Bilateral Filtering
 \****************************************************************************************/
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 #ifdef HAVE_OPENCL
 

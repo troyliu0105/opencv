@@ -8,7 +8,7 @@
 
 #include "opencv2/core/mat.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 #ifdef HAVE_OPENCL
 

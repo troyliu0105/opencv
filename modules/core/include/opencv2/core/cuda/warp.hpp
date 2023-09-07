@@ -49,7 +49,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     struct Warp
     {
@@ -132,7 +132,7 @@ namespace cv { namespace cuda { namespace device
                 *t = value;
         }
     };
-}}} // namespace cv { namespace cuda { namespace cudev
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace cudev
 
 //! @endcond
 

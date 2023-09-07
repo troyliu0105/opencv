@@ -15,7 +15,7 @@
 
 #include "compiler/gmodel.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 
     struct SubgraphMatch {
@@ -98,5 +98,5 @@ namespace gimpl {
                                           const cv::gimpl::SubgraphMatch& patternToGraphMatch);
 
 } //namespace gimpl
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // OPENCV_GAPI_PATTERN_MATCHING_HPP

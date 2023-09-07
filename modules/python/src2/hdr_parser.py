@@ -630,7 +630,7 @@ class CppHeaderParser(object):
         """
         adds the dot-separated container class/namespace names to the bare function/class name, e.g. when we have
 
-        namespace cv {
+        namespace stcv{} namespace cv = stcv; namespace stcv {
         class A {
         public:
             f(int);

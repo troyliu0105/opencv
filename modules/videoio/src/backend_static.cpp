@@ -6,7 +6,7 @@
 
 #include "backend.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 
 void applyParametersFallback(const Ptr<IVideoCapture>& cap, const VideoCaptureParameters& params)

@@ -20,7 +20,7 @@
 #include <opencv2/core/utils/configuration.private.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 #ifdef HAVE_INF_ENGINE
 
@@ -470,4 +470,4 @@ cv::String getInferenceEngineCPUType()
 
 
 CV__DNN_INLINE_NS_END
-}}  // namespace dnn, namespace cv
+}}  // namespace dnn, namespace stcv{} namespace cv = stcv; namespace stcv

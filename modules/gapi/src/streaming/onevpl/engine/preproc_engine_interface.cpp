@@ -23,7 +23,7 @@
 
 #include "logger.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 
@@ -107,4 +107,4 @@ IPreprocEngine::create_preproc_engine_impl<onevpl::VPPPreprocDispatcher,
                                            const onevpl::Context &ctx);
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

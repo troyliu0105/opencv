@@ -48,7 +48,7 @@
 
 #ifdef HAVE_IMGCODEC_PXM
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 enum PxMMode

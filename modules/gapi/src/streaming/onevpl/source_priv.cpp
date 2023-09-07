@@ -20,7 +20,7 @@
 #include "logger.hpp"
 
 #ifndef HAVE_ONEVPL
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -33,7 +33,7 @@ GMetaArg GSource::Priv::descr_of() const {
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #else // HAVE_ONEVPL
 
@@ -41,7 +41,7 @@ GMetaArg GSource::Priv::descr_of() const {
 mfxLoader mfx_handle = MFXLoad();
 int impl_number = 0;
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -370,6 +370,6 @@ GMetaArg GSource::Priv::descr_of() const
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // HAVE_ONEVPL

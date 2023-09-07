@@ -2,7 +2,7 @@
 #define FISHEYE_INTERNAL_H
 #include "precomp.hpp"
 
-namespace cv { namespace internal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace internal {
 
 struct CV_EXPORTS IntrinsicParams
 {

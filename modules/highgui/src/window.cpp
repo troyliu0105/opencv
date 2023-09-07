@@ -51,7 +51,7 @@
 using namespace cv;
 using namespace cv::highgui_backend;
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 Mutex& getWindowMutex()
 {
@@ -175,7 +175,7 @@ static void cleanupTrackbarCallbacksWithData_()
     }
 }
 
-}}  // namespace cv::impl
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::impl
 
 using namespace cv::impl;
 

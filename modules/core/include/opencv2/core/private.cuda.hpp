@@ -86,7 +86,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda {
     CV_EXPORTS cv::String getNppErrorMessage(int code);
     CV_EXPORTS cv::String getCudaDriverApiErrorMessage(int code);
 
@@ -111,7 +111,7 @@ static inline CV_NORETURN void throw_no_cuda() { CV_Error(cv::Error::GpuNotSuppo
 
 static inline CV_NORETURN void throw_no_cuda() { CV_Error(cv::Error::StsNotImplemented, "The called functionality is disabled for current build or platform"); }
 
-namespace cv { namespace cuda
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda
 {
     static inline void checkNppError(int code, const char* file, const int line, const char* func)
     {

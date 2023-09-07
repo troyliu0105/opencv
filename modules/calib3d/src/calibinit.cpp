@@ -93,7 +93,7 @@
 #define DPRINTF(...)
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 //=====================================================================================
 // Implementation for the enhanced calibration object detection
@@ -117,7 +117,7 @@ struct QuadCountour {
 
 } // namespace
 #include "opencv2/imgproc/imgproc_c.h"
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 struct CvContourEx
 {

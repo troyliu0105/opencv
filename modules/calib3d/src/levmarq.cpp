@@ -74,7 +74,7 @@
    POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class LMSolverImpl CV_FINAL : public LMSolver

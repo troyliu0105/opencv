@@ -47,7 +47,7 @@
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup video_track

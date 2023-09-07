@@ -23,7 +23,7 @@ namespace {
 struct ONNXCallContext;
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace onnx {
 
@@ -144,7 +144,7 @@ public:
 
 } // namespace onnx
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 namespace {
 
@@ -575,7 +575,7 @@ void cv::gimpl::onnx::GONNXExecutable::run(std::vector<InObj>  &&input_objs,
     for (auto &it : output_objs) magazine::writeBack(m_res, it.first, it.second);
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace onnx {
 
@@ -1123,7 +1123,7 @@ struct InferList2: public cv::detail::KernelTag {
 
 } // namespace onnx
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 namespace {
     class GONNXBackendImpl final: public cv::gapi::GBackend::Priv {

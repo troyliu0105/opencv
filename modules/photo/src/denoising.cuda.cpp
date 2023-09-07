@@ -69,7 +69,7 @@ void cv::cuda::fastNlMeansDenoisingColored(InputArray, OutputArray, float, float
 //////////////////////////////////////////////////////////////////////////////////
 //// Non Local Means Denosing (brute force)
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     namespace imgproc
     {
@@ -101,7 +101,7 @@ void cv::cuda::nonLocalMeans(InputArray _src, OutputArray _dst, float h, int sea
     func(src, dst, search_window/2, block_window/2, h, borderMode, StreamAccessor::getStream(stream));
 }
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     namespace imgproc
     {

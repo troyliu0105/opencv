@@ -12,7 +12,7 @@
 #include <thread>
 #include <chrono>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace oak {
 
@@ -55,4 +55,4 @@ cv::GMetaArg ColorCamera::descr_of() const {
 
 } // namespace oak
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

@@ -47,7 +47,7 @@
 
 ///////////////////////////////// UMat implementation ///////////////////////////////
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // forward decls, implementation is below in this file
 void setSize(UMat& m, int _dims, const int* _sz, const size_t* _steps,

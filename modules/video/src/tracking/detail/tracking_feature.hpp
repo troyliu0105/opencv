@@ -13,7 +13,7 @@
  * TODO Changed CvHaarEvaluator based on ADABOOSTING implementation (Grabner et al.)
  */
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 inline namespace tracking {
 
@@ -163,6 +163,6 @@ protected:
 
 //! @}
 
-}}}  // namespace cv::detail::tracking
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::detail::tracking
 
 #endif

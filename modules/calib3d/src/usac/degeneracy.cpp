@@ -5,7 +5,7 @@
 #include "../precomp.hpp"
 #include "../usac.hpp"
 
-namespace cv { namespace usac {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace usac {
 class EpipolarGeometryDegeneracyImpl : public EpipolarGeometryDegeneracy {
 private:
     const Mat * points_mat;

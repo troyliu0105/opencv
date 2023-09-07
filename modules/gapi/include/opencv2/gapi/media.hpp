@@ -16,16 +16,16 @@
 #include <opencv2/gapi/util/any.hpp>
 
 // Forward declaration
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace s11n {
 struct IOStream;
 struct IIStream;
 } // namespace s11n
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /** \addtogroup gapi_data_structures
  * @{
@@ -252,6 +252,6 @@ public:
 };
 /** @} */
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_MEDIA_HPP

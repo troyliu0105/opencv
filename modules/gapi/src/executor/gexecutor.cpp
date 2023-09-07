@@ -84,7 +84,7 @@ cv::gimpl::GExecutor::GExecutor(std::unique_ptr<ade::Graph> &&g_model)
     prepareForNewStream();
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace magazine {
 namespace {
@@ -191,7 +191,7 @@ void assignMetaStubExec(Mag& mag, const RcDesc &rc, const cv::GRunArg::Meta &met
 }
 
 } // anonymous namespace
-}}} // namespace cv::gimpl::magazine
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::gimpl::magazine
 
 
 void cv::gimpl::GExecutor::initResource(const ade::NodeHandle & nh, const ade::NodeHandle &orig_nh)

@@ -15,7 +15,7 @@
 #ifdef HAVE_DSHOW
 
 class videoInput;
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class VideoCapture_DShow : public IVideoCapture

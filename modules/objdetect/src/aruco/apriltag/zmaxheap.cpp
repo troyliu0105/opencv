@@ -27,7 +27,7 @@
 // Heap property: a parent is greater than (or equal to) its children.
 
 #define MIN_CAPACITY 16
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 struct zmaxheap
 {

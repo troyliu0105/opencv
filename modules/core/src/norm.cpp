@@ -11,7 +11,7 @@
 *                                         norm                                           *
 \****************************************************************************************/
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 
 extern const uchar popCountTable[256] =
 {

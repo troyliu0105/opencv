@@ -54,7 +54,7 @@
 // Proceedings of the 13th Scandinavian Conference on Image Analysis, Gothenburg, Sweden
 //
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static void
@@ -578,7 +578,7 @@ FarnebackUpdateFlow_GaussianBlur( const Mat& _R0, const Mat& _R1,
 
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace
 {
@@ -1189,7 +1189,7 @@ void FarnebackOpticalFlowImpl::calc(InputArray _prev0, InputArray _next0,
     }
 }
 } // namespace
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 void cv::calcOpticalFlowFarneback( InputArray _prev0, InputArray _next0,
                                InputOutputArray _flow0, double pyr_scale, int levels, int winsize,

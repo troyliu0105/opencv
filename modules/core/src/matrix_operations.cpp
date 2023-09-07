@@ -143,7 +143,7 @@ void cv::vconcat(InputArray _src, OutputArray dst)
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static bool ocl_setIdentity( InputOutputArray _m, const Scalar& s )
 {
@@ -227,7 +227,7 @@ void cv::setIdentity( InputOutputArray _m, const Scalar& s )
 }
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 UMat UMat::eye(int rows, int cols, int type, UMatUsageFlags usageFlags)
 {
@@ -338,7 +338,7 @@ cv::Mat cv::Mat::cross(InputArray _m) const
 
 ////////////////////////////////////////// reduce ////////////////////////////////////////////
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T, typename ST, class Op> static void
@@ -599,7 +599,7 @@ REDUCE_OP(32f, Min, float, float)
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static bool ocl_reduce(InputArray _src, OutputArray _dst,
                        int dim, int op, int op0, int stype, int dtype)
@@ -861,7 +861,7 @@ void cv::reduce(InputArray _src, OutputArray _dst, int dim, int op, int dtype)
 
 //////////////////////////////////////// sort ///////////////////////////////////////////
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T> static void sort_( const Mat& src, Mat& dst, int flags )

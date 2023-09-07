@@ -82,7 +82,7 @@ https://www.learnopencv.com/non-photorealistic-rendering-using-opencv-python-c/
 @}
   */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup photo

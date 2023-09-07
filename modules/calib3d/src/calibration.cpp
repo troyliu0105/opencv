@@ -3378,7 +3378,7 @@ cvDecomposeProjectionMatrix( const CvMat *projMatr, CvMat *calibMatr,
 
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static void collectCalibrationData( InputArrayOfArrays objectPoints,
@@ -3519,7 +3519,7 @@ static Mat prepareDistCoeffs(Mat& distCoeffs0, int rtype, int outputSize = 14)
     return distCoeffs;
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 void cv::Rodrigues(InputArray _src, OutputArray _dst, OutputArray _jacobian)
@@ -4234,7 +4234,7 @@ void cv::decomposeProjectionMatrix( InputArray _projMatrix, OutputArray _cameraM
 }
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static void adjust3rdMatrix(InputArrayOfArrays _imgpt1_0,

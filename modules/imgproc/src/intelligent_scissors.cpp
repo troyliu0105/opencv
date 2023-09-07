@@ -13,7 +13,7 @@
 
 #include <queue>  // std::priority_queue
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace segmentation {
 
 namespace {

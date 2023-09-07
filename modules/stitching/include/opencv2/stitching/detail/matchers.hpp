@@ -48,7 +48,7 @@
 
 #include "opencv2/opencv_modules.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 //! @addtogroup stitching_match
@@ -262,6 +262,6 @@ protected:
 //! @} stitching_match
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_STITCHING_MATCHERS_HPP

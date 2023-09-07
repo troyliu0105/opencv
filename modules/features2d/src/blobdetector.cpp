@@ -53,7 +53,7 @@
 #include "opencv2/highgui.hpp"
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // TODO: To be removed in 5.x branch

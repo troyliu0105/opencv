@@ -18,7 +18,7 @@
 #include <opencv2/gapi/own/assert.hpp>
 
 // TODO GAPI_EXPORTS or so
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 // Forward declaration; GNode and GOrigin are an internal
 // (user-inaccessible) classes.
@@ -108,6 +108,6 @@ GAPI_EXPORTS GFrameDesc descr_of(const MediaFrame &frame);
 
 GAPI_EXPORTS std::ostream& operator<<(std::ostream& os, const cv::GFrameDesc &desc);
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GFRAME_HPP

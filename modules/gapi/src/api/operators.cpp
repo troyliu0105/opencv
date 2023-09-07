@@ -12,7 +12,7 @@
 #include <opencv2/gapi/gscalar.hpp>
 #include <opencv2/gapi/operators.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 cv::GMat operator+(const cv::GMat& lhs, const cv::GMat& rhs)
 {

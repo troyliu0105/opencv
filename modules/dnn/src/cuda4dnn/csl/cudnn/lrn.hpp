@@ -16,7 +16,7 @@
 
 #include <cstddef>
 
-namespace cv { namespace dnn { namespace cuda4dnn { namespace csl { namespace cudnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn { namespace csl { namespace cudnn {
 
     class LRNDescriptor {
     public:
@@ -200,6 +200,6 @@ namespace cv { namespace dnn { namespace cuda4dnn { namespace csl { namespace cu
         }
     }
 
-}}}}} /* namespace cv::dnn::cuda4dnn::csl::cudnn */
+}}}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn::csl::cudnn */
 
 #endif /* OPENCV_DNN_CUDA4DNN_CSL_CUDNN_LRN_HPP */

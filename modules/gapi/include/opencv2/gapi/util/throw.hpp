@@ -15,7 +15,7 @@
 #include <stdio.h>
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace util
 {
@@ -31,6 +31,6 @@ template <class ExceptionType>
 #endif
 }
 } // namespace util
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_UTIL_THROW_HPP

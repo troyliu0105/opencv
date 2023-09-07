@@ -46,7 +46,7 @@
 
 #ifdef HAVE_IMGCODEC_HDR
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 HdrDecoder::HdrDecoder()

@@ -10,7 +10,7 @@
 
 #include <opencv2/core.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 
@@ -309,6 +309,6 @@ CONVERTTO_SCALED_SIMD(float, float)
 
 }  // namespace fluid
 }  // namespace gapi
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // !defined(GAPI_STANDALONE)

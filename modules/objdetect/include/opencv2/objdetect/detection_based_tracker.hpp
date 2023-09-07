@@ -48,7 +48,7 @@
 
 #include <vector>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup objdetect_cascade_classifier

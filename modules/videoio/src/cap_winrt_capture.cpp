@@ -43,7 +43,7 @@ using namespace Microsoft::WRL;
 
 using namespace ::std;
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
     /******************************* exported API functions **************************************/
 

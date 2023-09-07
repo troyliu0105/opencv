@@ -12,7 +12,7 @@
 
 #include <opencv2/gapi/gframe.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -24,7 +24,7 @@ int MediaFormat_to_chroma(cv::MediaFormat value);
 
 mfxFrameInfo to_mfxFrameInfo(const cv::GFrameDesc& frame_info);
 } // namespace utils
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 } // namespace gapi
 } // namespace wip
 } // namespace onevpl

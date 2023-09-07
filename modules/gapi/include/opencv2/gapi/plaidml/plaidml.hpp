@@ -11,7 +11,7 @@
 #include <string>
 #include <opencv2/gapi/gcommon.hpp> // CompileArgTag
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -48,6 +48,6 @@ namespace detail
     };
 } // namespace detail
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_PLAIDML_PLAIDML_HPP

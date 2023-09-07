@@ -5,7 +5,7 @@
 #ifndef OPENCV_RENDER_OCV_HPP
 #define OPENCV_RENDER_OCV_HPP
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -21,6 +21,6 @@ void GAPI_EXPORTS drawPrimitivesOCVBGR(cv::Mat& bgr, const Prims& prims, std::sh
 } // namespace draw
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_RENDER_OCV_HPP

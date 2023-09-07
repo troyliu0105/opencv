@@ -14,7 +14,7 @@
 #ifndef _OPENCV_UNIONFIND_HPP_
 #define _OPENCV_UNIONFIND_HPP_
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 
 typedef struct unionfind unionfind_t;

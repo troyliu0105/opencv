@@ -8,7 +8,7 @@
 #include "parallel.hpp"
 #include "opencv2/core/parallel/backend/parallel_for.openmp.hpp"
 
-namespace cv { namespace parallel {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace parallel {
 
 static
 std::shared_ptr<cv::parallel::openmp::ParallelForBackend>& getInstance()

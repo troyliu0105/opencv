@@ -58,7 +58,7 @@
 #include "grfmt_base.hpp"
 #include "bitstrm.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class PAMDecoder CV_FINAL : public BaseImageDecoder

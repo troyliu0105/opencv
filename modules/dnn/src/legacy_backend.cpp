@@ -15,7 +15,7 @@
 #include "op_timvx.hpp"
 #include "op_cann.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
@@ -128,4 +128,4 @@ Ptr<BackendWrapper> wrapMat(int backendId, int targetId, cv::Mat& m)
 
 }  // namespace detail
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

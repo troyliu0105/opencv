@@ -9,7 +9,7 @@
 #include "halide_scheduler.hpp"
 #include "op_halide.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {
@@ -298,4 +298,4 @@ bool HalideScheduler::process(Ptr<BackendNode>& node)
 }
 
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

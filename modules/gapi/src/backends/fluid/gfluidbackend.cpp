@@ -140,7 +140,7 @@ cv::gapi::GBackend cv::gapi::fluid::backend()
 
 // FluidAgent implementation ///////////////////////////////////////////////////
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 struct FluidMapper
 {
     FluidMapper(double ratio, int lpi) : m_ratio(ratio), m_lpi(lpi) {}
@@ -206,7 +206,7 @@ private:
 public:
     using FluidAgent::FluidAgent;
 };
-}} // namespace cv::gimpl
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::gimpl
 
 cv::gimpl::FluidAgent::FluidAgent(const ade::Graph &g, ade::NodeHandle nh)
     : k(GConstFluidModel(g).metadata(nh).get<FluidUnit>().k)        // init(0)

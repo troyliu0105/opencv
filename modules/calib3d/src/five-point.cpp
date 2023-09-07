@@ -33,7 +33,7 @@
 
 #include "usac.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class EMEstimatorCallback CV_FINAL : public PointSetRegistrator::Callback

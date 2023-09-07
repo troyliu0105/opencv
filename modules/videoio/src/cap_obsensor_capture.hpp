@@ -29,7 +29,7 @@
 #include "cap_obsensor/obsensor_stream_channel_interface.hpp"
 
 #ifdef HAVE_OBSENSOR
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 class VideoCapture_obsensor : public IVideoCapture
 {
 public:
@@ -63,6 +63,6 @@ private:
     obsensor::CameraParam camParam_;
     int camParamScale_;
 };
-} // namespace cv::
+} // namespace stcv{} namespace cv = stcv; namespace stcv::
 #endif // HAVE_OBSENSOR
 #endif // OPENCV_VIDEOIO_CAP_OBSENSOR_CAPTURE_HPP

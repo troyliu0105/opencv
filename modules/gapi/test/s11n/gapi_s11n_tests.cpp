@@ -45,7 +45,7 @@ struct MyCustomTypeNoS11N {
 };
 } // anonymous namespace
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace s11n {
 namespace detail {
@@ -89,10 +89,10 @@ template<> struct S11N<MyCustomType> {
 } // namespace detail
 } // namespace s11n
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 template<> struct CompileArgTag<EmptyCustomType> {
     static const char* tag() {
@@ -124,7 +124,7 @@ template<> struct CompileArgTag<MyCustomTypeNoS11N> {
     }
 };
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 namespace {
 class MyRMatAdapter : public cv::RMat::IAdapter {

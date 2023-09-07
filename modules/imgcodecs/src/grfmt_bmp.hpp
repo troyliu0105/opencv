@@ -45,7 +45,7 @@
 
 #include "grfmt_base.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 enum BmpCompression

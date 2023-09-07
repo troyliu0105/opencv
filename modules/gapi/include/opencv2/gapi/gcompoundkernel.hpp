@@ -13,7 +13,7 @@
 #include <opencv2/gapi/gkernel.hpp>
 #include <opencv2/gapi/garg.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi
 {
 namespace compound
@@ -134,6 +134,6 @@ public:
 #define GAPI_COMPOUND_KERNEL(Name, API) \
     struct Name: public cv::detail::GCompoundKernelImpl<Name, API>
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GCOMPOUNDKERNEL_HPP

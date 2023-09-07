@@ -1,7 +1,7 @@
 #error This is a shadow header file, which is not intended for processing by any compiler. \
        Only bindings parser should handle this file.
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 struct GAPI_EXPORTS_W_SIMPLE GCompileArg
 {
@@ -81,4 +81,4 @@ namespace detail
     gapi::GNetParam GAPI_EXPORTS_W strip(gapi::ie::PyParams params);
     gapi::GNetParam GAPI_EXPORTS_W strip(gapi::onnx::PyParams params);
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

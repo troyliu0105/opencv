@@ -14,7 +14,7 @@
 
 using namespace std;
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static
 CvResult CV_API_CALL cv_capture_open(const char* filename, int, CV_OUT CvPluginCapture* handle)

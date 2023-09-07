@@ -52,7 +52,7 @@
 #define CV_LOG_SKIP(...) {}
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace utils {
 namespace trace {
 namespace details {

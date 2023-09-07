@@ -49,7 +49,7 @@
 #include <vector>
 #include "common.hpp"
 
-namespace cv { namespace dnn { namespace ocl4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace ocl4dnn {
 
 struct OCL4DNNConvConfig
 {
@@ -524,6 +524,6 @@ class OCL4DNNSoftmax
         bool use_half_;
 };
 
-}}} // namespace cv::dnn::ocl4dnn
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::ocl4dnn
 
 #endif

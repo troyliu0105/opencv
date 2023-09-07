@@ -22,7 +22,7 @@
 #include <opencv2/gapi/util/util.hpp>
 #include <opencv2/gapi/own/convert.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace detail
 {
@@ -235,6 +235,6 @@ template<typename T> struct GObtainCtor<GOpaque<T> > {
     static HostCtor get() { return HostCtor{ConstructOpaque{&GOpaque<T>::Ctor}}; };
 };
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GTYPE_TRAITS_HPP

@@ -57,7 +57,7 @@
 #include "opencv2/core/cvdef.h"
 #include "opencv2/core/cvstd.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup core_utils

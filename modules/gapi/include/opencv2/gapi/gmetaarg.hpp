@@ -20,7 +20,7 @@
 #include <opencv2/gapi/gopaque.hpp>
 #include <opencv2/gapi/gframe.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 // FIXME: Rename to GMeta?
 // FIXME: user shouldn't deal with it - put to detail?
@@ -75,6 +75,6 @@ namespace gapi { namespace own {
     GAPI_EXPORTS cv::GMetaArgs descrs_of(const std::vector<Mat> &vec);
 }} // namespace gapi::own
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GMETAARG_HPP

@@ -49,7 +49,7 @@
 #include "undistort.simd.hpp"
 #include "undistort.simd_declarations.hpp" // defines CV_CPU_DISPATCH_MODES_ALL=AVX2,...,BASELINE based on CMakeLists.txt content
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 Mat getDefaultNewCameraMatrix( InputArray _cameraMatrix, Size imgsize,
@@ -564,7 +564,7 @@ void cvUndistortPoints(const CvMat* _src, CvMat* _dst, const CvMat* _cameraMatri
                               cv::TermCriteria(cv::TermCriteria::COUNT, 5, 0.01));
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 void undistortPoints(InputArray _src, OutputArray _dst,
                      InputArray _cameraMatrix,

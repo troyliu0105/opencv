@@ -25,7 +25,7 @@ Implementation of Scale layer.
 using namespace cv::dnn::cuda4dnn;
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {
@@ -594,4 +594,4 @@ Ptr<DataAugmentationLayer> DataAugmentationLayer::create(const LayerParams& para
 }
 
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

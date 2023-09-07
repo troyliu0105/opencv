@@ -42,7 +42,7 @@
 #include "precomp.hpp"
 #include <iostream>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename _Tp, typename _DotTp>

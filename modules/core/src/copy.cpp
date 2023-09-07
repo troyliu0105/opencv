@@ -50,7 +50,7 @@
 #include "opencl_kernels_core.hpp"
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template <typename T> static inline
@@ -919,7 +919,7 @@ void copyMakeConstBorder_8u( const uchar* src, size_t srcstep, cv::Size srcroi,
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static bool ocl_copyMakeBorder( InputArray _src, OutputArray _dst, int top, int bottom,
                                 int left, int right, int borderType, const Scalar& value )
@@ -984,7 +984,7 @@ static bool ocl_copyMakeBorder( InputArray _src, OutputArray _dst, int top, int 
 #endif
 
 #ifdef HAVE_IPP
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static bool ipp_copyMakeBorder( Mat &_src, Mat &_dst, int top, int bottom,
                                 int left, int right, int _borderType, const Scalar& value )

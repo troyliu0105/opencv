@@ -16,7 +16,7 @@
     #pragma GCC diagnostic ignored "-Wunused-parameter"
 #endif
 
-namespace cv { namespace ocl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ocl {
 
 static
 CV_NORETURN void throw_no_ocl()

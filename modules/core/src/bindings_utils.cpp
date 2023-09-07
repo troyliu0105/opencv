@@ -9,7 +9,7 @@
 #include <opencv2/core/utils/filesystem.hpp>
 #include <opencv2/core/utils/filesystem.private.hpp>
 
-namespace cv { namespace utils {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils {
 
 String dumpInputArray(InputArray argument)
 {

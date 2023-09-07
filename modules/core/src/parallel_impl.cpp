@@ -70,7 +70,7 @@ DECLARE_CV_PAUSE
 #endif // CV_PAUSE
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static int CV_ACTIVE_WAIT_PAUSE_LIMIT = (int)utils::getConfigurationParameterSizeT("OPENCV_THREAD_POOL_ACTIVE_WAIT_PAUSE_LIMIT", 16);  // iterations

@@ -13,7 +13,7 @@
 
 #include <utility>
 
-namespace cv { namespace dnn { namespace cuda4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn {
 
     enum class InterpolationType {
         NEAREST_NEIGHBOUR,
@@ -76,6 +76,6 @@ namespace cv { namespace dnn { namespace cuda4dnn {
         bool align_corners, half_pixel_centers;
     };
 
-}}} /* namespace cv::dnn::cuda4dnn */
+}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_PRIMITIVES_RESIZE_HPP */

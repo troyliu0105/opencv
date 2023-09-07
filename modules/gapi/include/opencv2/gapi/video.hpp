@@ -15,7 +15,7 @@
 /** \defgroup gapi_video G-API Video processing functionality
  */
 
-namespace cv { namespace gapi {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi {
 
 /** @brief Structure for the Kalman filter's initialization parameters.*/
 
@@ -347,10 +347,10 @@ GAPI_EXPORTS GMat KalmanFilter(const GMat& measurement, const GOpaque<bool>& hav
 
 //! @} gapi_video
 } //namespace gapi
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 
-namespace cv { namespace detail {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace detail {
 template<> struct CompileArgTag<cv::gapi::video::BackgroundSubtractorParams>
 {
     static const char* tag()
@@ -359,6 +359,6 @@ template<> struct CompileArgTag<cv::gapi::video::BackgroundSubtractorParams>
     }
 };
 }  // namespace detail
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_VIDEO_HPP

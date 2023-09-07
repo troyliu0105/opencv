@@ -7,7 +7,7 @@
 #include <memory>
 #include <map>
 
-namespace cv { namespace highgui_backend {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace highgui_backend {
 
 class CV_EXPORTS UIWindowBase
 {
@@ -130,6 +130,6 @@ std::shared_ptr<UIBackend> createUIBackendQT();
 
 }  // namespace highgui_backend
 
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_HIGHGUI_BACKEND_HPP

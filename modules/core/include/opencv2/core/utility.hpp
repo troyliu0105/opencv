@@ -62,7 +62,7 @@
 #include <mutex>  // std::mutex, std::lock_guard
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup core_utils
@@ -1217,7 +1217,7 @@ CV_EXPORTS int getThreadID();
 
 } // namespace
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #ifdef CV_COLLECT_IMPL_DATA
 #include "opencv2/core/utils/instrumentation.hpp"

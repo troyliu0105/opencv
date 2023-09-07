@@ -6,7 +6,7 @@
 #include "opencl_kernels_imgproc.hpp"
 #include "color.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #ifdef HAVE_OPENCL
@@ -355,7 +355,7 @@ void cvtColor( InputArray _src, OutputArray _dst, int code, int dcn )
             CV_Error( CV_StsBadFlag, "Unknown/unsupported color conversion code" );
     }
 }
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 CV_IMPL void

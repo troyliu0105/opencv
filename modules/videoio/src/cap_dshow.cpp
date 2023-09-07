@@ -3334,7 +3334,7 @@ int videoInput::property_window_count(int idx)
     return 0;
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 videoInput VideoCapture_DShow::g_VI;
 

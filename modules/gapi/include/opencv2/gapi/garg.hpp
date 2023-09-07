@@ -30,7 +30,7 @@
 #include <opencv2/gapi/streaming/source.hpp>
 #include <opencv2/gapi/rmat.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 class GArg;
 
@@ -304,6 +304,6 @@ void constructGraphOutputs(const cv::GTypesInfo &out_info,
                            cv::GRunArgsP        &outs);
 } // namespace detail
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GARG_HPP

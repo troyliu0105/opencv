@@ -50,7 +50,7 @@
 
 #include <opencv2/dnn/dict.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 
 namespace accessor {

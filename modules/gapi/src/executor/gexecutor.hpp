@@ -13,7 +13,7 @@
 
 #include "executor/gabstractexecutor.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 
 class GExecutor final: public GAbstractExecutor
@@ -54,6 +54,6 @@ public:
 };
 
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GEXECUTOR_HPP

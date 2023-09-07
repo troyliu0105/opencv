@@ -45,7 +45,7 @@
 #include "opencl_kernels_core.hpp"
 #include <map>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // On Win64 optimized versions of DFT and DCT fail the tests (fixed in VS2010)
@@ -1712,7 +1712,7 @@ typedef IppStatus (CV_STDCALL* IppDFTGetSizeFunc)(int, int, IppHintAlgorithm, in
 typedef IppStatus (CV_STDCALL* IppDFTInitFunc)(int, int, IppHintAlgorithm, void*, uchar*);
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 #if defined USE_IPP_DFT
 
@@ -2038,7 +2038,7 @@ static bool ippi_DFT_R_32F(const uchar * src, size_t src_step, uchar * dst, size
 
 #ifdef HAVE_OPENCL
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 enum FftType
@@ -2410,13 +2410,13 @@ static bool ocl_dft(InputArray _src, OutputArray _dst, int flags, int nonzero_ro
     return result;
 }
 
-} // namespace cv;
+} // namespace stcv{} namespace cv = stcv; namespace stcv;
 
 #endif
 
 #ifdef HAVE_CLAMDFFT
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 #define CLAMDDFT_Assert(func) \
     { \
@@ -2652,7 +2652,7 @@ static bool ocl_dft_amdfft(InputArray _src, OutputArray _dst, int flags)
 
 #endif // HAVE_CLAMDFFT
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template <typename T>
@@ -3544,7 +3544,7 @@ void cv::idft( InputArray src, OutputArray dst, int flags, int nonzero_rows )
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static bool ocl_mulSpectrums( InputArray _srcA, InputArray _srcB,
                               OutputArray _dst, int flags, bool conjB )
@@ -3761,7 +3761,7 @@ void cv::mulSpectrums( InputArray _srcA, InputArray _srcB,
                                Discrete Cosine Transform
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /* DCT is calculated using DFT, as described here:
@@ -3959,7 +3959,7 @@ static void IDCT_64f(const OcvDftOptions & c, const double* src, size_t src_step
 }
 
 #ifdef HAVE_IPP
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #if IPP_VERSION_X100 >= 900
@@ -4219,7 +4219,7 @@ static bool ippi_DCT_32f(const uchar * src, size_t src_step, uchar * dst, size_t
 }
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 class OcvDctImpl CV_FINAL : public hal::DCT2D
 {
@@ -4438,7 +4438,7 @@ void cv::idct( InputArray src, OutputArray dst, int flags )
     dct( src, dst, flags | DCT_INVERSE );
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static const int optimalDFTSizeTab[] = {

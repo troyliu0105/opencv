@@ -73,7 +73,7 @@ This section describes approaches based on local 2D features and used to categor
   @}
  */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup features2d_main
@@ -1590,6 +1590,6 @@ protected:
 
 //! @} features2d
 
-} /* namespace cv */
+} /* namespace stcv{} namespace cv = stcv; namespace stcv */
 
 #endif

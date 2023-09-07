@@ -47,7 +47,7 @@
 
 #include <math.h>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 inline bool is_smaller(const std::pair<int, float>& p1, const std::pair<int, float>& p2)
 {

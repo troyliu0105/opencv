@@ -70,7 +70,7 @@
 #endif
 //! @endcond
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #ifndef CV_DOXYGEN

@@ -46,7 +46,7 @@
 # pragma GCC diagnostic ignored "-Warray-bounds"
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 struct FFillSegment

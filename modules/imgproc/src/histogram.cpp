@@ -47,7 +47,7 @@
 
 #include "opencv2/core/utils/tls.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 ////////////////// Helper functions //////////////////////
@@ -837,7 +837,7 @@ private:
 }
 
 #ifdef HAVE_OPENVX
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     namespace ovx {
         template <> inline bool skipSmallImages<VX_KERNEL_HISTOGRAM>(int w, int h) { return w*h < 2048 * 1536; }
@@ -896,7 +896,7 @@ namespace cv
 
 #ifdef HAVE_IPP
 #define IPP_HISTOGRAM_PARALLEL 1
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ipp_calchist(const Mat &image, Mat &hist, int histSize, const float** ranges, bool uniform, bool accumulate)
 {
@@ -1011,7 +1011,7 @@ void cv::calcHist( const Mat* images, int nimages, const int* channels,
 }
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T> static void
@@ -1311,7 +1311,7 @@ void cv::calcHist( InputArrayOfArrays images, const std::vector<int>& channels,
 
 /////////////////////////////////////// B A C K   P R O J E C T ////////////////////////////////////
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T, typename BT> static void
@@ -1641,7 +1641,7 @@ void cv::calcBackProject( const Mat* images, int nimages, const int* channels,
 }
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename T, typename BT> static void
@@ -1815,7 +1815,7 @@ void cv::calcBackProject( const Mat* images, int nimages, const int* channels,
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static void getUMatIndex(const std::vector<UMat> & um, int cn, int & idx, int & cnidx)
 {
@@ -3347,7 +3347,7 @@ CV_IMPL void cvEqualizeHist( const CvArr* srcarr, CvArr* dstarr )
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static bool ocl_equalizeHist(InputArray _src, OutputArray _dst)
 {
@@ -3397,7 +3397,7 @@ static bool ocl_equalizeHist(InputArray _src, OutputArray _dst)
 #endif
 
 #ifdef HAVE_OPENVX
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool openvx_equalize_hist(Mat srcMat, Mat dstMat)
 {

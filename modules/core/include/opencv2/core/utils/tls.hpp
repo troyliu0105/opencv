@@ -9,7 +9,7 @@
 #error "tls.hpp must be included after opencv2/core/utility.hpp or opencv2/core.hpp"
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 //! @addtogroup core_utils
 //! @{

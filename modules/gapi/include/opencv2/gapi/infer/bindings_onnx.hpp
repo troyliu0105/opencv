@@ -12,7 +12,7 @@
 
 #include <string>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace onnx {
 
@@ -38,6 +38,6 @@ GAPI_EXPORTS_W PyParams params(const std::string& tag, const std::string& model_
 
 }  // namespace onnx
 }  // namespace gapi
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif  // OPENCV_GAPI_INFER_BINDINGS_ONNX_HPP

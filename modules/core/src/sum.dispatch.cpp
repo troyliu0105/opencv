@@ -16,7 +16,7 @@
 #undef CV_IPP_RUN
 #define CV_IPP_RUN(c, f, ...)
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 SumFunc getSumFunc(int depth)

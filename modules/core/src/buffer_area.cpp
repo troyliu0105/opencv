@@ -10,7 +10,7 @@ static bool CV_BUFFER_AREA_OVERRIDE_SAFE_MODE =
     cv::utils::getConfigurationParameterBool("OPENCV_BUFFER_AREA_ALWAYS_SAFE", false);
 #endif
 
-namespace cv { namespace utils {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils {
 
 //==================================================================================================
 

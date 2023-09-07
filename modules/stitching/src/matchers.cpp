@@ -276,7 +276,7 @@ void GpuMatcher::collectGarbage()
 } // namespace
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 void computeImageFeatures(
@@ -566,4 +566,4 @@ void AffineBestOf2NearestMatcher::match(const ImageFeatures &features1, const Im
 
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

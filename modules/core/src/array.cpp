@@ -3204,7 +3204,7 @@ cvCheckTermCriteria( CvTermCriteria criteria, double default_eps,
     return crit;
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 void DefaultDeleter<CvMat>::operator ()(CvMat* obj) const { cvReleaseMat(&obj); }

@@ -2106,7 +2106,7 @@ CV_IMPL int cvWaitKey( int delay )
     return last_key;
 }
 
-namespace cv { namespace impl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace impl {
 
 using namespace cv::highgui_backend;
 

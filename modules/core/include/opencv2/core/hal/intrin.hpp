@@ -92,7 +92,7 @@ inline unsigned int trailingZeros32(unsigned int value) {
 // unlike HAL API, which is in cv::hal,
 // we put intrinsics into cv namespace to make its
 // access from within opencv code more accessible
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace hal {
 
@@ -292,7 +292,7 @@ using namespace CV_CPU_OPTIMIZATION_HAL_NAMESPACE;
 
 //! @cond IGNORED
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 #ifndef CV_DOXYGEN
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN

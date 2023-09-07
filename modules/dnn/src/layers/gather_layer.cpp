@@ -6,7 +6,7 @@
 #include "layers_common.hpp"
 
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class GatherLayerImpl CV_FINAL : public GatherLayer
 {
@@ -124,4 +124,4 @@ Ptr<GatherLayer> GatherLayer::create(const LayerParams& params)
     return makePtr<GatherLayerImpl>(params);
 }
 
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

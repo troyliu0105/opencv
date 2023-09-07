@@ -472,7 +472,7 @@ inline GComputation runOCVnGAPIOptFlowPipeline(TestFunctional&,
 } // namespace opencv_test
 
 // Note: namespace must match the namespace of the type of the printed object
-namespace cv { namespace gapi { namespace video
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi { namespace video
 {
 inline std::ostream& operator<<(std::ostream& os, const BackgroundSubtractorType op)
 {
@@ -486,6 +486,6 @@ inline std::ostream& operator<<(std::ostream& os, const BackgroundSubtractorType
 #undef CASE
     return os;
 }
-}}} // namespace cv::gapi::video
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::gapi::video
 
 #endif // OPENCV_GAPI_VIDEO_TESTS_COMMON_HPP

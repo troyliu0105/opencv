@@ -9,7 +9,7 @@
 
 #include <opencv2/gapi/util/type_traits.hpp> //decay_t
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace util
 {
@@ -29,6 +29,6 @@ namespace util
         return std::forward<T>(t);
     }
 } // namespace util
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif /* OPENCV_GAPI_UTIL_COPY_THROUGH_MOVE_HPP */

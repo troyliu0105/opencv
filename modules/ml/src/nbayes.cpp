@@ -40,7 +40,7 @@
 
 #include "precomp.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace ml {
 
 

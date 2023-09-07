@@ -13,7 +13,7 @@
 #include <opencv2/gapi/opencv_includes.hpp>
 #include <opencv2/gapi/own/mat.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     template<typename T>
     std::vector<T> to_own(const cv::MatSize &sz) {
@@ -48,7 +48,7 @@ namespace own
 
 } // namespace own
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // !defined(GAPI_STANDALONE)
 

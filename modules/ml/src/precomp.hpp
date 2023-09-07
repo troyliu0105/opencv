@@ -64,7 +64,7 @@
 /* log(2*PI) */
 #define CV_LOG2PI (1.8378770664093454835606594728112)
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace ml
 {

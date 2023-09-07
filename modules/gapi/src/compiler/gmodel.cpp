@@ -21,7 +21,7 @@
 #include "api/gorigin.hpp"
 #include "compiler/gmodel_priv.hpp"
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 ade::NodeHandle GModel::mkOpNode(GModel::Graph &g,
                                  const GKernel &k,

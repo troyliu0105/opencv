@@ -56,7 +56,7 @@
 #include "utils.hpp"
 #include "grfmt_pam.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /* the PAM related fields */
 #define MAX_PAM_HEADER_IDENITFIER_LENGTH 8

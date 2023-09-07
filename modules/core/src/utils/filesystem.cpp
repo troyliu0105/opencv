@@ -44,7 +44,7 @@
 
 #endif // OPENCV_HAVE_FILESYSTEM_SUPPORT
 
-namespace cv { namespace utils { namespace fs {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace utils { namespace fs {
 
 #ifdef _WIN32
 static const char native_separator = '\\';

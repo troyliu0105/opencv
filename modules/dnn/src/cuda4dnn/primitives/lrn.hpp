@@ -13,7 +13,7 @@
 #include <cstddef>
 #include <utility>
 
-namespace cv { namespace dnn { namespace cuda4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn {
 
     enum class LRNType {
         ACROSS_CHANNELS,
@@ -70,6 +70,6 @@ namespace cv { namespace dnn { namespace cuda4dnn {
         std::size_t scratch_mem_in_bytes;
     };
 
-}}} /* namespace cv::dnn::cuda4dnn */
+}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_PRIMITIVES_LRN_HPP */

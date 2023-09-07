@@ -39,14 +39,14 @@ using namespace cv;
 #ifndef OPENCV_LIBVA_LINK
 #include "va_wrapper.impl.hpp"
 #else
-namespace cv { namespace detail {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace detail {
 static void init_libva() { /* nothing */ }
 }}  // namespace
 #endif
 using namespace cv::detail;
 #endif
 
-namespace cv { namespace va_intel {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace va_intel {
 
 #ifdef HAVE_VA_INTEL
 
@@ -212,7 +212,7 @@ static bool ocl_convert_bgr_to_nv12(cl_mem clBuffer, int step, int cols, int row
 }
 #endif // HAVE_VA_INTEL
 
-} // namespace cv::va_intel::ocl
+} // namespace stcv{} namespace cv = stcv; namespace stcv::va_intel::ocl
 
 #if defined(HAVE_VA)
 const int NCHANNELS = 3;
@@ -800,4 +800,4 @@ void convertFromVASurface(VADisplay display, VASurfaceID surface, Size size, Out
 #endif  // !HAVE_VA
 }
 
-}} // namespace cv::va_intel
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::va_intel

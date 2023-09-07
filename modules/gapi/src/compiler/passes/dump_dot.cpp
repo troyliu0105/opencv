@@ -19,7 +19,7 @@
 #include "compiler/gislandmodel.hpp"
 #include "compiler/passes/passes.hpp"
 
-namespace cv { namespace gimpl { namespace passes {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl { namespace passes {
 
 // TODO: FIXME: Ideally all this low-level stuff with accessing ADE APIs directly
 // should be incapsulated somewhere into GModel, so here we'd operate not

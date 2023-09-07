@@ -21,14 +21,14 @@
 #include "compiler/gmodel.hpp"
 #include "compiler/gislandmodel.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gimpl
 {
     class GBackend;
     class GIslandExecutable;
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 // GAPI_EXPORTS is here to make tests build on Windows
 class GAPI_EXPORTS cv::gapi::GBackend::Priv

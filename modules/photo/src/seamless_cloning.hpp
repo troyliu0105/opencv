@@ -47,7 +47,7 @@
 
 #include <vector>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
     class Cloning

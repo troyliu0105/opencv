@@ -12,7 +12,7 @@
 #include "../../precomp.hpp"
 #include "fast_convolution.hpp"
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 #if CV_NEON || CV_SIMD128 || CV_TRY_AVX2
 enum { VEC_ALIGN = 32, DFT_TYPE = CV_32F }; // Memory alignment.
@@ -1150,4 +1150,4 @@ int runWinograd63(InputArray _input, InputArray _fusedAddMat, OutputArray _outpu
     return 0;
 }
 #endif
-}} // namespace cv::dnn
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

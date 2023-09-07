@@ -9,7 +9,7 @@
 
 #include <opencv2/gapi/video.hpp>
 
-namespace cv { namespace gapi {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi {
 using namespace video;
 
 GBuildPyrOutput buildOpticalFlowPyramid(const GMat    &img,
@@ -116,4 +116,4 @@ void checkParams(const cv::gapi::KalmanParams& kfParams,
 }
 }  // namespace video
 } //namespace gapi
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv

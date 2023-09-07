@@ -8,7 +8,7 @@
 #include "opencv2/core/hal/intrin.hpp"
 #include <opencv2/core/utils/logger.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 
 static void convBlockMR1NoSIMD(int np, const float* a, const float* b, float *c, const float bias, bool init_c,
@@ -563,5 +563,5 @@ void convBlock_NEON(int np, const float* a, const float* b, float* c, int ldc, b
 #endif
 } // namespace opt_NEON
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif //OPENCV_FAST_CONVOLUTION_SIMD_HPP

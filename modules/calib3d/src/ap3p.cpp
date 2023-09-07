@@ -123,7 +123,7 @@ inline void mat_mult(const double a[3][3], const double b[3][3], double result[3
 }
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 void ap3p::init_inverse_parameters() {
     inv_fx = 1. / fx;
     inv_fy = 1. / fy;

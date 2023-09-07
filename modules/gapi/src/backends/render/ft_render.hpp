@@ -14,7 +14,7 @@
 
 #include <opencv2/gapi/own/exports.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace gapi
 {
@@ -39,6 +39,6 @@ private:
 } // namespace draw
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_FREETYPE_TEXT_RENDER_HPP

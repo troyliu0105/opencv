@@ -11,7 +11,7 @@
 #include <opencv2/gapi/streaming/format.hpp>
 #include "gstreamingkernel.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace streaming {
 
@@ -33,6 +33,6 @@ struct GCopy final : public cv::detail::NoTag
 
 } // namespace streaming
 } // namespace gimpl
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GSTREAMINGBACKEND_HPP

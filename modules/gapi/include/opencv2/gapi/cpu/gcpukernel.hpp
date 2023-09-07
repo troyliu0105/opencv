@@ -27,7 +27,7 @@
 #include <opencv2/gapi/util/util.hpp>
 
 // FIXME: namespace scheme for backends?
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace gimpl
 {
@@ -533,7 +533,7 @@ gapi::cpu::GOCVFunctor gapi::cpu::ocv_kernel(const Callable& c)
 }
 //! @endcond
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #if defined _MSC_VER
 #pragma warning(pop)

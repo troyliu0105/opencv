@@ -7,7 +7,7 @@
 #include "stat.hpp"
 #include <opencv2/core/hal/hal.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 template<typename _Tp, typename _Rt>

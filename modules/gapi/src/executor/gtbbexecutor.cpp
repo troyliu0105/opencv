@@ -30,7 +30,7 @@
 #define LOG_DEBUG(tag, ...)   GAPI_LOG_DEBUG(tag, __VA_ARGS__)
 
 
-namespace cv { namespace gimpl { namespace parallel {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl { namespace parallel {
 
 namespace detail {
 // some helper staff to deal with tbb::task related entities
@@ -361,7 +361,7 @@ namespace graph {
     };
 }
 } // namespace detail
-}}}  // namespace cv::gimpl::parallel
+}}}  // namespace stcv{} namespace cv = stcv; namespace stcv::gimpl::parallel
 
 void cv::gimpl::parallel::execute(prio_items_queue_t& q) {
     // get the reference to current task_arena (i.e. one we are running in)

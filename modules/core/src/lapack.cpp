@@ -62,7 +62,7 @@
 #pragma float_control(precise, on)
 #endif
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 int LU(float* A, size_t astep, int m, float* b, size_t bstep, int n)

@@ -16,7 +16,7 @@
 #include <sstream>
 #include <utility>
 
-namespace cv { namespace dnn { namespace cuda4dnn { namespace csl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn { namespace csl {
 
     /** \file stream.hpp
      *
@@ -156,6 +156,6 @@ namespace cv { namespace dnn { namespace cuda4dnn { namespace csl {
         std::shared_ptr<UniqueStream> stream;
     };
 
-}}}} /* namespace cv::dnn::cuda4dnn::csl */
+}}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn::csl */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_CSL_STREAM_HPP */

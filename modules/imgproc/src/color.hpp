@@ -5,7 +5,7 @@
 #include "opencv2/imgproc.hpp"
 #include "hal_replacement.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 //
 // Helper functions
@@ -569,4 +569,4 @@ void cvtColorGray25x5( InputArray _src, OutputArray _dst, int gbits);
 void cvtColorRGBA2mRGBA(InputArray _src, OutputArray _dst);
 void cvtColormRGBA2RGBA(InputArray _src, OutputArray _dst);
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv

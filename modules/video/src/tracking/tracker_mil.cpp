@@ -7,7 +7,7 @@
 
 #include "detail/tracker_feature_haar.impl.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 inline namespace tracking {
 namespace impl {
 
@@ -224,4 +224,4 @@ Ptr<TrackerMIL> TrackerMIL::create(const TrackerMIL::Params& parameters)
     return makePtr<tracking::impl::TrackerMILImpl>(parameters);
 }
 
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

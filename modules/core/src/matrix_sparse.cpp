@@ -6,7 +6,7 @@
 #include "opencv2/core/mat.hpp"
 #include "opencv2/core/types_c.h"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 template<typename T1, typename T2> void
 convertData_(const void* _from, void* _to, int cn)

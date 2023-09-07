@@ -106,7 +106,7 @@ struct SimpleCustomType2 {
 };
 
 // ! [S11N usage]
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace s11n {
 namespace detail {
@@ -134,10 +134,10 @@ template<> struct S11N<SimpleCustomType2> {
 } // namespace detail
 } // namespace s11n
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 // ! [S11N usage]
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 template<> struct CompileArgTag<SimpleCustomType> {
     static const char* tag() {
@@ -151,7 +151,7 @@ template<> struct CompileArgTag<SimpleCustomType2> {
     }
 };
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 static void s11n_example()
 {

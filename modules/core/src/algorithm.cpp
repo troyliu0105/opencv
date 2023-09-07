@@ -42,7 +42,7 @@
 
 #include "precomp.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 Algorithm::Algorithm()

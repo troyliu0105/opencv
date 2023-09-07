@@ -173,7 +173,7 @@ It provides easy interface to:
 */
 
 ///////////////////////// graphical user interface //////////////////////////
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup highgui

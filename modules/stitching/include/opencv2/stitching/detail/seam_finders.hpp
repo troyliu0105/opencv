@@ -47,7 +47,7 @@
 #include "opencv2/core.hpp"
 #include "opencv2/opencv_modules.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace detail {
 
 //! @addtogroup stitching_seam
@@ -286,6 +286,6 @@ private:
 //! @}
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_STITCHING_SEAM_FINDERS_HPP

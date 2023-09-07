@@ -103,7 +103,7 @@
 @}
  */
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 //! @addtogroup core_utils
 //! @{
@@ -3354,7 +3354,7 @@ struct ParamType<_Tp, typename std::enable_if< std::is_enum<_Tp>::value >::type>
 
 //! @} core_basic
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #include "opencv2/core/operations.hpp"
 #include "opencv2/core/cvstd.inl.hpp"

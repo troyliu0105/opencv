@@ -9,7 +9,7 @@
 #define OPENCV_DNN_SPV_SHADER_HPP
 
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 extern const unsigned int dw_conv_spv[1760];
 extern const unsigned int permute_spv[765];
@@ -24,6 +24,6 @@ extern const unsigned int max_pool_spv[1449];
 extern const unsigned int relu_spv[502];
 extern const unsigned int conv_spv[1894];
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom
 
 #endif /* OPENCV_DNN_SPV_SHADER_HPP */

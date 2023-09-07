@@ -11,7 +11,7 @@
 
 #include <algorithm>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #ifdef HAVE_OPENCV_DNN
@@ -189,4 +189,4 @@ Ptr<FaceRecognizerSF> FaceRecognizerSF::create(const String& model, const String
 #endif
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

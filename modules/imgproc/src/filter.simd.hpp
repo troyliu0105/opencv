@@ -57,7 +57,7 @@
                                     Base Image Filter
 \****************************************************************************************/
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 // forward declarations
 int FilterEngine__start(FilterEngine& this_, const Size &_wholeSize, const Size &sz, const Point &ofs);

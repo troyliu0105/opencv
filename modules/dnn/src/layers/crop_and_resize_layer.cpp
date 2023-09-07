@@ -13,7 +13,7 @@
 using namespace cv::dnn::cuda4dnn;
 #endif
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class CropAndResizeLayerImpl CV_FINAL : public CropAndResizeLayer
 {
@@ -183,4 +183,4 @@ Ptr<Layer> CropAndResizeLayer::create(const LayerParams& params)
 }
 
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

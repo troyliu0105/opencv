@@ -50,7 +50,7 @@
                              Sobel & Scharr Derivative Filters
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static void getScharrKernels( OutputArray _kx, OutputArray _ky,
@@ -183,7 +183,7 @@ cv::Ptr<cv::FilterEngine> cv::createDerivFilter(int srcType, int dstType,
 }
 
 #ifdef HAVE_OPENVX
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     namespace ovx {
         template <> inline bool skipSmallImages<VX_KERNEL_SOBEL_3x3>(int w, int h) { return w*h < 320 * 240; }
@@ -261,7 +261,7 @@ namespace cv
 #endif
 
 #if 0 //defined HAVE_IPP
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static bool ipp_Deriv(InputArray _src, OutputArray _dst, int dx, int dy, int ksize, double scale, double delta, int borderType)
@@ -352,7 +352,7 @@ static bool ipp_Deriv(InputArray _src, OutputArray _dst, int dx, int dy, int ksi
 #endif
 
 #ifdef HAVE_OPENCL
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 static bool ocl_sepFilter3x3_8UC1(InputArray _src, OutputArray _dst, int ddepth,
                                   InputArray _kernelX, InputArray _kernelY, double delta, int borderType)
@@ -518,7 +518,7 @@ void cv::Scharr( InputArray _src, OutputArray _dst, int ddepth, int dx, int dy,
 
 #ifdef HAVE_OPENCL
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 #define LAPLACIAN_LOCAL_MEM(tileX, tileY, ksize, elsize) (((tileX) + 2 * (int)((ksize) / 2)) * (3 * (tileY) + 2 * (int)((ksize) / 2)) * elsize)
 
@@ -712,7 +712,7 @@ static bool ocl_Laplacian3_8UC1(InputArray _src, OutputArray _dst, int ddepth,
 #endif
 
 #if defined(HAVE_IPP)
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static bool ipp_Laplacian(InputArray _src, OutputArray _dst, int ksize, double scale, double delta, int borderType)

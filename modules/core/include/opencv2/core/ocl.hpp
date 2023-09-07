@@ -46,7 +46,7 @@
 #include <typeinfo>
 #include <typeindex>
 
-namespace cv { namespace ocl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ocl {
 
 //! @addtogroup core_opencl
 //! @{

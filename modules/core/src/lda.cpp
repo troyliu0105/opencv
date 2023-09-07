@@ -21,7 +21,7 @@
 #include <map>
 #include <set>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // Removes duplicate elements in a given vector.

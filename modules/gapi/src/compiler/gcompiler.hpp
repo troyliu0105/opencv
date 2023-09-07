@@ -16,7 +16,7 @@
 
 #include <ade/execution_engine/execution_engine.hpp>
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 // FIXME: exported for internal tests only!
 class GAPI_EXPORTS GCompiler

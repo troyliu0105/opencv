@@ -1594,7 +1594,7 @@ void cv::ogl::render(const ogl::Arrays& arr, InputArray indices, int mode, Scala
 #  endif
 #endif // HAVE_OPENGL
 
-namespace cv { namespace ogl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ogl {
 
 #if defined(HAVE_OPENCL) && defined(HAVE_OPENGL) && defined(HAVE_OPENCL_OPENGL_SHARING)
 // Check to avoid crash in OpenCL runtime: https://github.com/opencv/opencv/issues/5209
@@ -1729,7 +1729,7 @@ Context& initializeContextFromGL()
 #endif
 }
 
-} // namespace cv::ogl::ocl
+} // namespace stcv{} namespace cv = stcv; namespace stcv::ogl::ocl
 
 void convertToGLTexture2D(InputArray src, Texture2D& texture)
 {
@@ -1933,4 +1933,4 @@ void unmapGLBuffer(UMat& u)
 #endif
 }
 
-}} // namespace cv::ogl
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::ogl

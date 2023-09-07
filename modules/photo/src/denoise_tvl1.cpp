@@ -44,7 +44,7 @@
 
 #define ABSCLIP(val,threshold) MIN(MAX((val),-(threshold)),(threshold))
 
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
 
     class AddFloatToCharScaled{
         public:

@@ -13,7 +13,7 @@
 #include <cstddef>
 #include <type_traits>
 
-namespace cv { namespace dnn { namespace cuda4dnn { namespace csl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn { namespace csl {
 
     /** @brief provides non-owning mutable access for device arrays
      *
@@ -77,6 +77,6 @@ namespace cv { namespace dnn { namespace cuda4dnn { namespace csl {
         return is_address_aligned(v, alignment) && is_size_aligned(v, alignment);
     }
 
-}}}} /* namespace cv::dnn::cuda4dnn::csl */
+}}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn::csl */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_CSL_SPAN_HPP */

@@ -45,7 +45,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace detail {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace detail {
 /**
 Computes the matrix for the projection onto a tilted image sensor
 \param tauX angular parameter rotation around x-axis

@@ -8,7 +8,7 @@
 #include "opencv2/dnn.hpp"
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 TrackerDaSiamRPN::TrackerDaSiamRPN()
 {

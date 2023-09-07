@@ -44,7 +44,7 @@
 #include "precomp.hpp"
 #include "opencv2/core/hal/intrin.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 // forward declarations
 Ptr<BaseRowFilter> getRowSumFilter(int srcType, int sumType, int ksize, int anchor);

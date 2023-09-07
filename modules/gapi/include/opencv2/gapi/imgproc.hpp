@@ -46,7 +46,7 @@ void validateFindingContoursMeta(const int depth, const int chan, const int mode
 }
 } // anonymous namespace
 
-namespace cv { namespace gapi {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi {
 
 /**
  * @brief This namespace contains G-API Operation Types for OpenCV
@@ -1764,6 +1764,6 @@ GAPI_EXPORTS GMatP resizeP(const GMatP& src, const Size& dsize, int interpolatio
 
 //! @} gapi_transform
 } //namespace gapi
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_IMGPROC_HPP

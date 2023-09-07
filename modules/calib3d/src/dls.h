@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 class dls
 {
@@ -769,5 +769,5 @@ public:
     Mat eigenvectors() { return _eigenvectors; }
 };
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // DLS_H

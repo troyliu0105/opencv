@@ -24,7 +24,7 @@
 
 #endif  // HAVE_DNN_NGRAPH
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 #ifdef HAVE_DNN_NGRAPH
 
@@ -158,7 +158,7 @@ private:
 
 #endif  // HAVE_DNN_NGRAPH
 
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn
 
 
 #endif  // __OPENCV_DNN_IE_NGRAPH_HPP__

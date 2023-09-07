@@ -12,7 +12,7 @@
 #include <vector>
 #include <utility>
 
-namespace cv { namespace dnn { namespace cuda4dnn { namespace kernels {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn { namespace kernels {
 
     template <class T>
     void copy_with_reflection101(
@@ -20,6 +20,6 @@ namespace cv { namespace dnn { namespace cuda4dnn { namespace kernels {
         csl::TensorSpan<T> output, csl::TensorView<T> input,
         std::vector<std::pair<std::size_t, std::size_t>> ranges);
 
-}}}} /* namespace cv::dnn::cuda4dnn::kernels */
+}}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn::kernels */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_KERNELS_PADDING_HPP */

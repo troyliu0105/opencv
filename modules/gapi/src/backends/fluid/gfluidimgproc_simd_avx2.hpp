@@ -21,7 +21,7 @@
 #include <limits>
 #include <vector>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace fluid {
 namespace avx2 {
@@ -177,5 +177,5 @@ CV_ALWAYS_INLINE void calcRowLinear32FC1Impl(float *dst[],
 } // namespace avx2
 } // namespace fliud
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // !defined(GAPI_STANDALONE)

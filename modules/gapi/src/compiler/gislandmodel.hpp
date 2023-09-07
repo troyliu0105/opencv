@@ -20,7 +20,7 @@
 
 #include "compiler/gobjref.hpp"
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 // FIXME: GAPI_EXPORTS only because of tests!
 class GAPI_EXPORTS GIsland
@@ -304,6 +304,6 @@ namespace GIslandModel
     std::string traceIslandName(const ade::NodeHandle& op_nh, const Graph& g);
 } // namespace GIslandModel
 
-}} // namespace cv::gimpl
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::gimpl
 
 #endif // OPENCV_GAPI_GISLANDMODEL_HPP

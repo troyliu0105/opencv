@@ -47,7 +47,7 @@
 
 #ifdef HAVE_TIFF
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // native simple TIFF codec

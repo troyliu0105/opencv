@@ -25,7 +25,7 @@
 #endif
 
 // declare major namespaces to avoid errors on unknown namespace
-namespace cv { namespace cuda {} namespace ocl {} }
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda {} namespace ocl {} }
 namespace cvtest { }
 
 namespace perf
@@ -510,13 +510,13 @@ void PrintTo(const MatType& t, std::ostream* os);
 
 } //namespace perf
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 void PrintTo(const String& str, ::std::ostream* os);
 void PrintTo(const Size& sz, ::std::ostream* os);
 
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 /*****************************************************************************************\

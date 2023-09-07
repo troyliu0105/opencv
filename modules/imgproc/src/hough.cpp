@@ -47,7 +47,7 @@
 #include <algorithm>
 #include <iterator>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 // Classical Hough Transform
@@ -2346,7 +2346,7 @@ void HoughCircles( InputArray _image, OutputArray _circles,
 {
     HoughCircles(_image, _circles, method, dp, minDist, param1, param2, minRadius, maxRadius, -1, 3);
 }
-} // \namespace cv
+} // \namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 /* Wrapper function for standard hough transform */

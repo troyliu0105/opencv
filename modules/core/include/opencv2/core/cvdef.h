@@ -136,7 +136,7 @@ namespace cv { namespace debug_build_guard { } using namespace debug_build_guard
 #  if !defined(__clang__) && defined(__GNUC__) && (__GNUC__*100 + __GNUC_MINOR__ > 302)
 #    define CV_StaticAssert(condition, reason) ({ extern int __attribute__((error("CV_StaticAssert: " reason " " #condition))) CV_StaticAssert(); ((condition) ? 0 : CV_StaticAssert()); })
 #  else
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
      template <bool x> struct CV_StaticAssert_failed;
      template <> struct CV_StaticAssert_failed<true> { enum { val = 1 }; };
      template<int x> struct CV_StaticAssert_test {};
@@ -815,7 +815,7 @@ __CV_ENUM_FLAGS_BITWISE_XOR_EQ   (EnumType, EnumType)                           
 #include OPENCV_STDINT_HEADER
 #elif defined(__cplusplus)
 #if defined(_MSC_VER) && _MSC_VER < 1600 /* MSVS 2010 */
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 typedef signed char int8_t;
 typedef unsigned char uint8_t;
 typedef signed short int16_t;
@@ -827,7 +827,7 @@ typedef unsigned __int64 uint64_t;
 }
 #elif defined(_MSC_VER) || __cplusplus >= 201103L
 #include <cstdint>
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 using std::int8_t;
 using std::uint8_t;
 using std::int16_t;
@@ -839,7 +839,7 @@ using std::uint64_t;
 }
 #else
 #include <stdint.h>
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 typedef ::int8_t int8_t;
 typedef ::uint8_t uint8_t;
 typedef ::int16_t int16_t;
@@ -855,7 +855,7 @@ typedef ::uint64_t uint64_t;
 #endif
 
 #ifdef __cplusplus
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class float16_t

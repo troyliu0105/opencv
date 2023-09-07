@@ -20,7 +20,7 @@
 #include "tbb/task_arena.h"
 #endif
 
-namespace cv { namespace parallel { namespace tbb {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace parallel { namespace tbb {
 
 using namespace ::tbb;
 

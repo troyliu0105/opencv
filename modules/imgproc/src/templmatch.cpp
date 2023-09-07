@@ -44,7 +44,7 @@
 
 ////////////////////////////////////////////////// matchTemplate //////////////////////////////////////////////////////////
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #ifdef HAVE_OPENCL
@@ -1031,7 +1031,7 @@ static void common_matchTemplate( Mat& img, Mat& templ, Mat& result, int method,
 
 
 #if defined HAVE_IPP
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 typedef IppStatus (CV_STDCALL * ippimatchTemplate)(const void*, int, IppiSize, const void*, int, IppiSize, Ipp32f* , int , IppEnum , Ipp8u*);
 

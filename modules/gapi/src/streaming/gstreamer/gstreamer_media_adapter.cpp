@@ -8,7 +8,7 @@
 #include "gstreamer_buffer_utils.hpp"
 
 #ifdef HAVE_GSTREAMER
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace gst {
@@ -177,5 +177,5 @@ cv::util::any GStreamerMediaAdapter::blobParams() const {
 } // namespace gst
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // HAVE_GSTREAMER

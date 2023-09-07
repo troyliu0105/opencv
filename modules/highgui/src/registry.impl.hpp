@@ -8,7 +8,7 @@
 
 #include "opencv2/core/utils/filesystem.private.hpp"  // OPENCV_HAVE_FILESYSTEM_SUPPORT
 
-namespace cv { namespace highgui_backend {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace highgui_backend {
 
 #if OPENCV_HAVE_FILESYSTEM_SUPPORT && defined(ENABLE_PLUGINS)
 #define DECLARE_DYNAMIC_BACKEND(name) \

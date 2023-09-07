@@ -47,7 +47,7 @@ const char* keys =
 "6: CUDA, "
 "7: CUDA fp16 (half-float preprocess) }";
 
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
 namespace reid{
 
 static Mat preprocess(const Mat& img)

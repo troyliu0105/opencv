@@ -53,7 +53,7 @@ http://www.robesafe.com/personal/pablo.alcantarilla/papers/Alcantarilla13bmvc.pd
 
 #include <iostream>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     using namespace std;
 

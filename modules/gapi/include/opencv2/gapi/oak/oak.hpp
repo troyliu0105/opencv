@@ -11,7 +11,7 @@
 #include <opencv2/gapi/gkernel.hpp>    // GKernelPackage
 #include <opencv2/gapi/gstreaming.hpp> // GOptRunArgsP
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace oak {
 
@@ -153,6 +153,6 @@ template<> struct CompileArgTag<gapi::oak::EncoderConfig> {
 };
 } // namespace detail
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_OAK_HPP

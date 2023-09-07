@@ -7,7 +7,7 @@
 
 #include "factory_parallel.hpp"
 
-namespace cv { namespace parallel {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace parallel {
 
 struct ParallelBackendInfo
 {

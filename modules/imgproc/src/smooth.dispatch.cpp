@@ -59,14 +59,14 @@
 
 #include "opencv2/core/softfloat.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 #include "fixedpoint.inl.hpp"
 }
 
 #include "smooth.simd.hpp"
 #include "smooth.simd_declarations.hpp" // defines CV_CPU_DISPATCH_MODES_ALL=AVX2,...,BASELINE based on CMakeLists.txt content
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /****************************************************************************************\
                                      Gaussian Blur

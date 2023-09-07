@@ -21,7 +21,7 @@
 #include <queue>
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip  {
 
@@ -277,4 +277,4 @@ std::future<void> async(GCompiled& gcmpld, GRunArgs &&ins, GRunArgsP &&outs, GAs
     return f;
 
 }
-}}} //namespace wip namespace gapi namespace cv
+}}} //namespace wip namespace gapi namespace stcv{} namespace cv = stcv; namespace stcv

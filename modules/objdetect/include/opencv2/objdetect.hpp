@@ -130,7 +130,7 @@ Check @ref tutorial_dnn_face "the corresponding tutorial" for more details.
 
 typedef struct CvHaarClassifierCascade CvHaarClassifierCascade;
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup objdetect_common

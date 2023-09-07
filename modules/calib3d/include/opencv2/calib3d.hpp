@@ -438,7 +438,7 @@ R & t \\
   @}
  */
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup calib3d
@@ -4046,7 +4046,7 @@ optimization. It is the \f$max(width,height)/\pi\f$ or the provided \f$f_x\f$, \
 //! @} calib3d_fisheye
 } // end namespace fisheye
 
-} //end namespace cv
+} //end namespace stcv{} namespace cv = stcv; namespace stcv
 
 #if 0 //def __cplusplus
 //////////////////////////////////////////////////////////////////////////////////////////

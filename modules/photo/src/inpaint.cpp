@@ -735,7 +735,7 @@ icvNSInpaintFMM(const CvMat *f, CvMat *t, CvMat *out, int range, CvPriorityQueue
       }\
    }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 template<> struct DefaultDeleter<IplConvKernel>{ void operator ()(IplConvKernel* obj) const { cvReleaseStructuringElement(&obj); } };
 }
 

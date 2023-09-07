@@ -47,7 +47,7 @@
 
 #include "grfmt_base.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class Jpeg2KDecoder CV_FINAL : public BaseImageDecoder

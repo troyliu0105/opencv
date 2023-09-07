@@ -23,7 +23,7 @@ set(STR_CPP "// This file is auto-generated. Do not edit!
 
 #ifdef HAVE_OPENCL
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace ocl
 {
@@ -41,7 +41,7 @@ set(STR_HPP "// This file is auto-generated. Do not edit!
 
 #ifdef HAVE_OPENCL
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace ocl
 {

@@ -2226,7 +2226,7 @@ void PrintTo(const MatType& t, ::std::ostream* os)
 /*****************************************************************************************\
 *                                  ::cv::PrintTo
 \*****************************************************************************************/
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 void PrintTo(const String& str, ::std::ostream* os)
 {
@@ -2238,4 +2238,4 @@ void PrintTo(const Size& sz, ::std::ostream* os)
     *os << /*"Size:" << */sz.width << "x" << sz.height;
 }
 
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

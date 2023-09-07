@@ -20,7 +20,7 @@
 #define IVX_USE_OPENCV
 #include "ivx.hpp"
 
-namespace cv{
+namespace stcv{} namespace cv = stcv; namespace stcv{
 namespace ovx{
 // Get common thread local OpenVX context
 CV_EXPORTS_W ivx::Context& getOpenVXContext();

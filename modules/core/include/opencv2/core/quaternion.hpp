@@ -29,7 +29,7 @@
 #include <opencv2/core.hpp>
 #include <opencv2/core/utils/logger.hpp>
 #include <iostream>
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 //! @addtogroup core
 //! @{

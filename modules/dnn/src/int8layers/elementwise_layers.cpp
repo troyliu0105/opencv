@@ -9,7 +9,7 @@
 #include <opencv2/dnn/shape_utils.hpp>
 #include <iostream>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {

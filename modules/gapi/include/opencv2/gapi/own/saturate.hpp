@@ -15,7 +15,7 @@
 #include <opencv2/gapi/own/assert.hpp>
 #include <opencv2/gapi/util/type_traits.hpp>
 
-namespace cv { namespace gapi { namespace own {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gapi { namespace own {
 //-----------------------------
 //
 // Numeric cast with saturation
@@ -79,5 +79,5 @@ inline double  rintd(double x) { return rint(x); }
 
 } //namespace own
 } //namespace gapi
-} //namespace cv
+} //namespace stcv{} namespace cv = stcv; namespace stcv
 #endif /* OPENCV_GAPI_OWN_SATURATE_HPP */

@@ -24,7 +24,7 @@
         #include <CL/cl_d3d11.h>
     #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace onevpl {
@@ -54,7 +54,7 @@ private:
 } // namespace onevpl
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #undef NOMINMAX
 #endif // HAVE_D3D11
 #endif // HAVE_DIRECTX

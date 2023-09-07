@@ -29,7 +29,7 @@ namespace opencv_test
     };
 } // namespace opencv_test
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     namespace detail
     {
@@ -49,7 +49,7 @@ namespace cv
             }
         };
     } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 namespace opencv_test
 {

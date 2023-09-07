@@ -49,7 +49,7 @@
 
 #include "usac.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 int RANSACUpdateNumIters( double p, double ep, int modelPoints, int maxIters )
@@ -1182,4 +1182,4 @@ Mat estimateAffinePartial2D(InputArray _from, InputArray _to, OutputArray _inlie
     return H;
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

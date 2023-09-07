@@ -7,7 +7,7 @@
 
 #include "../../precomp.hpp"
 
-namespace cv { namespace dnn { namespace vkcom {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace vkcom {
 
 extern const unsigned int prior_box_spv[1480] = {
     0x07230203,0x00010000,0x00080001,0x000000db,0x00000000,0x00020011,0x00000001,0x0006000b,
@@ -197,4 +197,4 @@ extern const unsigned int prior_box_spv[1480] = {
     0x00000008,0x000000d8,0x000200f9,0x00000012,0x000200f8,0x00000014,0x000100fd,0x00010038
 };
 
-}}} // namespace cv::dnn::vkcom
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::vkcom

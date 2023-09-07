@@ -7,7 +7,7 @@
 #ifndef OPENCV_GAPI_STREAMING_GSTREAMER_GSTREAMERENV_HPP
 #define OPENCV_GAPI_STREAMING_GSTREAMER_GSTREAMERENV_HPP
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace gst {
@@ -32,6 +32,6 @@ private:
 } // namespace gst
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_STREAMING_GSTREAMER_GSTREAMERENV_HPP

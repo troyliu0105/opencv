@@ -6,7 +6,7 @@
 #include "persistence_impl.hpp"
 #include "persistence_base64_encoding.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class base64::Base64ContextEmitter

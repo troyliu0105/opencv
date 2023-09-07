@@ -5,7 +5,7 @@
 #include "precomp.hpp"
 #include "persistence.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class JSONEmitter : public FileStorageEmitter

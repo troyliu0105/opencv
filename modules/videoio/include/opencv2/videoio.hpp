@@ -69,7 +69,7 @@
 typedef struct CvCapture CvCapture;
 typedef struct CvVideoWriter CvVideoWriter;
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup videoio

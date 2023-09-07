@@ -4,7 +4,7 @@
 #include "precomp.hpp"
 #include <sstream>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 namespace {

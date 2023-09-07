@@ -23,7 +23,7 @@
 
 #include "logger.hpp"    // GAPI_LOG
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 GIsland::GIsland(const gapi::GBackend &bknd,
                  ade::NodeHandle op,
@@ -447,5 +447,5 @@ void GIslandExecutable::run(GIslandExecutable::IInput &in, GIslandExecutable::IO
     }
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 } // namespace gimpl

@@ -30,7 +30,7 @@
 #include <agile.h>
 #include "opencv2/core/cvdef.h"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup videoio_winrt

@@ -62,7 +62,7 @@
 #define icvWriteFrame_FFMPEG_p cvWriteFrame_FFMPEG
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace {
 
 class CvCapture_FFMPEG_proxy CV_FINAL : public cv::IVideoCapture
@@ -240,7 +240,7 @@ cv::Ptr<cv::IVideoWriter> cvCreateVideoWriter_FFMPEG_proxy(const std::string& fi
 #include "plugin_writer_api.hpp"
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 static
 CvResult CV_API_CALL cv_capture_open(const char* filename, int camera_index, CV_OUT CvPluginCapture* handle)

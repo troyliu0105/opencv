@@ -50,7 +50,7 @@ http://www.robesafe.com/personal/pablo.alcantarilla/papers/Alcantarilla12eccv.pd
 #include "precomp.hpp"
 #include "kaze/KAZEFeatures.h"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
     class KAZE_Impl CV_FINAL : public KAZE

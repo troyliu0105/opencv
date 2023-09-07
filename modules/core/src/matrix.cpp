@@ -5,7 +5,7 @@
 #include "precomp.hpp"
 #include "bufferpool.impl.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 void MatAllocator::map(UMatData*, AccessFlag) const
 {

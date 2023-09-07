@@ -19,7 +19,7 @@
 #endif
 #endif  // HAVE_HALIDE
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 namespace dnn
 {
@@ -91,6 +91,6 @@ namespace dnn
 
     bool haveHalide();
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif  // __OPENCV_DNN_OP_HALIDE_HPP__

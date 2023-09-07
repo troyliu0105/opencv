@@ -47,7 +47,7 @@
 
 ////////////////////////////////////////// kmeans ////////////////////////////////////////////
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static int CV_KMEANS_PARALLEL_GRANULARITY = (int)utils::getConfigurationParameterSizeT("OPENCV_KMEANS_PARALLEL_GRANULARITY", 1000);

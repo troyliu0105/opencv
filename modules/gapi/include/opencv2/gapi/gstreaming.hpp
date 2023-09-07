@@ -17,7 +17,7 @@
 #include <opencv2/gapi/garg.hpp>
 #include <opencv2/gapi/streaming/source.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 template<class T> using optional = cv::util::optional<T>;
 

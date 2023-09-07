@@ -10,7 +10,7 @@
 
 #include <cstddef>
 
-namespace cv { namespace dnn { namespace cuda4dnn { namespace kernels {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace cuda4dnn { namespace kernels {
 
     template <class T>
     void generate_prior_boxes(
@@ -23,6 +23,6 @@ namespace cv { namespace dnn { namespace cuda4dnn { namespace kernels {
         std::size_t imageWidth, std::size_t imageHeight,
         bool normalize, bool clip);
 
-}}}} /* namespace cv::dnn::cuda4dnn::kernels */
+}}}} /* namespace stcv{} namespace cv = stcv; namespace stcv::dnn::cuda4dnn::kernels */
 
 #endif /* OPENCV_DNN_SRC_CUDA4DNN_KERNELS_PRIOR_BOX_HPP */

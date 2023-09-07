@@ -4,7 +4,7 @@
 
 #include "precomp.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
@@ -260,4 +260,4 @@ bool Layer::updateMemoryShapes(const std::vector<MatShape>& inputs)
 }
 
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

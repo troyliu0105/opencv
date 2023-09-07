@@ -26,7 +26,7 @@
 
 using namespace Windows::UI::Xaml::Controls;
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup highgui_winrt

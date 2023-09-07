@@ -17,7 +17,7 @@
 #endif
 #endif
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 
 class ProposalLayerImpl CV_FINAL : public ProposalLayer
 {
@@ -422,4 +422,4 @@ Ptr<ProposalLayer> ProposalLayer::create(const LayerParams& params)
 }
 
 }  // namespace dnn
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

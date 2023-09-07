@@ -6,7 +6,7 @@
 
 #include "oak_memory_adapters.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace oak {
 
@@ -51,4 +51,4 @@ cv::RMat::View OAKRMatAdapter::access(cv::RMat::Access) {
 
 } // namespace oak
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

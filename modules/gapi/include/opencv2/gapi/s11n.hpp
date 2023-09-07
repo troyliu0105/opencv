@@ -22,7 +22,7 @@
 #pragma warning(disable: 4702)
 #endif
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 
 /**
@@ -155,9 +155,9 @@ type deserialize(const std::vector<char> &bytes) {
     return detail::getRunArgsWithAdapters<AtLeastOneAdapterT, AdapterTypes...>(bytes);
 }
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace s11n {
 
@@ -504,7 +504,7 @@ cv::GRunArgs getRunArgsWithAdapters(const std::vector<char> &bytes) {
 /** @} */
 
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #if defined _MSC_VER
 #pragma warning(pop)

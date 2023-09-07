@@ -37,7 +37,7 @@
 
 #include "opencv2/core/utils/filesystem.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace obsensor {
 
 #define IOCTL_FAILED_RETURN(x)                                 \
@@ -376,5 +376,5 @@ void V4L2StreamChannel::stop()
         }
     }
 }
-}} // namespace cv::obsensor::
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::obsensor::
 #endif // HAVE_OBSENSOR_V4L2

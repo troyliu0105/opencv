@@ -48,7 +48,7 @@
 
 #include "agast_score.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class BRISK_Impl CV_FINAL : public BRISK

@@ -56,7 +56,7 @@
                      Basic Morphological Operations: Erosion & Dilation
 \****************************************************************************************/
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 /////////////////////////////////// External Interface /////////////////////////////////////
 
@@ -1253,7 +1253,7 @@ void morphologyEx( InputArray _src, OutputArray _dst, int op,
     }
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 CV_IMPL IplConvKernel *
 cvCreateStructuringElementEx( int cols, int rows,

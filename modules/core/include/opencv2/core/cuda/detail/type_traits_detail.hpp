@@ -48,7 +48,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     namespace type_traits_detail
     {
@@ -184,7 +184,7 @@ namespace cv { namespace cuda { namespace device
             enum { value = 1 };
         };
     } // namespace type_traits_detail
-}}} // namespace cv { namespace cuda { namespace cudev
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace cudev
 
 //! @endcond
 

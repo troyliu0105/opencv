@@ -47,7 +47,7 @@
 #include "sumpixels.avx512_skx.hpp"
 #endif
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 
 // forward declarations

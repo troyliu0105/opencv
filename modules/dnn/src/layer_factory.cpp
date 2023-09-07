@@ -7,7 +7,7 @@
 #include <opencv2/dnn/layer_reg.private.hpp>  // getLayerFactoryImpl
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
@@ -106,4 +106,4 @@ Ptr<Layer> LayerFactory::createLayerInstance(const String& type, LayerParams& pa
 
 
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

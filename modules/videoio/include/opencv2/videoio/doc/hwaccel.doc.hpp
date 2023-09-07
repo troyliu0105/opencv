@@ -6,7 +6,7 @@
 // This file should not be used with compiler (documentation only)
 //
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 /** @addtogroup videoio_hwaccel
 This section contains information about API to control Hardware-accelerated video decoding and encoding.
 

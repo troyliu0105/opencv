@@ -92,7 +92,7 @@
 
 #define  CV_DESCALE(x,n)     (((x) + (1 << ((n)-1))) >> (n))
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 
@@ -1674,7 +1674,7 @@ static void Bayer2RGB_EdgeAware_T(const Mat& src, Mat& dst, int code)
             firstRow[x] = lastRow[x] = 0;
 }
 
-} // end namespace cv
+} // end namespace stcv{} namespace cv = stcv; namespace stcv
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //                           The main Demosaicing function                              //

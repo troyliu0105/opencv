@@ -24,7 +24,7 @@
 #include "backend_plugin_legacy.impl.hpp"
 
 
-namespace cv { namespace impl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace impl {
 
 #if OPENCV_HAVE_FILESYSTEM_SUPPORT && defined(ENABLE_PLUGINS)
 

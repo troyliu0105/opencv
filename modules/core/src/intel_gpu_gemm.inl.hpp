@@ -24,7 +24,7 @@
 
 #ifdef HAVE_OPENCL
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static bool intel_gpu_gemm(
@@ -165,6 +165,6 @@ static bool intel_gpu_gemm(
     }
 }
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif

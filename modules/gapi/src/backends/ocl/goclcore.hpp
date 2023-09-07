@@ -13,7 +13,7 @@
 
 #include <opencv2/gapi/ocl/goclkernel.hpp>
 
-namespace cv { namespace gimpl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl {
 
 // NB: This is what a "Kernel Package" from the original Wiki doc should be.
 void loadOCLCore(std::map<std::string, cv::GOCLKernel> &kmap);

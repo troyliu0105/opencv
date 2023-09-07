@@ -12,7 +12,7 @@ cv::flann::IndexParams::~IndexParams()
     delete &get_params(*this);
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 namespace flann

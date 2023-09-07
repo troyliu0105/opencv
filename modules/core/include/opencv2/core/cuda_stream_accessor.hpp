@@ -54,7 +54,7 @@
 #include <cuda_runtime.h>
 #include "opencv2/core/cuda.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     namespace cuda
     {

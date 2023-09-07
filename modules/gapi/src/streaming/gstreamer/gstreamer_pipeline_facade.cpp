@@ -20,7 +20,7 @@
 #include <gst/video/video-frame.h>
 #include <gst/pbutils/missing-plugins.h>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace wip {
 namespace gst {
@@ -310,5 +310,5 @@ void GStreamerPipelineFacade::checkBusMessages() const
 } // namespace gst
 } // namespace wip
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 #endif // HAVE_GSTREAMER

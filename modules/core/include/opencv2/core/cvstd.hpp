@@ -61,7 +61,7 @@
 #  include <cstdlib> //for abs(int)
 #  include <cmath>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     static inline uchar abs(uchar a) { return a; }
     static inline ushort abs(ushort a) { return a; }
@@ -80,7 +80,7 @@ namespace cv
 
 #include "cvstd_wrapper.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 //! @addtogroup core_utils
 //! @{

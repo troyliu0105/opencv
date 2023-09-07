@@ -11,7 +11,7 @@
 #include "opencv2/core/utility.hpp"
 #include "cvconfig.h"
 
-namespace cv { namespace ocl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ocl {
 #ifdef HAVE_OPENCL
 /// Call is similar to useOpenCL() but doesn't try to load OpenCL runtime or create OpenCL context
 CV_EXPORTS bool isOpenCLActivated();

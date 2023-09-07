@@ -13,7 +13,7 @@
 
 #include <omp.h>
 
-namespace cv { namespace parallel { namespace openmp {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace parallel { namespace openmp {
 
 /** OpenMP parallel_for API implementation
  *

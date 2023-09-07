@@ -6,7 +6,7 @@
 #include "precomp.hpp"
 #include "stat.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 typedef int (*SumSqrFunc)(const uchar*, const uchar* mask, uchar*, uchar*, int, int);
 
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN

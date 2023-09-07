@@ -26,7 +26,7 @@
 
 #include "backends/ie/giebackend/giewrapper.hpp" // wrap::Plugin
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gimpl {
 namespace ie {
 

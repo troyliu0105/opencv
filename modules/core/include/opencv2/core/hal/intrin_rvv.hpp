@@ -10,7 +10,7 @@
 
 #include <algorithm>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN

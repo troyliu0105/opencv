@@ -129,7 +129,7 @@ typedef unsigned short ushort;
 #endif
 
 // base.h:
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 enum BorderTypes {
     BORDER_CONSTANT    = 0, //!< `iiiiii|abcdefgh|iiiiiii`  with some specified `i`
@@ -153,7 +153,7 @@ enum InterpolationFlags{
     INTER_LINEAR_EXACT   = 5,
     INTER_MAX            = 7,
 };
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 static inline int cvFloor( double value )
 {

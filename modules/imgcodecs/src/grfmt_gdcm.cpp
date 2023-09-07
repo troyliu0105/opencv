@@ -58,7 +58,7 @@ inline cv::String getMagic()
     return cv::String("\x44\x49\x43\x4D", 4);
 }
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 /************************ DICOM decoder *****************************/

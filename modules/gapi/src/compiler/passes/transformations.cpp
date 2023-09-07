@@ -18,7 +18,7 @@
 
 #include <sstream>
 
-namespace cv { namespace gimpl { namespace passes {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace gimpl { namespace passes {
 namespace
 {
 using Graph = GModel::Graph;
@@ -137,4 +137,4 @@ void applyTransformations(ade::passes::PassContext& ctx,
 }
 }  // namespace passes
 }  // namespace gimpl
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv

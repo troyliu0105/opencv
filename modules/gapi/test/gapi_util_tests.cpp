@@ -9,7 +9,7 @@
 #include <opencv2/gapi/gtype_traits.hpp>
 #include <opencv2/gapi/util/util.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 struct Own {};
 namespace gapi

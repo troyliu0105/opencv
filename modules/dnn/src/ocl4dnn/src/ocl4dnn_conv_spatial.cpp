@@ -63,7 +63,7 @@
 #undef max
 #endif
 
-namespace cv { namespace dnn { namespace ocl4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace ocl4dnn {
 static cv::Mutex kernelConfigMutex;
 typedef std::map<std::string, std::string> kernel_hash_t;
 static kernel_hash_t kernelConfigMap;
@@ -1952,4 +1952,4 @@ bool OCL4DNNConvSpatial<Dtype>::loadTunedConfig()
 
 template class OCL4DNNConvSpatial<float>;
 
-}}} // namespace cv::dnn::ocl4dnn
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::ocl4dnn

@@ -16,7 +16,7 @@
 #include <iostream>
 
 // Namespaces
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 using namespace std;
 

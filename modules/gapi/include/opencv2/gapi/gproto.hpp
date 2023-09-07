@@ -21,7 +21,7 @@
 #include <opencv2/gapi/garg.hpp>
 #include <opencv2/gapi/gmetaarg.hpp>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // FIXME: user shouldn't deal with it - put to detail?
 // GProtoArg is an union type over G-types which can serve as
@@ -154,6 +154,6 @@ bool GAPI_EXPORTS can_describe(const GMetaArg&  meta,  const GRunArgP& argp);
 void GAPI_EXPORTS validate_input_arg(const GRunArg& arg);
 void GAPI_EXPORTS validate_input_args(const GRunArgs& args);
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GPROTO_HPP

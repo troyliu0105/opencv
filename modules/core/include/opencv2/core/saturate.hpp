@@ -49,7 +49,7 @@
 #include <climits>
 #include "opencv2/core/fast_math.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 //! @addtogroup core_utils

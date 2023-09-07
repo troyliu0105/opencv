@@ -51,7 +51,7 @@
 
 //! @cond IGNORED
 
-namespace cv { namespace cuda { namespace device
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace device
 {
     #ifndef CV_DESCALE
         #define CV_DESCALE(x, n) (((x) + (1 << ((n)-1))) >> (n))
@@ -2011,7 +2011,7 @@ namespace cv { namespace cuda { namespace device
 
     #undef CV_DESCALE
 
-}}} // namespace cv { namespace cuda { namespace cudev
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv { namespace cuda { namespace cudev
 
 //! @endcond
 

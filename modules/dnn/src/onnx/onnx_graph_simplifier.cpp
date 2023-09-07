@@ -13,7 +13,7 @@
 #include <opencv2/core/utils/logger.hpp>
 #include <queue>
 
-namespace cv { namespace dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
 extern bool DNN_DIAGNOSTICS_RUN;
@@ -937,4 +937,4 @@ Mat getMatFromTensor(const opencv_onnx::TensorProto& tensor_proto)
 }
 
 CV__DNN_INLINE_NS_END
-}}  // namespace cv::dnn
+}}  // namespace stcv{} namespace cv = stcv; namespace stcv::dnn

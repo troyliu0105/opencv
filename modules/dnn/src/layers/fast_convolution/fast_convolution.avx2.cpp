@@ -5,7 +5,7 @@
 #include "../../precomp.hpp"
 #include "fast_convolution.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace dnn {
 namespace opt_AVX2
 {
@@ -496,4 +496,4 @@ void _fx_winograd_AtXA_8x8_f32(const float* inptr, int inpstep,
 #endif
 } // namespace opt_AVX2
 } // namespace dnn
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv

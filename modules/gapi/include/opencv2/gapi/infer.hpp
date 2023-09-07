@@ -23,7 +23,7 @@
 #include <opencv2/gapi/gcommon.hpp>   // CompileArgTag
 #include <opencv2/gapi/gmetaarg.hpp>  // GMetaArg
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 template<typename, typename> class GNetworkType;
 
@@ -443,7 +443,7 @@ inferGenericROI(const std::string& tag,
 }
 
 } // namespace detail
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 // FIXME: Probably the <API> signature makes a function/tuple/function round-trip
 #define G_API_NET(Class, API, Tag)                                      \
@@ -451,7 +451,7 @@ inferGenericROI(const std::string& tag,
         static constexpr const char * tag() { return Tag; }             \
     }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 
 /** @brief Calculates response for the specified network (template
@@ -642,11 +642,11 @@ infer2(const std::string& tag,
 }
 
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // GAPI_STANDALONE
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 
 // Note: the below code _is_ part of STANDALONE build,
@@ -693,7 +693,7 @@ template<> struct CompileArgTag<cv::gapi::GNetPackage> {
     static const char* tag() { return "gapi.net_package"; }
 };
 
-} // namespace cv::detail
+} // namespace stcv{} namespace cv = stcv; namespace stcv::detail
 
 namespace gapi {
 template<typename... Args>
@@ -709,6 +709,6 @@ inline cv::gapi::GNetPackage& operator += (      cv::gapi::GNetPackage& lhs,
 }
 
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_INFER_HPP

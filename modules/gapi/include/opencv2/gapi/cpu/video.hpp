@@ -9,7 +9,7 @@
 
 #include <opencv2/gapi/gkernel.hpp> // GKernelPackage
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace gapi {
 namespace video {
 namespace cpu {
@@ -19,7 +19,7 @@ GAPI_EXPORTS GKernelPackage kernels();
 } // namespace cpu
 } // namespace video
 } // namespace gapi
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
 #endif // OPENCV_GAPI_CPU_VIDEO_API_HPP

@@ -40,7 +40,7 @@ void cv::detail::GOpaqueU::setKind(cv::detail::OpaqueKind kind)
     m_priv->kind = kind;
 }
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 std::ostream& operator<<(std::ostream& os, const cv::GOpaqueDesc &)
 {
     // FIXME: add type information here

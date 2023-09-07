@@ -26,14 +26,14 @@
 #  include <opencv2/gapi/own/scalar.hpp> // cv::gapi::own::Scalar
 #  include <opencv2/gapi/own/mat.hpp>
 // replacement of cv's structures:
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
     using Rect    = gapi::own::Rect;
     using Size    = gapi::own::Size;
     using Point   = gapi::own::Point;
     using Point2f = gapi::own::Point2f;
     using Scalar  = gapi::own::Scalar;
     using Mat     = gapi::own::Mat;
-}  // namespace cv
+}  // namespace stcv{} namespace cv = stcv; namespace stcv
 #define GAPI_OWN_TYPES_LIST     cv::gapi::own::VoidType
 
 #endif // !defined(GAPI_STANDALONE)

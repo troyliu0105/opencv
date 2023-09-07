@@ -11,7 +11,7 @@
 #include "aruco_utils.hpp"
 #include <cmath>
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace aruco {
 
 using namespace std;

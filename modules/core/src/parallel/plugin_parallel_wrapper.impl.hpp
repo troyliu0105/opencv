@@ -11,7 +11,7 @@
 
 #include "opencv2/core/utils/plugin_loader.private.hpp"
 
-namespace cv { namespace impl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace impl {
 
 using namespace cv::parallel;
 

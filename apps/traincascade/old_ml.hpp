@@ -759,7 +759,7 @@ struct CvDTreeTrainData
 class CvDTree;
 class CvForestTree;
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
     struct DTreeBestSplitFinder;
     struct ForestTreeBestSplitFinder;
@@ -2005,7 +2005,7 @@ protected:
 };
 
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 typedef CvStatModel StatModel;

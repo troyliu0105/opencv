@@ -14,7 +14,7 @@
 #include <opencv2/core/utils/logtag.hpp>
 #include "logtagconfig.hpp"
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 namespace utils {
 namespace logging {
 

@@ -58,7 +58,7 @@
       (http://pascal.inrialpes.fr/soft/olt/)
 \****************************************************************************************/
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #define NTHREADS 256

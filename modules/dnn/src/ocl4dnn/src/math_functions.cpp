@@ -48,7 +48,7 @@
 
 #include "opencv2/core/utils/logger.hpp"
 
-namespace cv { namespace dnn { namespace ocl4dnn {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace dnn { namespace ocl4dnn {
 
 enum gemm_data_type_t
 {
@@ -695,4 +695,4 @@ template bool ocl4dnnAXPY<float>(const int32_t N, const float alpha,
                                  const UMat X, const int32_t offX,
                                  UMat Y, const int32_t offY);
 
-}}} // namespace cv::dnn::ocl4dnn
+}}} // namespace stcv{} namespace cv = stcv; namespace stcv::dnn::ocl4dnn

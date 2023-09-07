@@ -45,7 +45,7 @@ The references are:
 #include "precomp.hpp"
 #include "agast_score.hpp"
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 #if (defined __i386__ || defined(_M_IX86) || defined __x86_64__ || defined(_M_X64))

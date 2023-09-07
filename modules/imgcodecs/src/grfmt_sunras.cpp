@@ -45,7 +45,7 @@
 
 #ifdef HAVE_IMGCODEC_SUNRASTER
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 static const char* fmtSignSunRas = "\x59\xA6\x6A\x95";

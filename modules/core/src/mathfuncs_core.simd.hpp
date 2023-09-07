@@ -4,7 +4,7 @@
 
 #include "mathfuncs.hpp"
 
-namespace cv { namespace hal {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace hal {
 
 CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
 
@@ -845,4 +845,4 @@ float fastAtan2( float y, float x )
 
 CV_CPU_OPTIMIZATION_NAMESPACE_END
 
-}} // namespace cv::hal
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::hal

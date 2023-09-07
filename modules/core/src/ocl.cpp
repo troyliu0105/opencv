@@ -124,7 +124,7 @@
 
 #include "umatrix.hpp"
 
-namespace cv { namespace ocl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ocl {
 
 #define IMPLEMENT_REFCOUNTABLE() \
     void addref() { CV_XADD(&refcount, 1); } \
@@ -3123,7 +3123,7 @@ CV_EXPORTS bool useSVM(UMatUsageFlags usageFlags)
     return false; // don't use SVM by default
 }
 
-} // namespace cv::ocl::svm
+} // namespace stcv{} namespace cv = stcv; namespace stcv::ocl::svm
 #endif // HAVE_OPENCL_SVM
 
 Context::UserContext::~UserContext()
@@ -3562,7 +3562,7 @@ struct Kernel::Impl
     bool haveTempSrcUMats;
 };
 
-}} // namespace cv::ocl
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::ocl
 
 extern "C" {
 
@@ -3588,7 +3588,7 @@ static void CL_CALLBACK oclCleanupCallback(cl_event e, cl_int, void *p)
 
 }
 
-namespace cv { namespace ocl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ocl {
 
 Kernel::Kernel() CV_NOEXCEPT
 {
@@ -6633,20 +6633,20 @@ MatAllocator* getOpenCLAllocator()
     CV_SINGLETON_LAZY_INIT(MatAllocator, getOpenCLAllocator_())
 }
 
-}} // namespace cv::ocl
+}} // namespace stcv{} namespace cv = stcv; namespace stcv::ocl
 
 
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 // three funcs below are implemented in umatrix.cpp
 void setSize( UMat& m, int _dims, const int* _sz, const size_t* _steps,
               bool autoSteps = false );
 void finalizeHdr(UMat& m);
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 
-namespace cv { namespace ocl {
+namespace stcv{} namespace cv = stcv; namespace stcv { namespace ocl {
 
 /*
 // Convert OpenCL buffer memory to UMat

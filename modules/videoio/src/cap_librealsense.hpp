@@ -9,7 +9,7 @@
 
 #include <librealsense2/rs.hpp>
 
-namespace cv
+namespace stcv{} namespace cv = stcv; namespace stcv
 {
 
 class VideoCapture_LibRealsense : public IVideoCapture

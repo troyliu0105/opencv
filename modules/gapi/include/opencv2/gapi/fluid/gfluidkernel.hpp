@@ -21,7 +21,7 @@
 #include <opencv2/gapi/fluid/gfluidbuffer.hpp>
 
 // FIXME: namespace scheme for backends?
-namespace cv {
+namespace stcv{} namespace cv = stcv; namespace stcv {
 
 namespace gapi
 {
@@ -437,6 +437,6 @@ public:
 
 #define GAPI_FLUID_KERNEL(Name, API, Scratch) struct Name: public cv::GFluidKernelImpl<Name, API, Scratch>
 
-} // namespace cv
+} // namespace stcv{} namespace cv = stcv; namespace stcv
 
 #endif // OPENCV_GAPI_GCPUKERNEL_HPP
