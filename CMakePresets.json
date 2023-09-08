@@ -115,6 +115,27 @@
       }
     },
     {
+      "name": "nova_9832x",
+      "displayName": "nova_9832x",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/arm-ca9-linux-gnueabihf-6.5.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/nova_9832x/lib/libavutil.a"
+      }
+    },
+    {
       "name": "rk_3566_arm32",
       "displayName": "rk_3566_arm32",
       "inherits": "default",
@@ -125,6 +146,7 @@
         "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/pkgconfig"
       },
       "cacheVariables": {
+        "ENABLE_NEON": "OFF",
         "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavformat.a",
         "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavcodec.a",
         "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libswresample.a",
@@ -132,7 +154,8 @@
         "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libswscale.a",
         "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavresample.a",
         "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavresample.a",
-        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavutil.a"
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm32/lib/libavutil.a",
+        "CMAKE_CXX_FLAGS": "-DOPENCV_INCLUDE_PORT_FILE=\\\"${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/fixing/gnustl_fix.hpp\\\""
       }
     },
     {
@@ -147,6 +170,7 @@
       },
       "cacheVariables": {
         "ENABLE_NEON": "OFF",
+        "WITH_EIGEN": "OFF",
         "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libavformat.a",
         "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libavcodec.a",
         "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libswresample.a",
@@ -154,7 +178,8 @@
         "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libswscale.a",
         "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libavresample.a",
         "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libavresample.a",
-        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libavutil.a"
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3566_arm64/lib/libavutil.a",
+        "CMAKE_CXX_FLAGS": "-DOPENCV_INCLUDE_PORT_FILE=\\\"${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/fixing/gnustl_fix.hpp\\\""
       }
     },
     {
@@ -169,6 +194,7 @@
       },
       "cacheVariables": {
         "ENABLE_NEON": "OFF",
+        "WITH_EIGEN": "OFF",
         "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavformat.a",
         "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavcodec.a",
         "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libswresample.a",
@@ -176,7 +202,54 @@
         "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libswscale.a",
         "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavresample.a",
         "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavresample.a",
-        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavutil.a"
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/rk_3588_arm64/lib/libavutil.a",
+        "CMAKE_CXX_FLAGS": "-DOPENCV_INCLUDE_PORT_FILE=\\\"${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/fixing/gnustl_fix.hpp\\\""
+      }
+    },
+    {
+      "name": "axera_ax620",
+      "displayName": "axera_ax620",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/arm-axera620-linux-gnueabihf.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "ENABLE_NEON": "ON",
+        "WITH_EIGEN": "ON",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/axera_ax620/lib/libavutil.a"
+      }
+    },
+    {
+      "name": "amba cv2x",
+      "displayName": "amba cv2x",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/linaro-aarch64-2018.08-gcc8.2.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "ENABLE_NEON": "OFF",
+        "WITH_EIGEN": "ON",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/amba_cv2x/lib/libavutil.a"
       }
     }
   ]
