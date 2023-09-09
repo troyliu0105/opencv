@@ -94,6 +94,35 @@
       }
     },
     {
+      "name": "linux_aarch",
+      "displayName": "linux_aarch",
+      "inherits": "default",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/pkgconfig",
+        "CC": "/usr/local/bin/gcc",
+        "CXX": "/usr/local/bin/g++"
+      },
+      "cacheVariables": {
+        "ENABLE_NEON": "OFF",
+        "BUILD_PERF_TESTS": "OFF",
+        "BUILD_TESTS": "OFF",
+        "BUILD_EXAMPLES": "OFF",
+        "ENABLE_PRECOMPILED_HEADERS": "ON",
+        "ENABLE_LTO": "ON",
+        "CV_ENABLE_INTRINSICS": "ON",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/linux_aarch/lib/libavutil.a"
+      }
+    },
+    {
       "name": "hisi_3516dv300",
       "displayName": "hisi_3516dv300",
       "inherits": "default",
