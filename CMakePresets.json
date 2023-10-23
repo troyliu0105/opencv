@@ -259,8 +259,8 @@
       }
     },
     {
-      "name": "amba cv2x",
-      "displayName": "amba cv2x",
+      "name": "amba_cv2x",
+      "displayName": "amba_cv2x",
       "inherits": "default",
       "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/linaro-aarch64-2018.08-gcc8.2.cmake",
       "binaryDir": "${sourceDir}/builds/${presetName}",
