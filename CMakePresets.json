@@ -157,6 +157,28 @@
       }
     },
     {
+      "name": "hisi_3516dv500",
+      "displayName": "hisi_3516dv500",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/aarch64-v01c01-linux-gnu-gcc.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "ENABLE_NEON": "OFF",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz/3rdparty/extra_libs/3516dv500/lib/libavutil.a"
+      }
+    },
+    {
       "name": "nova_9832x",
       "displayName": "nova_9832x",
       "inherits": "default",
