@@ -315,6 +315,29 @@
         "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/amba_cv2x/lib/libavresample.a",
         "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/amba_cv2x/lib/libavutil.a"
       }
+    },
+    {
+      "name": "rv1126_19",
+      "displayName": "rv1126_19",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/arm-rv1126-19.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "ENABLE_NEON": "OFF",
+        "WITH_EIGEN": "ON",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19/lib/libavutil.a"
+      }
     }
   ]
 }
