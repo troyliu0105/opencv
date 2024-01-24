@@ -320,7 +320,7 @@
       "name": "rv1126_19",
       "displayName": "rv1126_19",
       "inherits": "default",
-      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/arm-rv1126-19.cmake",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/arm-rv1126-19-linux-gnueabihf.cmake",
       "binaryDir": "${sourceDir}/builds/${presetName}",
       "installDir": "${sourceDir}/3rdparty/schwarz_extra_libs/rv1126_19",
       "environment": {
