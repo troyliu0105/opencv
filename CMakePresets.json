@@ -106,6 +106,40 @@
       }
     },
     {
+      "name": "linux_x64_debug",
+      "displayName": "linux_x64_debug",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/x86_64-linux-gnu.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "OPENCV_ENABLE_MEMORY_SANITIZER": "ON",
+        "ENABLE_OMIT_FRAME_POINTER": "OFF",
+        "BUILD_PERF_TESTS": "OFF",
+        "BUILD_TESTS": "OFF",
+        "BUILD_EXAMPLES": "OFF",
+        "BUILD_WITH_DEBUG_INFO": "ON",
+        "BUILD_SHARED_LIBS": "ON",
+        "CV_ENABLE_INTRINSICS": "ON",
+        "ENABLE_NEON": "OFF",
+        "ENABLE_PRECOMPILED_HEADERS": "ON",
+        "ENABLE_LTO": "OFF",
+        "GENERATE_ABI_DESCRIPTOR": "ON",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/linux_x64/lib/libavutil.a"
+      }
+    },
+    {
       "name": "linux_aarch",
       "displayName": "linux_aarch",
       "inherits": "default",
@@ -176,6 +210,28 @@
         "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/3516dv500/lib/libavresample.a",
         "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/3516dv500/lib/libavresample.a",
         "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/3516dv500/lib/libavutil.a"
+      }
+    },
+    {
+      "name": "hisi_ss528v100",
+      "displayName": "hisi_ss528v100",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/aarch64-mix210-linux.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "ENABLE_NEON": "OFF",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/ss528v100/lib/libavutil.a"
       }
     },
     {
