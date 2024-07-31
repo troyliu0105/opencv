@@ -170,6 +170,36 @@
       }
     },
     {
+      "name": "apple_silicon",
+      "displayName": "apple_silicon",
+      "inherits": "default",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "BUILD_PERF_TESTS": "OFF",
+        "BUILD_TESTS": "OFF",
+        "BUILD_EXAMPLES": "OFF",
+        "CV_ENABLE_INTRINSICS": "ON",
+        "ENABLE_NEON": "ON",
+        "ENABLE_PRECOMPILED_HEADERS": "ON",
+        "ENABLE_LTO": "OFF",
+        "GENERATE_ABI_DESCRIPTOR": "ON",
+        "HAVE_FFMPEG": "OFF",
+        "WITH_FFMPEG": "ON",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/apple_silicon/lib/libavutil.a"
+      }
+    },
+    {
       "name": "hisi_3516dv300",
       "displayName": "hisi_3516dv300",
       "inherits": "default",
