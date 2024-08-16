@@ -1,9 +1,9 @@
 [submodule "3rdparty/schwarz"]
 	path = 3rdparty/schwarz
-	url = https://gitlab.com/stmgroup/schwarz.git
+	url = ../schwarz.git
 [submodule ".devcontainer"]
 	path = .devcontainer
-	url = https://gitlab.com/stmgroup/devcontainer.git
+	url = ../devcontainer.git
 [submodule "3rdparty/schwarz_extra_libs"]
 	path = 3rdparty/schwarz_extra_libs
 	url = https://git.asswecan.org:9443/troyliu0105/extra_libs
