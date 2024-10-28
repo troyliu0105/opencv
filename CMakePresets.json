@@ -401,6 +401,29 @@
       }
     },
     {
+      "name": "rk_3588_arm64_linux",
+      "displayName": "rk_3588_arm64_linux",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/3rdparty/schwarz/toolchains/aarch64-rk3588-linux.cmake",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "installDir": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux",
+      "environment": {
+        "PKG_CONFIG_PATH": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/pkgconfig"
+      },
+      "cacheVariables": {
+        "ENABLE_NEON": "ON",
+        "WITH_EIGEN": "OFF",
+        "pkgcfg_lib_FFMPEG_avformat": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/libavformat.a",
+        "pkgcfg_lib_FFMPEG_avcodec": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/libavcodec.a",
+        "pkgcfg_lib_FFMPEG_swresample": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/libswresample.a",
+        "pkgcfg_lib_FFMPEG_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/libavutil.a",
+        "pkgcfg_lib_FFMPEG_swscale": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/libswscale.a",
+        "pkgcfg_lib_FFMPEG_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avresample": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/libavresample.a",
+        "pkgcfg_lib_FFMPEG_libavresample_avutil": "${sourceDir}/3rdparty/schwarz_extra_libs/rk_3588_arm64_linux/lib/libavutil.a"
+      }
+    },
+    {
       "name": "axera_ax620",
       "displayName": "axera_ax620",
       "inherits": "default",
