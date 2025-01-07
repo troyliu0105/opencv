@@ -499,6 +499,14 @@ public:
             {
                 type = "Convolution";
             }
+            else if ("ArgMax" == type)
+            {
+                type = "Arg";
+                const auto &caffe_argmax_param = layer.argmax_param();
+                const int axis = caffe_argmax_param.axis();
+                layerParams.set("axis", axis);
+                layerParams.set("op", "max");
+            }
 
             int id = dstNet.addLayer(name, type, layerParams);
 
